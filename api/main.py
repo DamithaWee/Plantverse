@@ -1,4 +1,4 @@
-from fastapi import FastAPI, UploadFile,File
+from fastapi import FastAPI, UploadFile,File,HTTPException
 import uvicorn
 import numpy as np
 from io import BytesIO
@@ -8,9 +8,9 @@ import tensorflow as tf
 #create app which is an instance of fast api
 app = FastAPI()
 
-MODEL = tf.keras.models.load_model("../models/pests.h5")
+MODEL = tf.keras.models.load_model(r"C:\Users\USER\Downloads\DSGPgit\DSGP\pestmodels\6\pests.h5")
 
-CLASS_NAMES = ["cashew_leaf miner", "cashew_leafminer", "cassava_green mite","maize_fall armyworm","maize_grasshoper","maize_leaf beetle","rice_hispa","Tomato_Spider_mites"]
+CLASS_NAMES = ["cashew_leaf miner", "cashew_leafminer", "cassava_green mite","maize_fall armyworm","maize_grasshoper","maize_leaf beetle","rice_hispa"]
 
 
 # Define a route for a simple ping endpoint
@@ -34,14 +34,31 @@ async def predict(
     # Resize the image to match the model's expected input shape
     image = tf.image.resize(image, [256, 256])
 
-    img_batch = np.expand_dims(image,0)
+    img_batch = np.expand_dims(image, 0)
 
     predictions = MODEL.predict(img_batch)
-    predicted_class = CLASS_NAMES[np.argmax(predictions[0])]
     confidence = np.max(predictions[0])
-    return{
-        'class':predicted_class,
-        'confidence':float(confidence)
+
+    # Set your confidence threshold here
+    confidence_threshold = 0.7
+
+    if confidence < confidence_threshold:
+        return {
+            'class': 'Image not identified',
+            'confidence': float(confidence)
+        }
+
+    predicted_class_index = np.argmax(predictions[0])
+
+    # Check if the predicted class is within the range of expected classes
+    if predicted_class_index < len(CLASS_NAMES):
+        predicted_class = CLASS_NAMES[predicted_class_index]
+    else:
+        predicted_class = 'Unknown'
+
+    return {
+        'class': predicted_class,
+        'confidence': float(confidence)
     }
 
 
