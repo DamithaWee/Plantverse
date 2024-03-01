@@ -1,0 +1,62 @@
+version: '3.1'
+intents:
+  - fallback
+  - greet
+  - nlu_fallback
+  - question_CBB_disease_symptoms
+  - question_cassava_diseases
+  - question_crop_rotation
+  - question_crop_rotation_definition
+  - question_irrigation_methods
+  - question_major_cassava_disease
+  - question_major_food_crop_africa
+  - question_organic_farming_definition
+  - question_organic_farming_importance
+  - question_soil_degradation_causes
+  - question_soil_erosion_prevention
+  - question_soil_health_importance
+responses:
+  utter_greet:
+    - text: "Hi there! How can I assist you today?"
+  utter_question_crop_rotation:
+    - text: "Crop rotation is essential in farming as it helps to prevent soil erosion and depletion, and can also aid in controlling pests and diseases."
+  utter_question_soil_erosion_prevention:
+    - text: "Crop rotation is a farming practice that helps prevent soil erosion."
+  utter_question_crop_rotation_definition:
+    - text: "Crop rotation is the practice of growing a series of different crops in the same area over several seasons."
+  utter_question_irrigation_methods:
+    - text: "Different methods of irrigation include surface irrigation, drip irrigation, and sprinkler irrigation."
+  utter_question_soil_health_importance:
+    - text: "Soil health is vital to crop growth and productivity, as it provides the necessary nutrients and support for plants to thrive."
+  utter_question_soil_degradation_causes:
+    - text: "Causes of soil degradation include erosion, compaction, and nutrient depletion."
+  utter_question_organic_farming_definition:
+    - text: "Organic farming is a method of crop production that emphasizes the use of natural and sustainable practices, such as crop rotation, composting, and biological pest control."
+  utter_question_organic_farming_importance:
+    - text: "Organic farming seeks to minimize the use of synthetic chemicals and promote the health of the soil and the environment."
+  utter_question_major_food_crop_africa:
+    - text: "Cassava is the major source of food in Africa."
+  utter_question_major_cassava_disease:
+    - text: "The major cassava disease is Cassava Mosaic Disease (CMD)."
+  utter_question_cassava_diseases:
+    - text: "Cassava is susceptible to various diseases."
+  utter_question_CBB_disease_symptoms:
+    - text: "The symptoms of Cassava Brown Streak Disease (CBB) include wilting, yellowing of the leaves, and rotting of the stems and roots."
+  utter_default:
+    - text: "I'm sorry, I couldn't find an answer to your question. Please try asking something else."
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
+actions:
+  - utter_question_crop_rotation_definition
+  - utter_default
+  - utter_question_soil_health_importance
+  - utter_greet
+  - utter_question_crop_rotation
+  - utter_question_irrigation_methods
+  - utter_question_soil_degradation_causes
+  - utter_question_organic_farming_definition
+  - utter_question_organic_farming_importance
+  - utter_question_major_food_crop_africa
+  - utter_question_major_cassava_disease
+  - utter_question_CBB_disease_symptoms

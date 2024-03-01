@@ -1,0 +1,81 @@
+version: "3.1"
+nlu:
+- intent: greet
+  examples: |
+    - Hi
+    - Hello
+    - Hey
+    - Hi there
+    - hey
+- intent: question_crop_rotation
+  examples: |
+    - Why is crop rotation important in farming?
+    - What's the significance of crop rotation in agriculture?
+    - Explain the importance of crop rotation
+- intent: question_soil_erosion_prevention
+  examples: |
+    - What farming practice helps prevent soil erosion?
+    - How can we prevent soil erosion in agriculture?
+    - Which agricultural technique is effective against soil erosion?
+- intent: question_crop_rotation_definition
+  examples: |
+    - What is crop rotation?
+    - Define crop rotation
+    - Explain crop rotation to me
+    - crop rotation
+- intent: question_irrigation_methods
+  examples: |
+    - What are the different methods of irrigation?
+    - Explain various irrigation techniques
+    - List irrigation methods used in agriculture
+- intent: question_soil_health_importance
+  examples: |
+    - Why is soil health vital?
+    - Importance of soil health in farming?
+    - How does soil health impact agriculture?
+    - soil health
+- intent: question_soil_degradation_causes
+  examples: |
+    - What are the causes of soil degradation?
+    - Explain soil degradation factors
+    - List reasons for soil degradation
+- intent: question_organic_farming_definition
+  examples: |
+    - What is organic farming?
+    - Define organic farming practices
+    - Explain organic agriculture
+- intent: question_organic_farming_importance
+  examples: |
+    - What is the importance of organic farming?
+    - Why is organic farming significant?
+    - Benefits of organic agriculture
+- intent: question_major_food_crop_africa
+  examples: |
+    - Which crop is the major source of food in Africa?
+    - What is the primary food crop in Africa?
+    - Identify the main food crop in Africa
+- intent: question_major_cassava_disease
+  examples: |
+    - What is the major cassava disease?
+    - Identify the primary disease affecting cassava
+    - Explain the main illness of cassava plants
+    - major cassava disease
+- intent: question_cassava_diseases
+  examples: |
+    - What are different cassava diseases?
+    - List common cassava illnesses
+    - Explain diseases affecting cassava plants
+- intent: question_CBB_disease_symptoms
+  examples: |
+    - What are the signs and symptoms of CBB disease?
+    - Describe symptoms of Cassava Brown Streak Disease
+    - Identify symptoms of CBB disease
+- intent: fallback
+  examples: |
+    - Sorry, I didn't understand that
+    - Can you rephrase your question?
+    - I'm not sure, could you ask something else?
+    - jet
+- intent: nlu_fallback
+  examples: |
+    - what is the meaning of life?
