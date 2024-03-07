@@ -8,7 +8,7 @@ import tensorflow as tf
 #create app which is an instance of fast api
 app = FastAPI()
 
-MODEL = tf.keras.models.load_model(r"C:\Users\USER\Downloads\DSGPgit\DSGP\pestmodels\6\pests.h5")
+MODEL = tf.keras.models.load_model(r"C:\Users\USER\Downloads\DSGPgit\DSGP\pestmodels\12\pests.h5")
 
 CLASS_NAMES = ["cashew_leaf miner", "cashew_leafminer", "cassava_green mite","maize_fall armyworm","maize_grasshoper","maize_leaf beetle","rice_hispa"]
 
