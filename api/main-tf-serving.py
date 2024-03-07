@@ -23,8 +23,7 @@ app.add_middleware(
 )
 
 # Define the endpoint for making predictions using a pre-trained model
-endpoint = "http://localhost:8501/v1/models/pests.h5:predict"
-
+endpoint = "http://localhost:8501/v1/pestmodels/predict"
 # Define class names for predictions
 CLASS_NAMES = ["cashew_leaf miner", "cashew_leafminer", "cassava_green mite","maize_fall armyworm","maize_grasshoper","maize_leaf beetle","rice_hispa","Tomato_Spider_mites"]
 
