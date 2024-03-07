@@ -8,7 +8,7 @@ import tensorflow as tf
 #create app which is an instance of fast api
 app = FastAPI()
 
-MODEL = tf.keras.models.load_model(r"C:\Users\USER\Downloads\diseasedetection\models\4\maize.h5")
+MODEL = tf.keras.models.load_model(r"C:\Users\USER\Downloads\disease detection\new models\5\maize.h5")
 
 CLASS_NAMES = ["maize_healthy", "maize_leaf blight","maize_leaf spot","maize_streak virus"]
 
@@ -43,7 +43,7 @@ async def predict(
     image = read_file_as_image(await file.read())
 
     # Resize the image to match the model's expected input shape
-    image = tf.image.resize(image, [256, 256])
+    image = tf.image.resize(image, [224, 224])
 
     img_batch = np.expand_dims(image, 0)
 
