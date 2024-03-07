@@ -32,7 +32,7 @@ async def predict(
     image = read_file_as_image(await file.read())
 
     # Resize the image to match the model's expected input shape
-    image = tf.image.resize(image, [256, 256])
+    image = tf.image.resize(image, [224,224])
 
     img_batch = np.expand_dims(image, 0)
 

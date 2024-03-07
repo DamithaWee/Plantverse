@@ -8,7 +8,7 @@ import tensorflow as tf
 #create app which is an instance of fast api
 app = FastAPI()
 
-MODEL = tf.keras.models.load_model(r"C:\Users\USER\Downloads\diseasedetection\models\2\cassava.h5")
+MODEL = tf.keras.models.load_model(r"C:\Users\USER\Downloads\disease detection\new models\3\cassava.h5")
 
 CLASS_NAMES = ["cassava_bacterial blight", "cassava_brown spot", "cassava_healthy","cassava_mosaic"]
 
@@ -43,7 +43,7 @@ async def predict(
     image = read_file_as_image(await file.read())
 
     # Resize the image to match the model's expected input shape
-    image = tf.image.resize(image, [256, 256])
+    image = tf.image.resize(image, [224,224])
 
     img_batch = np.expand_dims(image, 0)
 
@@ -74,4 +74,4 @@ async def predict(
 
 # Run the FastAPI application using Uvicorn
 if __name__ == "__main__":
-    uvicorn.run(app, host='localhost', port=8001)
+    uvicorn.run(app, host='localhost', port=8000)
