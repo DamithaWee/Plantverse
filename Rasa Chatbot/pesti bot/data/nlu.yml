@@ -2,80 +2,699 @@ version: "3.1"
 nlu:
 - intent: greet
   examples: |
-    - Hi
-    - Hello
-    - Hey
-    - Hi there
+    - hi
+    - hello
+    - hey there
+    - good morning
+    - hi, how are you?
+    - hey, what's up?
     - hey
-- intent: question_crop_rotation
+- intent: thank_you
   examples: |
-    - Why is crop rotation important in farming?
-    - What's the significance of crop rotation in agriculture?
-    - Explain the importance of crop rotation
-- intent: question_soil_erosion_prevention
+    - thanks
+    - thank you
+    - thanks a lot
+    - thank you so much
+    - appreciate it
+- intent: goodbye
+  examples: |
+    - goodbye
+    - bye
+    - see you later
+    - take care
+    - farewell
+- intent: explain_crop_rotation
+  examples: |
+    - What is [crop rotation](concept)?
+    - Can you explain [crop rotation](concept)?
+    - Define [crop rotation](concept).
+    - What does [crop rotation](concept) mean?
+- intent: crop_rotation_importance
+  examples: |
+    - Why is [crop rotation](concept) important in farming?
+    - What are the benefits of [crop rotation](concept) in farming?
+    - How does [crop rotation](concept) help in farming?
+- intent: farming_practices_soil_erosion
   examples: |
     - What farming practice helps prevent soil erosion?
-    - How can we prevent soil erosion in agriculture?
+    - How can soil erosion be prevented in farming?
     - Which agricultural technique is effective against soil erosion?
-- intent: question_crop_rotation_definition
+- intent: ylcv_primary_vector
   examples: |
-    - What is crop rotation?
-    - Define crop rotation
-    - Explain crop rotation to me
-    - crop rotation
-- intent: question_irrigation_methods
+    - What is the primary vector responsible for transmitting [Yellow Leaf Curl Virus](disease)?
+    - Which insect is the main transmitter of [Yellow Leaf Curl Virus](disease)?
+    - What is the primary carrier of [Yellow Leaf Curl Virus](disease)?
+- intent: ylcv_symptoms
+  examples: |
+    - What are the typical symptoms of a tomato plant infected with [Yellow Leaf Curl Virus](disease)?
+    - How can you identify a tomato plant infected with [Yellow Leaf Curl Virus](disease)?
+    - What signs indicate a tomato plant has been infected with [Yellow Leaf Curl Virus](disease)?
+- intent: ylcv_impact
+  examples: |
+    - How does [Yellow Leaf Curl Virus](disease) affect tomato crops?
+    - What is the impact of [Yellow Leaf Curl Virus](disease) on tomato cultivation?
+    - What damage does [Yellow Leaf Curl Virus](disease) cause to tomato crops?
+- intent: ylcv_preventive_measures
+  examples: |
+    - What are some preventive measures farmers can take to reduce the spread of [Yellow Leaf Curl Virus](disease)?
+    - How can farmers prevent the transmission of [Yellow Leaf Curl Virus](disease) in tomato crops?
+    - What strategies can be employed to minimize the spread of [Yellow Leaf Curl Virus](disease) among tomato plants?
+- intent: ylcv_treatment
+  examples: |
+    - Is there any treatment available for [Yellow Leaf Curl Virus](disease) in tomato plants?
+    - Can [Yellow Leaf Curl Virus](disease) in tomato plants be treated?
+    - What options are available for treating [Yellow Leaf Curl Virus](disease) in tomato crops?
+- intent: leaf_blight_affected_plants
+  examples: |
+    - What are some common plants affected by [leaf blight](disease)?
+    - Which plants are susceptible to [leaf blight](disease)?
+    - What types of crops can be affected by [leaf blight](disease)?
+- intent: leaf_blight_symptoms
+  examples: |
+    - What are the typical symptoms of [leaf blight](disease)?
+    - How can you identify [leaf blight](disease) on plants?
+    - What signs indicate a plant has been infected with [leaf blight](disease)?
+- intent: leaf_blight_fungal_pathogens
+  examples: |
+    - What are some fungal pathogens that can cause [leaf blight](disease)?
+    - Which fungi are responsible for [leaf blight](disease)?
+    - What types of fungi can lead to [leaf blight](disease)?
+- intent: leaf_blight_environmental_conditions
+  examples: |
+    - What environmental conditions favor the development of [leaf blight](disease)?
+    - Which weather conditions promote the spread of [leaf blight](disease)?
+    - What climate factors are conducive to [leaf blight](disease) development?
+- intent: leaf_blight_management
+  examples: |
+    - How can farmers manage [leaf blight](disease)?
+    - What strategies can be employed to control [leaf blight](disease)?
+    - What measures are effective in preventing and managing [leaf blight](disease)?
+- intent: leaf_mold_fungal_species
+  examples: |
+    - What is the primary fungal species responsible for causing [leaf mold](disease)?
+    - Which fungus causes [leaf mold](disease)?
+    - What is the scientific name of the fungus responsible for [leaf mold](disease)?
+- intent: leaf_mold_susceptible_plants
+  examples: |
+    - Which plant family is particularly susceptible to [leaf mold](disease)?
+    - What types of plants are vulnerable to [leaf mold](disease)?
+    - Which crops are commonly affected by [leaf mold](disease)?
+- intent: leaf_mold_symptoms
+  examples: |
+    - What are some typical symptoms of [leaf mold](disease) in plants?
+    - How can you identify [leaf mold](disease) on plants?
+    - What signs indicate a plant has been infected with [leaf mold](disease)?
+- intent: leaf_mold_environmental_conditions
+  examples: |
+    - In what environmental conditions does [leaf mold](disease) thrive?
+    - What weather conditions favor the development of [leaf mold](disease)?
+    - Where does [leaf mold](disease) tend to thrive?
+- intent: leaf_mold_management
+  examples: |
+    - How can farmers manage [leaf mold](disease) in their crops?
+    - What strategies can be employed to control [leaf mold](disease)?
+    - What measures are effective in preventing and managing [leaf mold](disease)?
+- intent: septoria_leaf_spot_causal_agent
+  examples: |
+    - What is the primary causal agent responsible for [Septoria leaf spot](disease)?
+    - Which fungus causes [Septoria leaf spot](disease)?
+    - What is the scientific name of the fungus responsible for [Septoria leaf spot](disease)?
+- intent: septoria_leaf_spot_affected_crops
+  examples: |
+    - Which crops are commonly affected by [Septoria leaf spot](disease)?
+    - What plants are susceptible to [Septoria leaf spot](disease)?
+    - What types of crops can be affected by [Septoria leaf spot](disease)?
+- intent: septoria_leaf_spot_symptoms
+  examples: |
+    - What are the typical symptoms of [Septoria leaf spot](disease)?
+    - How can you identify [Septoria leaf spot](disease) on plants?
+    - What signs indicate a plant has been infected with [Septoria leaf spot](disease)?
+- intent: septoria_leaf_spot_climate
+  examples: |
+    - In what type of climate does [Septoria leaf spot](disease) thrive?
+    - What weather conditions favor the development of [Septoria leaf spot](disease)?
+    - Where does [Septoria leaf spot](disease) tend to thrive?
+- intent: septoria_leaf_spot_effect_on_plants_yield
+  examples: |
+    - How does [Septoria leaf spot](disease) affect plant health and yield?
+    - What impact does [Septoria leaf spot](disease) have on plant health and yield?
+    - What are the consequences of [Septoria leaf spot](disease) on plant health and yield?
+- intent: septoria_leaf_spot_management_cultural_practices
+  examples: |
+    - What are some cultural practices that can help manage [Septoria leaf spot](disease)?
+    - How can farmers manage [Septoria leaf spot](disease) through cultural practices?
+    - What strategies can be employed to control [Septoria leaf spot](disease) using cultural methods?
+- intent: septoria_leaf_spot_management_chemical_control
+  examples: |
+    - Are there any chemical control options available for managing [Septoria leaf spot](disease)?
+    - What fungicides can be used to manage [Septoria leaf spot](disease)?
+    - How can chemical methods be employed to control [Septoria leaf spot](disease)?
+- intent: septoria_leaf_spot_prevention
+  examples: |
+    - How can farmers prevent the spread of [Septoria leaf spot](disease)?
+    - What strategies can be implemented to prevent [Septoria leaf spot](disease) outbreaks?
+    - What measures can be taken to stop the spread of [Septoria leaf spot](disease)?
+- intent: septoria_leaf_spot_resistant_varieties
+  examples: |
+    - What are some resistant tomato varieties that can help mitigate [Septoria leaf spot](disease)?
+    - Which tomato varieties are resistant to [Septoria leaf spot](disease)?
+    - Are there any tomato cultivars that show resistance to [Septoria leaf spot](disease)?
+- intent: septoria_leaf_spot_early_detection
+  examples: |
+    - How can early detection of [Septoria leaf spot](disease) help in its management?
+    - What are the benefits of early detection of [Septoria leaf spot](disease)?
+    - Why is early detection of [Septoria leaf spot](disease) important for its management?
+- intent: verticillium_wilt_fungal_pathogens
+  examples: |
+    - What are the primary fungal pathogens responsible for causing [Verticillium wilt](disease)?
+    - Which fungi cause [Verticillium wilt](disease)?
+    - What is the scientific name of the fungus responsible for causing [Verticillium wilt](disease)?
+- intent: verticillium_wilt_affected_plants
+  examples: |
+    - Which plants are commonly affected by [Verticillium wilt](disease)?
+    - What plants are susceptible to [Verticillium wilt](disease)?
+    - What types of crops can be affected by [Verticillium wilt](disease)?
+- intent: verticillium_wilt_symptoms
+  examples: |
+    - How does [Verticillium wilt](disease) typically manifest in infected plants?
+    - What are the typical symptoms of [Verticillium wilt](disease)?
+    - What signs indicate a plant has been infected with [Verticillium wilt](disease)?
+- intent: verticillium_wilt_spread
+  examples: |
+    - How does [Verticillium wilt](disease) spread?
+    - What are the mechanisms of spread for [Verticillium wilt](disease)?
+    - What factors contribute to the spread of [Verticillium wilt](disease)?
+- intent: verticillium_wilt_management_cultural_practices
+  examples: |
+    - What are some cultural practices that can help manage [Verticillium wilt](disease)?
+    - How can farmers manage [Verticillium wilt](disease) through cultural practices?
+    - What strategies can be employed to control [Verticillium wilt](disease) using cultural methods?
+- intent: verticillium_wilt_management_chemical_control
+  examples: |
+    - Are there any chemical control options available for managing [Verticillium wilt](disease)?
+    - What fungicides can be used to manage [Verticillium wilt](disease)?
+    - How can chemical methods be employed to control [Verticillium wilt](disease)?
+- intent: verticillium_wilt_prevention
+  examples: |
+    - How can farmers reduce the risk of [Verticillium wilt](disease) in their crops?
+    - What strategies can be implemented to prevent [Verticillium wilt](disease) outbreaks?
+    - What measures can be taken to stop the spread of [Verticillium wilt](disease)?
+- intent: verticillium_wilt_symptoms_in_tomatoes
+  examples: |
+    - What are some symptoms of [Verticillium wilt](disease) in [tomatoes](plant)?
+    - How can you identify [Verticillium wilt](disease) in [tomatoes](plant)?
+    - What signs indicate [tomatoes](plant) have been infected with [Verticillium wilt](disease)?
+- intent: verticillium_wilt_genetic_resistance
+  examples: |
+    - Is there any genetic resistance to [Verticillium wilt](disease)?
+    - Do some tomato varieties exhibit genetic resistance to [Verticillium wilt](disease)?
+    - Are there any tomato cultivars that show resistance to [Verticillium wilt](disease)?
+- intent: gummosis_definition
+  examples: |
+    - What is [gummosis](disease)?
+    - Can you define [gummosis](disease)?
+    - What does [gummosis](disease) refer to?
+- intent: gummosis_affected_trees
+  examples: |
+    - Which fruit trees are commonly affected by [gummosis](disease)?
+    - What plants are susceptible to [gummosis](disease)?
+    - What types of trees can be affected by [gummosis](disease)?
+- intent: gummosis_common_causes
+  examples: |
+    - What are some common causes of [gummosis](disease)?
+    - What factors contribute to the development of [gummosis](disease)?
+    - What can lead to the occurrence of [gummosis](disease)?
+- intent: gummosis_symptoms
+  examples: |
+    - How does [gummosis](disease) manifest in affected trees?
+    - What are the typical symptoms of [gummosis](disease)?
+    - What signs indicate a tree has been affected by [gummosis](disease)?
+- intent: gummosis_management_prevention
+  examples: |
+    - How can [gummosis](disease) be managed or prevented?
+    - What strategies can be employed to control [gummosis](disease)?
+    - What measures can be taken to prevent [gummosis](disease) outbreaks?
+- intent: gummosis_symptoms_in_citrus_trees
+  examples: |
+    - What are some symptoms of [gummosis](disease) in [citrus trees](plant)?
+    - How can you identify [gummosis](disease) in [citrus trees](plant)?
+    - What signs indicate [citrus trees](plant) have been infected with [gummosis](disease)?
+- intent: gummosis_effect_on_fruit_production
+  examples: |
+    - Can [gummosis](disease) affect fruit production in affected trees?
+    - How does [gummosis](disease) impact fruit production?
+    - Does [gummosis](disease) influence fruit yield in affected trees?
+- intent: gummosis_chemical_treatment
+  examples: |
+    - Is there any chemical treatment available for [gummosis](disease)?
+    - What chemical options are there for treating [gummosis](disease)?
+    - Are there any chemical treatments effective against [gummosis](disease)?
+- intent: red_rust_fungal_pathogen
+  examples: |
+    - What is the primary fungal pathogen responsible for causing [red rust](disease)?
+    - Which pathogen causes [red rust](disease)?
+    - What causes [red rust](disease) in wheat?
+- intent: red_rust_affected_crops
+  examples: |
+    - Which crops are commonly affected by [red rust](disease)?
+    - What plants are susceptible to [red rust](disease)?
+    - What types of crops can be affected by [red rust](disease)?
+- intent: red_rust_identification
+  examples: |
+    - How can [red rust](disease) be identified on infected plants?
+    - What are the typical signs of [red rust](disease) in plants?
+    - What does [red rust](disease) look like on plants?
+- intent: red_rust_symptoms_in_wheat
+  examples: |
+    - What are some symptoms of [red rust](disease) in wheat?
+    - How does [red rust](disease) affect wheat plants?
+    - What signs indicate a wheat plant has been infected with [red rust](disease)?
+- intent: red_rust_environmental_conditions
+  examples: |
+    - What environmental conditions favor the development of [red rust](disease)?
+    - Which weather conditions promote the spread of [red rust](disease)?
+    - What climate factors are conducive to [red rust](disease) development?
+- intent: red_rust_impact_on_yield
+  examples: |
+    - How does [red rust](disease) affect crop yield?
+    - What is the impact of [red rust](disease) on crop production?
+    - Can [red rust](disease) lead to yield losses in crops?
+- intent: red_rust_management
+  examples: |
+    - What are some cultural practices that can help manage [red rust](disease)?
+    - How can farmers control [red rust](disease) in their crops?
+    - What strategies are effective in preventing [red rust](disease) outbreaks?
+- intent: red_rust_fungicides
+  examples: |
+    - Are there any fungicides effective against [red rust](disease)?
+    - What fungicides can be used to control [red rust](disease)?
+    - Which chemicals are effective in managing [red rust](disease)?
+- intent: red_rust_monitoring
+  examples: |
+    - How can farmers monitor for [red rust](disease) in their wheat crops?
+    - What methods can be used to detect [red rust](disease) in wheat fields?
+    - What are some signs farmers should look for to detect [red rust](disease)?
+- intent: red_rust_genetic_resistance
+  examples: |
+    - Is genetic resistance available for managing [red rust](disease)?
+    - Do any wheat varieties exhibit genetic resistance to [red rust](disease)?
+    - Which wheat varieties are resistant to [red rust](disease)?
+- intent: brown_spot_primary_pathogen
+  examples: |
+    - What is the primary fungal pathogen responsible for causing [brown spot](disease)?
+    - What causes [brown spot](disease)?
+    - Which pathogen is associated with [brown spot](disease)?
+- intent: brown_spot_affected_crop
+  examples: |
+    - Which crop is primarily affected by [brown spot](disease)?
+    - What plants are susceptible to [brown spot](disease)?
+    - Which crop commonly suffers from [brown spot](disease)?
+- intent: brown_spot_identification
+  examples: |
+    - How can [brown spot](disease) be identified on infected plants?
+    - What are the characteristics of [brown spot](disease) on plants?
+    - What signs indicate the presence of [brown spot](disease) on plants?
+- intent: brown_spot_symptoms_soybean
+  examples: |
+    - What are some symptoms of [brown spot](disease) in [soybean plants](plant)?
+    - How does [brown spot](disease) affect [soybean plants](plant)?
+    - What signs indicate [soybean plants](plant) have been infected with [brown spot](disease)?
+- intent: brown_spot_environmental_conditions
+  examples: |
+    - What environmental conditions favor the development of [brown spot](disease)?
+    - Which weather conditions promote the spread of [brown spot](disease)?
+    - What climate factors are conducive to [brown spot](disease) development?
+- intent: brown_spot_effect_on_yield
+  examples: |
+    - How does [brown spot](disease) affect crop yield?
+    - What impact does [brown spot](disease) have on yield?
+    - Does [brown spot](disease) influence crop productivity?
+- intent: brown_spot_management_practices
+  examples: |
+    - What are some cultural practices that can help manage [brown spot](disease)?
+    - How can [brown spot](disease) be controlled?
+    - What measures are effective in preventing and managing [brown spot](disease)?
+- intent: brown_spot_fungicides
+  examples: |
+    - Are there any fungicides effective against [brown spot](disease)?
+    - What fungicides can control [brown spot](disease)?
+    - Which chemicals are effective in managing [brown spot](disease)?
+- intent: brown_spot_monitoring
+  examples: |
+    - How can farmers monitor for [brown spot](disease) in their soybean crops?
+    - What methods are used to detect [brown spot](disease)?
+    - How do farmers detect [brown spot](disease) in their fields?
+- intent: brown_spot_genetic_resistance
+  examples: |
+    - Is genetic resistance available for managing [brown spot](disease)?
+    - What are some resistant soybean varieties for [brown spot](disease)?
+    - Are there soybean varieties resistant to [brown spot](disease)?
+- intent: maize_streak_primary_vector
+  examples: |
+    - What is the primary vector responsible for transmitting [Maize streak virus](disease)?
+    - Which insect is the main carrier of [Maize streak virus](disease)?
+    - What insect transmits [Maize streak virus](disease)?
+- intent: maize_streak_affected_crop
+  examples: |
+    - Which crop is primarily affected by [Maize streak virus](disease)?
+    - What plants are susceptible to [Maize streak virus](disease)?
+    - Which crop commonly suffers from [Maize streak virus](disease)?
+- intent: maize_streak_symptoms
+  examples: |
+    - What are some symptoms of [Maize streak virus](disease) infection in [maize plants](plant)?
+    - How does [Maize streak virus](disease) affect [maize plants](plant)?
+    - What signs indicate [maize plants](plant) have been infected with [Maize streak virus](disease)?
+- intent: maize_streak_family_genus
+  examples: |
+    - What is the family and genus to which [Maize streak virus](disease) belongs?
+    - Which taxonomic groups include [Maize streak virus](disease)?
+    - To which family and genus does [Maize streak virus](disease) belong?
+- intent: maize_streak_transmission
+  examples: |
+    - How is [Maize streak virus](disease) transmitted?
+    - What is the mode of transmission of [Maize streak virus](disease)?
+    - By what means does [Maize streak virus](disease) spread?
+- intent: maize_streak_consequences
+  examples: |
+    - What are the potential consequences of a severe [Maize streak virus](disease) infection?
+    - How does a severe [Maize streak virus](disease) infection impact crop production?
+    - What are the effects of severe [Maize streak virus](disease) infection on agriculture?
+- intent: maize_streak_management
+  examples: |
+    - Are there any cultural practices or control measures to manage [Maize streak virus](disease)?
+    - How can [Maize streak virus](disease) be controlled?
+    - What measures are effective in preventing and managing [Maize streak virus](disease)?
+- intent: maize_streak_chemical_control
+  examples: |
+    - Can [Maize streak virus](disease) be controlled through chemical means?
+    - What chemical options are available for controlling [Maize streak virus](disease)?
+    - Are there any insecticides effective against [Maize streak virus](disease)?
+- intent: leaf_smut_primary_pathogen
+  examples: |
+    - What is the primary fungal pathogen responsible for causing [leaf smut](disease)?
+    - Which fungus causes [leaf smut](disease)?
+    - What organism is responsible for [leaf smut](disease)?
+- intent: leaf_smut_affected_crops
+  examples: |
+    - Which crops are primarily affected by [leaf smut](disease)?
+    - What plants are susceptible to [leaf smut](disease)?
+    - Which crops commonly suffer from [leaf smut](disease)?
+    - Which crops commonly suffer from [leaf smut](disease)?
+- intent: leaf_smut_identification
+  examples: |
+    - How can [leaf smut](disease) be identified on infected plants?
+    - What are the visual cues for identifying [leaf smut](disease) on plants?
+    - What signs indicate [plants](plant) have been infected with [leaf smut](disease)?
+- intent: leaf_smut_symptoms
+  examples: |
+    - What are some symptoms of [leaf smut](disease) in affected [crops](crop)?
+    - How does [leaf smut](disease) affect [crops](crop)?
+    - What signs indicate [crops](crop) have been infected with [leaf smut](disease)?
+    - How does [leaf smut](disease) affect [crops](crop)?
+- intent: leaf_smut_spread
+  examples: |
+    - How does [leaf smut](disease) spread?
+    - What is the mode of transmission of [leaf smut](disease)?
+    - By what means does [leaf smut](disease) spread?
+- intent: leaf_smut_environmental_conditions
+  examples: |
+    - What environmental conditions favor the development of [leaf smut](disease)?
+    - Which weather conditions promote the spread of [leaf smut](disease)?
+    - What climate factors are conducive to [leaf smut](disease) development?
+- intent: leaf_smut_management
+  examples: |
+    - Are there any cultural practices or control measures to manage [leaf smut](disease)?
+    - How can [leaf smut](disease) be controlled?
+    - What measures are effective in preventing and managing [leaf smut](disease)?
+- intent: leaf_smut_chemical_control
+  examples: |
+    - Can [leaf smut](disease) be controlled through chemical means?
+    - What chemical options are available for controlling [leaf smut](disease)?
+    - Are there any fungicides effective against [leaf smut](disease)?
+- intent: leaf_smut_prevention
+  examples: |
+    - How can farmers prevent the spread of [leaf smut](disease) in their crops?
+    - What measures can be taken to avoid [leaf smut](disease) infection in crops?
+    - What are some strategies for preventing [leaf smut](disease) in crops?
+- intent: spider_mites_type
+  examples: |
+    - What type of pests are [spider mites](pests)?
+    - What category do [spider mites](pests) belong to?
+    - What are [spider mites](pests) classified as?
+- intent: spider_mites_infested_plants
+  examples: |
+    - Which plants are commonly infested by [spider mites](pests)?
+    - What types of plants do [spider mites](pests) commonly infest?
+    - What are some examples of plants infested by [spider mites](pests)?
+- intent: spider_mites_feeding
+  examples: |
+    - How do [spider mites](pests) feed on plants?
+    - What is the feeding mechanism of [spider mites](pests) on plants?
+    - How do [spider mites](pests) damage plants while feeding?
+- intent: spider_mites_thrive_conditions
+  examples: |
+    - Under what conditions do [spider mites](pests) thrive?
+    - What environmental factors favor the proliferation of [spider mites](pests)?
+    - In what types of weather do [spider mites](pests) thrive?
+- intent: spider_mites_signs_infestation
+  examples: |
+    - What are some signs of [spider mite](pest) infestation?
+    - How can one identify an infestation of [spider mites](pests) on plants?
+    - What visual cues indicate the presence of [spider mites](pests) on plants?
+- intent: spider_mites_control
+  examples: |
+    - How can farmers and gardeners control [spider mite](pest) infestations?
+    - What measures can be taken to manage [spider mite](pest) infestations on plants?
+    - What are some strategies for controlling [spider mites](pests) on plants?
+- intent: spider_mites_natural_predators
+  examples: |
+    - Are there any natural predators of [spider mites](pests)?
+    - What organisms prey on [spider mites](pests) in their natural habitat?
+    - Do [spider mites](pests) have any natural enemies?
+- intent: spider_mites_preventive_measures
+  examples: |
+    - What are some preventive measures to avoid [spider mite](pest) infestations?
+    - How can one prevent [spider mite](pest) infestations on plants?
+    - What steps can be taken to prevent [spider mite](pest) outbreaks?
+- intent: leaf_miners_type
+  examples: |
+    - What type of insects are [leaf miners](insects)?
+    - What category do [leaf miners](insects) belong to?
+    - To which family do [leaf miners](insects) belong?
+- intent: leaf_miners_infested_plants
+  examples: |
+    - Which plants are commonly infested by [leaf miners](pests)?
+    - What types of plants do [leaf miners](pests) commonly infest?
+    - What are some examples of plants infested by [leaf miners](pests)?
+- intent: leaf_miners_damage
+  examples: |
+    - How do [leaf miners](pests) damage plants?
+    - What is the mechanism of damage caused by [leaf miners](pests) on plants?
+    - How do [leaf miners](pests) affect plant health?
+- intent: leaf_miners_signs_infestation
+  examples: |
+    - What are some signs of [leaf miner](pest) infestation?
+    - How can one identify an infestation of [leaf miners](pests) on plants?
+    - What visual cues indicate the presence of [leaf miners](pests) on plants?
+- intent: leaf_miners_management
+  examples: |
+    - How can [leaf miner](pest) infestations be managed?
+    - What measures can be taken to manage [leaf miner](pest) infestations on plants?
+    - What are some strategies for controlling [leaf miners](pests) on plants?
+- intent: leaf_miners_chemical_insecticides
+  examples: |
+    - Are there any chemical insecticides effective against [leaf miners](pests)?
+    - What pesticides can be used to control [leaf miners](pests)?
+    - Which chemical insecticides are recommended for combating [leaf miners](pests)?
+- intent: leaf_miners_preventive_measures
+  examples: |
+    - What are some preventive measures to avoid [leaf miner](pest) infestations?
+    - How can one prevent [leaf miner](pest) infestations on plants?
+    - What steps can be taken to prevent [leaf miner](pest) outbreaks?
+- intent: grasshoppers_type
+  examples: |
+    - What type of insects are [grasshoppers](insects)?
+    - What category do [grasshoppers](insects) belong to?
+    - To which suborder do [grasshoppers](insects) belong?
+- intent: grasshoppers_feeding
+  examples: |
+    - Which types of plants do [grasshoppers](pests) typically feed on?
+    - What are the preferred food sources of [grasshoppers](pests)?
+    - On which plants do [grasshoppers](pests) usually feed?
+- intent: grasshoppers_damage
+  examples: |
+    - How do [grasshoppers](pests) cause damage to crops?
+    - What is the mechanism of damage caused by [grasshoppers](pests) on crops?
+    - How do [grasshoppers](pests) affect crop health?
+- intent: grasshoppers_active_conditions
+  examples: |
+    - Under what environmental conditions are [grasshoppers](pests) most active?
+    - When are [grasshoppers](pests) most active in terms of weather?
+    - What weather conditions favor the activity of [grasshoppers](pests)?
+- intent: grasshoppers_signs_infestation
+  examples: |
+    - What are some signs of [grasshopper](pest) infestation in crops?
+    - How can one identify an infestation of [grasshoppers](pests) on crops?
+    - What visual cues indicate the presence of [grasshoppers](pests) in the field?
+- intent: grasshoppers_management
+  examples: |
+    - How can [grasshopper](pest) infestations be managed?
+    - What measures can be taken to manage [grasshopper](pest) infestations on crops?
+    - What are some strategies for controlling [grasshoppers](pests) in agriculture?
+- intent: grasshoppers_natural_predators
+  examples: |
+    - Are there any natural predators of [grasshoppers](pests)?
+    - What animals or insects prey on [grasshoppers](pests)?
+    - Which organisms are known to feed on [grasshoppers](pests) in nature?
+- intent: grasshoppers_preventive_measures
+  examples: |
+    - What are some preventive measures to avoid [grasshopper](pest) infestations?
+    - How can one prevent [grasshopper](pest) infestations on crops?
+    - What steps can be taken to prevent [grasshopper](pest) outbreaks?
+- intent: leaf_beetles_type
+  examples: |
+    - What type of insects are [leaf beetles](insects)?
+    - What category do [leaf beetles](insects) belong to?
+    - To which family do [leaf beetles](insects) belong?
+- intent: leaf_beetles_infested_plants
+  examples: |
+    - Which types of plants do [leaf beetles](pests) typically feed on?
+    - What are some examples of plants infested by [leaf beetles](pests)?
+    - Which plants are commonly infested by [leaf beetles](pests)?
+- intent: leaf_beetles_damage
+  examples: |
+    - How do [leaf beetles](pests) cause damage to plants?
+    - What is the mechanism of damage caused by [leaf beetles](pests) on plants?
+    - How do [leaf beetles](pests) affect plant health?
+- intent: leaf_beetles_signs_infestation
+  examples: |
+    - What are some signs of [leaf beetle](pest) infestation in crops?
+    - How can one identify an infestation of [leaf beetles](pests) on plants?
+    - What visual cues indicate the presence of [leaf beetles](pests) on plants?
+- intent: leaf_beetles_management
+  examples: |
+    - How can [leaf beetle](pest) infestations be managed?
+    - What measures can be taken to manage [leaf beetle](pest) infestations on plants?
+    - What are some strategies for controlling [leaf beetles](pests) on plants?
+- intent: leaf_beetles_natural_predators
+  examples: |
+    - Are there any natural predators of [leaf beetles](pests)?
+    - Which animals prey on [leaf beetles](pests)?
+    - What are some natural enemies of [leaf beetles](pests)?
+- intent: leaf_beetles_preventive_measures
+  examples: |
+    - What are some preventive measures to avoid [leaf beetle](pest) infestations?
+    - How can one prevent [leaf beetle](pest) infestations on plants?
+    - What steps can be taken to prevent [leaf beetle](pest) outbreaks?
+- intent: hispa_beetle_common_name
+  examples: |
+    - What is the common name of the beetle known scientifically as 'Hispa'?
+    - What is another name for the beetle scientifically known as 'Hispa'?
+    - What is the colloquial name of the beetle referred to as 'Hispa'?
+- intent: hispa_beetle_family
+  examples: |
+    - Which family does the [Hispa](beetle) beetle belong to?
+    - To which family does the [Hispa](beetle) beetle species belong?
+- intent: hispa_beetle_plants_attacked
+  examples: |
+    - Which plants are commonly attacked by the [Hispa](beetle) beetle?
+    - What are the preferred hosts of the [Hispa](beetle) beetle?
+- intent: hispa_beetle_damage
+  examples: |
+    - What type of damage do [Hispa](beetle) beetles cause to plants?
+    - How do [Hispa](beetle) beetles damage plants?
+    - What is the characteristic damage caused by [Hispa](beetle) beetles?
+- intent: hispa_beetle_identification
+  examples: |
+    - How can [Hispa](beetle) beetle infestations be identified?
+    - What are the signs of [Hispa](beetle) beetle infestation?
+    - What cues indicate the presence of [Hispa](beetle) beetles in crops?
+- intent: hispa_beetle_management
+  examples: |
+    - What are some management strategies for controlling [Hispa](beetle) beetle infestations?
+    - How can [Hispa](beetle) beetle infestations be managed?
+    - What measures can be taken to control [Hispa](beetle) beetle populations?
+- intent: hispa_beetle_natural_predators
+  examples: |
+    - Are there any natural predators of [Hispa](beetle) beetles?
+    - What animals prey on [Hispa](beetle) beetles?
+    - Which organisms act as natural enemies of [Hispa](beetle) beetles?
+- intent: hispa_beetle_preventive_measures
+  examples: |
+    - What are some preventive measures to avoid [Hispa](beetle) beetle infestations?
+    - How can [Hispa](beetle) beetle infestations be prevented?
+    - What steps can be taken to prevent [Hispa](beetle) beetle outbreaks?
+- intent: irrigation_methods
   examples: |
     - What are the different methods of irrigation?
-    - Explain various irrigation techniques
-    - List irrigation methods used in agriculture
-- intent: question_soil_health_importance
+    - List the various irrigation methods.
+    - Name the techniques used for irrigation.
+- intent: irrigation_definition
   examples: |
-    - Why is soil health vital?
-    - Importance of soil health in farming?
-    - How does soil health impact agriculture?
-    - soil health
-- intent: question_soil_degradation_causes
+    - What is irrigation?
+    - Define irrigation.
+    - Explain the concept of irrigation.
+- intent: surface_irrigation_working
   examples: |
-    - What are the causes of soil degradation?
-    - Explain soil degradation factors
-    - List reasons for soil degradation
-- intent: question_organic_farming_definition
+    - How does surface irrigation work?
+    - Explain the functioning of surface irrigation.
+    - Describe how surface irrigation is performed.
+- intent: drip_irrigation_definition
   examples: |
-    - What is organic farming?
-    - Define organic farming practices
-    - Explain organic agriculture
-- intent: question_organic_farming_importance
+    - What is drip irrigation?
+    - Explain the concept of drip irrigation.
+    - Define drip irrigation.
+- intent: sprinkler_irrigation_working
   examples: |
-    - What is the importance of organic farming?
-    - Why is organic farming significant?
-    - Benefits of organic agriculture
-- intent: question_major_food_crop_africa
+    - How does sprinkler irrigation work?
+    - Explain the functioning of sprinkler irrigation.
+    - Describe the process of sprinkler irrigation.
+- intent: center_pivot_irrigation_definition
   examples: |
-    - Which crop is the major source of food in Africa?
-    - What is the primary food crop in Africa?
-    - Identify the main food crop in Africa
-- intent: question_major_cassava_disease
+    - What is center pivot irrigation?
+    - Define center pivot irrigation.
+    - Explain the concept of center pivot irrigation.
+- intent: irrigation_method_choice_factors
   examples: |
-    - What is the major cassava disease?
-    - Identify the primary disease affecting cassava
-    - Explain the main illness of cassava plants
-    - major cassava disease
-- intent: question_cassava_diseases
+    - What factors influence the choice of irrigation method?
+    - List the factors affecting the selection of an irrigation method.
+    - Which factors determine the choice of irrigation technique?
+- intent: drip_irrigation_advantages
   examples: |
-    - What are different cassava diseases?
-    - List common cassava illnesses
-    - Explain diseases affecting cassava plants
-- intent: question_CBB_disease_symptoms
+    - What are the advantages of drip irrigation?
+    - List the benefits of drip irrigation.
+    - Enumerate the advantages of using drip irrigation.
+- intent: sprinkler_irrigation_disadvantages
   examples: |
-    - What are the signs and symptoms of CBB disease?
-    - Describe symptoms of Cassava Brown Streak Disease
-    - Identify symptoms of CBB disease
-- intent: fallback
+    - What are the disadvantages of sprinkler irrigation?
+    - List the drawbacks of sprinkler irrigation.
+    - Enumerate the disadvantages of using sprinkler irrigation.
+- intent: soil_health_importance
   examples: |
-    - Sorry, I didn't understand that
-    - Can you rephrase your question?
-    - I'm not sure, could you ask something else?
-    - jet
+    - Why is [soil health](soil health) vital?
+    - What makes [soil health](soil health) important?
+    - Why is [soil health](soil health) critical?
+- intent: soil_degradation_causes
+  examples: |
+    - What are the causes of [soil degradation](soil degradation)?
+    - What factors contribute to [soil degradation](soil degradation)?
+- intent: erosion_impact_soil_health
+  examples: |
+    - How does [erosion](erosion) impact soil health?
+    - What effect does [erosion](erosion) have on soil health?
+- intent: soil_compaction_definition
+  examples: |
+    - What is [soil compaction](soil compaction)?
+    - How would you define [soil compaction](soil compaction)?
+- intent: nutrient_depletion_impact_soil_health
+  examples: |
+    - How does [nutrient depletion](nutrient depletion) affect soil health?
+    - What is the impact of [nutrient depletion](nutrient depletion) on soil health?
+- intent: poor_soil_health_signs
+  examples: |
+    - What are some signs of [poor soil health](poor soil health)?
+    - How can you identify [poor soil health](poor soil health)?
 - intent: nlu_fallback
   examples: |
-    - what is the meaning of life?
+    - gibberish
+    - gay
