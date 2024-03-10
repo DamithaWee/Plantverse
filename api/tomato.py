@@ -8,23 +8,12 @@ import tensorflow as tf
 #create app which is an instance of fast api
 app = FastAPI()
 
-MODEL = tf.keras.models.load_model(r"C:\Users\USER\Downloads\diseasedetection\models\3\tomato.h5")
+MODEL = tf.keras.models.load_model(r"C:\Users\USER\Downloads\disease detection\new models\11\tomato.h5")
 
-CLASS_NAMES = ["Tomato__Tomato_mosaic_virus", "Tomato__Tomato_Yellow Leaf__Curl_Virus", "Tomato_Early_blight","Tomato_healthy","Tomato_Late_blight","Tomato_Leaf_Mold","tomato_verticulium wilt"]
+CLASS_NAMES = ["Tomato___Septoria_leaf_spot","Tomato___Tomato_mosaic_virus","Tomato___healthy","tomato_verticulium wilt"]
 
 
 # Define a route for a simple ping endpoint
-@app.get("/ping")
-async def ping():
-    return "Hello, I am alive"
-
-# Define a function to read a file as an image
-def read_file_as_image(data) -> np.ndarray:
-    image = np.array(Image.open(BytesIO(data)))
-    return image
-
-# Define a route for making predictions using a file upload
-# Define a route for making predictions using a file upload
 @app.get("/ping")
 async def ping():
     return "Hello, I am alive"
@@ -42,10 +31,8 @@ async def predict(
     # Read the uploaded file as an image
     image = read_file_as_image(await file.read())
 
-    image = image / 255.0  # Normalize pixel values to the range [0, 1]
-
     # Resize the image to match the model's expected input shape
-    image = tf.image.resize(image, [256, 256])
+    image = tf.image.resize(image, [224,224])
 
     img_batch = np.expand_dims(image, 0)
 
@@ -74,6 +61,7 @@ async def predict(
         'confidence': float(confidence)
     }
 
+
 # Run the FastAPI application using Uvicorn
 if __name__ == "__main__":
-    uvicorn.run(app, host='localhost', port=8001)
+    uvicorn.run(app, host='localhost', port=8000)
