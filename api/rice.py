@@ -22,9 +22,9 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
-MODEL = tf.keras.models.load_model(r"C:\Users\USER\Downloads\diseasedetection\models\9\rice.h5")
+MODEL = tf.keras.models.load_model(r"C:\Users\USER\Downloads\disease detection\new models\10\rice.h5")
 
-CLASS_NAMES = ["rice_bacterial_leaf_blight","rice_bacterial_leaf_streak","rice_bacterial_panicle_blight","rice_blast","rice_brown_spot","rice_dead_heart","rice_downy_mildew","rice_healthy","rice_tungro"]
+CLASS_NAMES = ["rice_bacterial_leaf_blight","rice_brown_spot","rice_dead_heart","rice_healthy"]
 
 @app.get("/ping")
 async def ping():
@@ -42,7 +42,7 @@ async def predict(
     image = read_file_as_image(await file.read())
 
     # Resize the image to match the model's expected input shape
-    image = tf.image.resize(image, [256, 256])
+    image = tf.image.resize(image, [224,224])
 
     img_batch = np.expand_dims(image, 0)
 
@@ -73,4 +73,4 @@ async def predict(
 
 # Run the FastAPI application using Uvicorn
 if __name__ == "__main__":
-    uvicorn.run(app, host='localhost', port=8000)
+    uvicorn.run(app, host='localhost', port=8001)
