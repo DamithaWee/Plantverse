@@ -8,9 +8,9 @@ import tensorflow as tf
 #create app which is an instance of fast api
 app = FastAPI()
 
-MODEL = tf.keras.models.load_model(r"C:\Users\USER\Downloads\DSGPgit\DSGP\pestmodels\12\pests.h5")
+MODEL = tf.keras.models.load_model(r"C:\Users\USER\Downloads\DSGPgit\DSGP\pestmodels\13\pests.h5")
 
-CLASS_NAMES = ["cashew_leaf miner", "cashew_leafminer", "cassava_green mite","maize_fall armyworm","maize_grasshoper","maize_leaf beetle","rice_hispa"]
+CLASS_NAMES = ["cashew_leaf miner","cassava_green mite","maize_fall armyworm","maize_grasshoper","maize_leaf beetle","rice_hispa"]
 
 
 # Define a route for a simple ping endpoint
@@ -64,4 +64,4 @@ async def predict(
 
 # Run the FastAPI application using Uvicorn
 if __name__ == "__main__":
-    uvicorn.run(app, host='localhost', port=8000)
+    uvicorn.run(app, host='localhost', port=8003)
