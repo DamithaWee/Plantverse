@@ -1,0 +1,31 @@
+{
+  "lookup": {
+    "eJyLrq6NBQAEOAGx": "action_listen",
+    "eJwti9ENgCAMBVfpAE7AKsY0Fas2gWKg8kPYXYz+vcu7m1ufoF2ZK5I3SeqgfQOVIjv4IUgx1uHehfNwRAeag8C04xrkOA1Zq+SkcRwU0Cfd5G1L78sDBiEoWQ==": "utter_leaf_blight_environmental_conditions",
+    "eJydjdENgCAQQ1dhACdgFWMuiKdeAoeBgx/C7mL0X+Nfm762Y22DqkfEAsYKBdaq3gLYeNTqMY6SIHc2J4ydIe5WtHJoVpgdbbsAcqEY2PfAOLCBF7q6qb1cZBGM8Gnp5/90AsXfWxM=": "action_listen",
+    "eJwtysEJwCAMQNFVMkAncJVSQlqiBmwUjb2Iu1dob//B38fcYJTKD9JlktXB+AKVbnbwI0kz1vX2xnU9oovmIDF5PJOEaOi7BkpYyGIOrG3O4wXOUiTj": "utter_leaf_blight_fungal_pathogens",
+    "eJyVjVEKgCAQBa/iATqBV4lYtlhtwVbRtR/x7gn1XfT3BoZ5c+uTaSnTCbgpR7Gm3QMED7LmgcBFSYZbC+XhsAxUawKhgzWw3xVcFY8BEuoePUnpH+mqShleCz//lgt5gFCx": "action_listen",
+    "eJwtytEJwCAMRdFVMoATuEopIvZ9BNpUklQQcfcK7d+9cLYxA42qaCkX51sijS+S5AuR/jnZHLLsY9BlIM7OsEjbwYZs2AOxLOOR+llaqspX1p4ait865/4CkpcpIg==": "utter_ylcv_primary_vector",
+    "eJyljUEKhDAMRa+SA3iCXkUklPoXAY0liQUp3n0KM8sBF+7+h/d4c78n6tXQOJeQQxP172DNOxL9ziYe0MGeDhsMNCQEnmhexZEdy0Sig4lE11YaV5M928UNJQ67HzJnBIz/iS+SywcSvVXN": "action_listen",
+    "eJwtisEJgDAMAFfJAE7QVURClFgDTZQ2+ind3YD+7o6b+5igX5UfpM3ltAT9AzRSTvBLkeZs8d6NazxioZ6gMO24FsmHo5JRZo0+xvIC92AiWw==": "utter_leaf_blight_management",
+    "eJyLrq7VUaguKEoti09MLsnMz7NSqIYw4vMSc1OtFKCcnMziktQ8oNrS4tQioJrMPCC3xEohJzUxLT4pJzM9oyQ+NzEvMT01FyheS8DQ0pKS1KJ4HHqJtiMWAO7pSRk=": "action_listen",
+    "eJyLrq7VUaguKEoti09MLsnMz7NSqIYw4vMSc1OtFKCcnMziktQ8oNrS4tQioJrMPCC3xEqhMie5LB6kHcjLLEuNz01NLC4tSi2urY0FAET+I5c=": "utter_ylcv_preventive_measures",
+    "eJyLrq7VUaguKEoti09MLsnMz7NSqIYw4vMSc1OtFKCcnMziktQ8oNrS4tQioJrMPCC3xEqhMie5LB6kHcjLLEuNz01NLC4tSi2uJWBsaUlJalE8Tt0k2BMLAAiHTM0=": "action_listen",
+    "eJyLrq7VUaguKEoti09MLsnMz7NSqIYw4vMSc1OtFKCcnMziktQ8oNrS4tQioJrMPCC3xEqhMie5LL64MregJD+3uLY2FgDWmR8X": "utter_ylcv_symptoms",
+    "eJyLrq7VUaguKEoti09MLsnMz7NSqIYw4vMSc1OtFKCcnMziktQ8oNrS4tQioJrMPCC3xEqhMie5LL64MregJD+3uJaAWaUlJalF8ahaCJkYCwDq3j9N": "action_listen",
+    "eJyLrq7VUaguKEoti09MLsnMz7NSqIYw4vMSc1OtFKCcnMziktQ8oNrS4tQioJrMPCC3xEohJzUxLT4pJzM9oyS+uDK3oCQ/t7i2NhYAtZYhyg==": "utter_leaf_blight_symptoms",
+    "eJyLrq7VUaguKEoti09MLsnMz7NSqIYw4vMSc1OtFKCcnMziktQ8oNrS4tQioJrMPCC3xEohJzUxLT4pJzM9oyS+uDK3oCQ/t7iWgJGlJSWpRfFYdRJpfiwAYQpHZg==": "action_listen",
+    "eJyLrq7VUaguKEoti09MLsnMz7NSqIYw4vMSc1OtFKCcnMziktQ8oNrS4tQioJrMPCC3xEqhJCMxLzu+Mr+0tjYWAFwgHUA=": "utter_thank_you",
+    "eJyLrq7VUaguKEoti09MLsnMz7NSqIYw4vMSc1OtFKCcnMziktQ8oNrS4tQioJrMPCC3xEqhJCMxLzu+Mr+0loA5pSUlqUXxCOX4TIoFAO+LOcg=": "action_listen",
+    "eJyLrq7VUaguKEoti09MLsnMz7NSqIYw4vMSc1OtFKCcnMziktQ8oNrS4tQioJrMPCC3xEohPT8/JakytbY2FgAh+hxX": "utter_goodbye",
+    "eJyLrq7VUaguKEoti09MLsnMz7NSqIYw4vMSc1OtFKCcnMziktQ8oNrS4tQioJrMPCC3xEohPT8/JakytZaAKaUlJalF8TDFuE2JBQCMqTcN": "action_listen",
+    "eJwtysEJgDAMQNFVMoATdBWREGuqgRhLG72U7m5Bb//Bn1ufoOXCD1J0uSxA+wKNTg7wQ6U623jvymU8YoMeQJkSrir74UgpcXTeMCuZ196XF6fNJGE=": "utter_leaf_blight_affected_plants",
+    "eJyVjVEKgCAQBa+yB+gEXiVi2WwtwTbRtR/x7gn1XfT3BoZ5Y20D1Jj4RLLqDzFQ74FCOxt4IPisLN0tmVN3vHRUA4HJ4Rz8uimSc2yVF4yBRHP7KBdVTvgW+Pc2XXFOTys=": "action_listen",
+    "eJyLrq7VUaguKEoti09MLsnMz7NSqIYw4vMSc1OtFKCcnMziktQ8oNrS4tQioJrMPCC3xEohvSg1taS2NhYA6dwbhQ==": "utter_greet",
+    "eJyLrq7VUaguKEoti09MLsnMz7NSqIYw4vMSc1OtFKCcnMziktQ8oNrS4tQioJrMPCC3xEohvSg1taSWgBmlJSWpRfEQpbhMiAUAQvc0lw==": "action_listen",
+    "eJyLrq7VUaguKEoti09MLsnMz7NSqIYw4vMSc1OtFKCcnMziktQ8oNrS4tQioJrMPCC3xEqhMie5LD4ztwCorLY2FgCXrB4J": "utter_ylcv_impact",
+    "eJyLrq7VUaguKEoti09MLsnMz7NSqIYw4vMSc1OtFKCcnMziktQ8oNrS4tQioJrMPCC3xEqhMie5LD4ztwCorJaASaUlJalF8cga8JsWCwBUOjwj": "action_listen",
+    "eJyLrq7VUaguKEoti09MLsnMz7NSqIYw4vMSc1OtFKCcnMziktQ8oNrS4tQioJrMPCC3xEqhMie5LL6kKDWxJBfIr62NBQD0uh9f": "utter_ylcv_treatment",
+    "eJyLrq7VUaguKEoti09MLsnMz7NSqIYw4vMSc1OtFKCcnMziktQ8oNrS4tQioJrMPCC3xEqhMie5LL6kKDWxJBfIryVgWGlJSWpRPJoegmbGAgCaakAl": "action_listen"
+  }
+}

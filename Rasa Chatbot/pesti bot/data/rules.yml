@@ -41,3 +41,53 @@ rules:
   steps:
   - intent: bot_challenge
   - action: utter_iamabot
+
+- rule: ylcv primary vector
+  steps:
+  - intent: ylcv_primary_vector
+  - action: utter_ylcv_primary_vector
+  
+- rule: ylcv symptoms
+  steps:
+  - intent: ylcv_symptoms
+  - action: utter_ylcv_symptoms
+  
+- rule: ylcv impact
+  steps:
+  - intent: ylcv_impact
+  - action: utter_ylcv_impact
+  
+- rule: ylcv preventive measures
+  steps:
+  - intent: ylcv_preventive_measures
+  - action: utter_ylcv_preventive_measures
+  
+- rule: ylcv treatment
+  steps:
+  - intent: ylcv_treatment
+  - action: utter_ylcv_treatment
+  
+- rule: leaf blight affected plants
+  steps:
+  - intent: leaf_blight_affected_plants
+  - action: utter_leaf_blight_affected_plants
+  
+- rule: leaf blight symptoms
+  steps:
+  - intent: leaf_blight_symptoms
+  - action: utter_leaf_blight_symptoms
+  
+- rule: leaf blight fungal pathogens
+  steps:
+  - intent: leaf_blight_fungal_pathogens
+  - action: utter_leaf_blight_fungal_pathogens
+  
+- rule: leaf blight environmental conditions
+  steps:
+  - intent: leaf_blight_environmental_conditions
+  - action: utter_leaf_blight_environmental_conditions
+  
+- rule: leaf blight management
+  steps:
+  - intent: leaf_blight_management
+  - action: utter_leaf_blight_management

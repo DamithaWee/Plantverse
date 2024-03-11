@@ -1,34 +1,64 @@
-version: "3.1"
-
+version: '3.1'
 intents:
-  - greet
-  - thank_you
-  - mood_great
-  - mood_unhappy
-  - affirm
-  - deny
-  - goodbye
-  - bot_challenge
-
+- affirm
+- bot_challenge
+- deny
+- goodbye
+- greet
+- leaf_blight_affected_plants
+- leaf_blight_environmental_conditions
+- leaf_blight_fungal_pathogens
+- leaf_blight_management
+- leaf_blight_symptoms
+- mood_great
+- mood_unhappy
+- thank_you
+- ylcv_impact
+- ylcv_preventive_measures
+- ylcv_primary_vector
+- ylcv_symptoms
+- ylcv_treatment
 responses:
   utter_greet:
-    - text: "Hello! How can I assist you today?"
-    
+  - text: Hello! How can I assist you today?
   utter_thank_you:
-    - text: "You're welcome! If you have any more questions, feel free to ask."
-
+  - text: You're welcome! If you have any more questions, feel free to ask.
   utter_happy:
-    - text: "I'm glad to hear that you're feeling amazing!"
-
+  - text: I'm glad to hear that you're feeling amazing!
   utter_cheer_up:
-    - text: "I'm sorry to hear that you're not feeling good. Here's something to cheer you up: [Cheer Up Image]"
-
+  - text: "I'm sorry to hear that you're not feeling good. Here's something to cheer you up: [Cheer Up Image]"
   utter_did_that_help:
-    - text: "Did that help cheer you up?"
-
+  - text: Did that help cheer you up?
   utter_goodbye:
-    - text: "Goodbye! Take care."
-
+  - text: Goodbye! Take care.
   utter_iamabot:
-    - text: "Yes, I am a bot. But I'm here to assist you!"
-
+  - text: Yes, I am a bot. But I'm here to assist you!
+  utter_ylcv_primary_vector:
+  - text: The whitefly Bemisia tabaci is the primary vector responsible for transmitting [Yellow Leaf Curl Virus](disease).
+  utter_ylcv_symptoms:
+  - text: Tomato plants infected with [Yellow Leaf Curl Virus](disease) exhibit symptoms such as yellowing and curling of leaves, stunted growth, and reduced fruit yield.
+  utter_ylcv_impact:
+  - text: '[Yellow Leaf Curl Virus](disease) can cause significant damage to tomato crops, leading to reduced yields.'
+  utter_ylcv_preventive_measures:
+  - text: Farmers can reduce the spread of [Yellow Leaf Curl Virus](disease) by using reflective mulches, planting resistant varieties, and employing biological control agents against whiteflies.
+  utter_ylcv_treatment:
+  - text: Currently, there are no effective treatments for [Yellow Leaf Curl Virus](disease) once a plant is infected.
+  utter_leaf_blight_affected_plants:
+  - text: Maize, tomatoes, and rice are among the plants commonly affected by leaf blight.
+  utter_leaf_blight_symptoms:
+  - text: Leaf blight usually manifests as dark lesions on the leaves, which may lead to leaf death.
+  utter_leaf_blight_fungal_pathogens:
+  - text: Alternaria, Bipolaris, and Helminthosporium species are among the fungal pathogens known to cause leaf blight.
+  utter_leaf_blight_environmental_conditions:
+  - text: Warm and humid conditions are favorable for the development and spread of leaf blight.
+  utter_leaf_blight_management:
+  - text: Farmers can manage leaf blight through cultural practices such as crop rotation, sanitation, and the use of resistant varieties. Fungicides may also be used as a control measure.
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
+entities:
+- disease
+disease:
+- Yellow Leaf Curl Virus
+actions:
+- utter_leaf_blight_symptoms

@@ -52,3 +52,55 @@ nlu:
     - are you a bot?
     - am I talking to a bot?
     - is this a bot?
+- intent: ylcv_primary_vector
+  examples: |
+    - What is the primary vector responsible for transmitting [Yellow Leaf Curl Virus](disease)?
+    - Which insect is the main transmitter of [Yellow Leaf Curl Virus](disease)?
+    - What is the primary carrier of [Yellow Leaf Curl Virus](disease)?
+- intent: ylcv_symptoms
+  examples: |
+    - What are the typical symptoms of a tomato plant infected with [Yellow Leaf Curl Virus](disease)?
+    - How can you identify a tomato plant infected with [Yellow Leaf Curl Virus](disease)?
+    - What signs indicate a tomato plant has been infected with [Yellow Leaf Curl Virus](disease)?
+    - What signs indicate a tomato plant has been infected with [Yellow Leaf Curl Virus][{"entity": "disease"}, {"entity": "disease"}]?
+- intent: ylcv_impact
+  examples: |
+    - How does [Yellow Leaf Curl Virus](disease) affect tomato crops?
+    - What is the impact of [Yellow Leaf Curl Virus](disease) on tomato cultivation?
+    - What damage does [Yellow Leaf Curl Virus](disease) cause to tomato crops?
+- intent: ylcv_preventive_measures
+  examples: |
+    - What are some preventive measures farmers can take to reduce the spread of [Yellow Leaf Curl Virus](disease)?
+    - How can farmers prevent the transmission of [Yellow Leaf Curl Virus](disease) in tomato crops?
+    - What strategies can be employed to minimize the spread of [Yellow Leaf Curl Virus](disease) among tomato plants?
+- intent: ylcv_treatment
+  examples: |
+    - Is there any treatment available for [Yellow Leaf Curl Virus](disease) in tomato plants?
+    - Can [Yellow Leaf Curl Virus](disease) in tomato plants be treated?
+    - What options are available for treating [Yellow Leaf Curl Virus](disease) in tomato crops?
+- intent: leaf_blight_affected_plants
+  examples: |
+    - What are some common plants affected by [leaf blight](disease)?
+    - Which plants are susceptible to [leaf blight](disease)?
+    - What types of crops can be affected by [leaf blight](disease)?
+- intent: leaf_blight_symptoms
+  examples: |
+    - What are the typical symptoms of [leaf blight](disease)?
+    - How can you identify [leaf blight](disease) on plants?
+    - What signs indicate a plant has been infected with [leaf blight](disease)?
+    - What signs indicate a plant has been infected with [leaf blight][{"entity": "disease"}, {"entity": "disease"}]?
+- intent: leaf_blight_fungal_pathogens
+  examples: |
+    - What are some fungal pathogens that can cause [leaf blight](disease)?
+    - Which fungi are responsible for [leaf blight](disease)?
+    - What types of fungi can lead to [leaf blight](disease)?
+- intent: leaf_blight_environmental_conditions
+  examples: |
+    - What environmental conditions favor the development of [leaf blight](disease)?
+    - Which weather conditions promote the spread of [leaf blight](disease)?
+    - What climate factors are conducive to [leaf blight](disease) development?
+- intent: leaf_blight_management
+  examples: |
+    - How can farmers manage [leaf blight](disease)?
+    - What strategies can be employed to control [leaf blight](disease)?
+    - What measures are effective in preventing and managing [leaf blight](disease)?
