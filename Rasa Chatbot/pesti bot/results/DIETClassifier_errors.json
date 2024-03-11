@@ -1,0 +1,74 @@
+[
+  {
+    "text": "What type of insects are grasshoppers?",
+    "entities": [
+      {
+        "start": 25,
+        "end": 37,
+        "value": "grasshoppers",
+        "entity": "insects"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "pests",
+        "start": 25,
+        "end": 37,
+        "confidence_entity": 0.719557523727417,
+        "value": "grasshoppers",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "What category do grasshoppers belong to?",
+    "entities": [
+      {
+        "start": 17,
+        "end": 29,
+        "value": "grasshoppers",
+        "entity": "insects"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "pests",
+        "start": 17,
+        "end": 29,
+        "confidence_entity": 0.6920783519744873,
+        "value": "grasshoppers",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "To which suborder do grasshoppers belong?",
+    "entities": [
+      {
+        "start": 21,
+        "end": 33,
+        "value": "grasshoppers",
+        "entity": "insects"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "pests",
+        "start": 21,
+        "end": 33,
+        "confidence_entity": 0.7078549861907959,
+        "value": "grasshoppers",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  }
+]
