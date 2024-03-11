@@ -64,4 +64,4 @@ async def predict(
 
 # Run the FastAPI application using Uvicorn
 if __name__ == "__main__":
-    uvicorn.run(app, host='localhost', port=8003)
+    uvicorn.run(app, host='localhost', port=8000)
