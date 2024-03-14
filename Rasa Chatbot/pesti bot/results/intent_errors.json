@@ -1,0 +1,954 @@
+[
+  {
+    "text": "goodbye",
+    "intent": "goodbye",
+    "intent_prediction": {
+      "name": "importance_seed_drying_storage_handling",
+      "confidence": 0.2104906290769577
+    }
+  },
+  {
+    "text": "bye",
+    "intent": "goodbye",
+    "intent_prediction": {
+      "name": "importance_seed_drying_storage_handling",
+      "confidence": 0.2399614304304123
+    }
+  },
+  {
+    "text": "see you later",
+    "intent": "goodbye",
+    "intent_prediction": {
+      "name": "importance_seed_drying_storage_handling",
+      "confidence": 0.02591118961572647
+    }
+  },
+  {
+    "text": "take care",
+    "intent": "goodbye",
+    "intent_prediction": {
+      "name": "importance_seed_drying_storage_handling",
+      "confidence": 0.03679655119776726
+    }
+  },
+  {
+    "text": "farewell",
+    "intent": "goodbye",
+    "intent_prediction": {
+      "name": "bot_challenge",
+      "confidence": 0.025952935218811035
+    }
+  },
+  {
+    "text": "Why is crop rotation important in farming?",
+    "intent": "crop_rotation_importance",
+    "intent_prediction": {
+      "name": "importance_crop_rotation",
+      "confidence": 0.04212115705013275
+    }
+  },
+  {
+    "text": "How can soil erosion be prevented in farming?",
+    "intent": "farming_practices_soil_erosion",
+    "intent_prediction": {
+      "name": "prevent_soil_erosion_farm",
+      "confidence": 0.13050690293312073
+    }
+  },
+  {
+    "text": "What are some cultural practices that can help manage Septoria leaf spot?",
+    "intent": "septoria_leaf_spot_management_cultural_practices",
+    "intent_prediction": {
+      "name": "effects_not_replacing_new_seeds",
+      "confidence": 0.020746730268001556
+    }
+  },
+  {
+    "text": "What strategies can be employed to control Septoria leaf spot using cultural methods?",
+    "intent": "septoria_leaf_spot_management_cultural_practices",
+    "intent_prediction": {
+      "name": "effects_not_replacing_new_seeds",
+      "confidence": 0.01843499206006527
+    }
+  },
+  {
+    "text": "Which fungi cause Verticillium wilt?",
+    "intent": "verticillium_wilt_fungal_pathogens",
+    "intent_prediction": {
+      "name": "verticillium_wilt_management_chemical_control",
+      "confidence": 0.03304789960384369
+    }
+  },
+  {
+    "text": "What are the typical symptoms of Verticillium wilt?",
+    "intent": "verticillium_wilt_symptoms",
+    "intent_prediction": {
+      "name": "verticillium_wilt_symptoms_in_tomatoes",
+      "confidence": 0.03498343378305435
+    }
+  },
+  {
+    "text": "What insect transmits Maize streak virus?",
+    "intent": "maize_streak_primary_vector",
+    "intent_prediction": {
+      "name": "maize_streak_virus_transmission",
+      "confidence": 0.06017686799168587
+    }
+  },
+  {
+    "text": "How is Maize streak virus transmitted?",
+    "intent": "maize_streak_transmission",
+    "intent_prediction": {
+      "name": "maize_streak_virus_transmission",
+      "confidence": 0.06002368777990341
+    }
+  },
+  {
+    "text": "Are there any cultural practices or control measures to manage leaf smut?",
+    "intent": "leaf_smut_management",
+    "intent_prediction": {
+      "name": "soil_organism_carbon_sequestration",
+      "confidence": 0.02165890671312809
+    }
+  },
+  {
+    "text": "How can leaf smut be controlled?",
+    "intent": "leaf_smut_management",
+    "intent_prediction": {
+      "name": "leaf_smut_spread",
+      "confidence": 0.032242193818092346
+    }
+  },
+  {
+    "text": "What measures are effective in preventing and managing leaf smut?",
+    "intent": "leaf_smut_management",
+    "intent_prediction": {
+      "name": "leaf_smut_prevention",
+      "confidence": 0.02369498275220394
+    }
+  },
+  {
+    "text": "How can grasshoppers infestations be managed?",
+    "intent": "grasshoppers_management",
+    "intent_prediction": {
+      "name": "grasshoppers_preventive_measures",
+      "confidence": 0.042570989578962326
+    }
+  },
+  {
+    "text": "What measures can be taken to manage grasshoppers infestations on crops?",
+    "intent": "grasshoppers_management",
+    "intent_prediction": {
+      "name": "grasshoppers_preventive_measures",
+      "confidence": 0.05133931711316109
+    }
+  },
+  {
+    "text": "What are some signs of leaf beetles infestation in crops?",
+    "intent": "leaf_beetles_signs_infestation",
+    "intent_prediction": {
+      "name": "cultural_pest_control_practices",
+      "confidence": 0.01573146879673004
+    }
+  },
+  {
+    "text": "What is irrigation?",
+    "intent": "irrigation_definition",
+    "intent_prediction": {
+      "name": "irrigation_areas",
+      "confidence": 0.03510207682847977
+    }
+  },
+  {
+    "text": "Define irrigation.",
+    "intent": "irrigation_definition",
+    "intent_prediction": {
+      "name": "irrigation_areas",
+      "confidence": 0.03237193822860718
+    }
+  },
+  {
+    "text": "Explain the concept of irrigation.",
+    "intent": "irrigation_definition",
+    "intent_prediction": {
+      "name": "irrigation_areas",
+      "confidence": 0.0284810122102499
+    }
+  },
+  {
+    "text": "How does sprinkler irrigation work?",
+    "intent": "sprinkler_irrigation_working",
+    "intent_prediction": {
+      "name": "seed_dormancy_factors",
+      "confidence": 0.03755037486553192
+    }
+  },
+  {
+    "text": "Explain the functioning of sprinkler irrigation.",
+    "intent": "sprinkler_irrigation_working",
+    "intent_prediction": {
+      "name": "seed_dormancy_factors",
+      "confidence": 0.02151109278202057
+    }
+  },
+  {
+    "text": "Describe the process of sprinkler irrigation.",
+    "intent": "sprinkler_irrigation_working",
+    "intent_prediction": {
+      "name": "seed_dormancy_factors",
+      "confidence": 0.03059697337448597
+    }
+  },
+  {
+    "text": "What are some signs of poor soil health?",
+    "intent": "poor_soil_health_signs",
+    "intent_prediction": {
+      "name": "soil_health_importance",
+      "confidence": 0.0474323034286499
+    }
+  },
+  {
+    "text": "Why is soil organic matter important for soil health?",
+    "intent": "soil_organic_matter_importance",
+    "intent_prediction": {
+      "name": "soil_health_importance",
+      "confidence": 0.04316624999046326
+    }
+  },
+  {
+    "text": "What role does soil organic matter play in soil health?",
+    "intent": "soil_organic_matter_importance",
+    "intent_prediction": {
+      "name": "soil_health_importance",
+      "confidence": 0.04782891646027565
+    }
+  },
+  {
+    "text": "What is organic farming?",
+    "intent": "organic_farming_definition",
+    "intent_prediction": {
+      "name": "regulation_organic_farming",
+      "confidence": 0.022907525300979614
+    }
+  },
+  {
+    "text": "How would you define organic farming?",
+    "intent": "organic_farming_definition",
+    "intent_prediction": {
+      "name": "importance_of_organic_farming",
+      "confidence": 0.02281475067138672
+    }
+  },
+  {
+    "text": "Can you explain what organic farming is?",
+    "intent": "organic_farming_definition",
+    "intent_prediction": {
+      "name": "regulation_organic_farming",
+      "confidence": 0.018082335591316223
+    }
+  },
+  {
+    "text": "What is the importance of organic farming?",
+    "intent": "importance_of_organic_farming",
+    "intent_prediction": {
+      "name": "reason_for_drying",
+      "confidence": 0.016444461420178413
+    }
+  },
+  {
+    "text": "What is [Cassava Bacterial Blight [{\"entity\":\"CBB\",\"value\":\"Cassava Bacterial Blight (CBB)\"}]][{\"entity\":\"CBB\",\"value\":\"Cassava Bacterial Blight (CBB)\"}]?",
+    "intent": "cbb_definition",
+    "intent_prediction": {
+      "name": "cbb_cause",
+      "confidence": 0.0715038925409317
+    }
+  },
+  {
+    "text": "Can you explain what [Cassava Bacterial Blight [{\"entity\":\"CBB\",\"value\":\"Cassava Bacterial Blight (CBB)\"}]][{\"entity\":\"CBB\",\"value\":\"Cassava Bacterial Blight (CBB)\"}] is?",
+    "intent": "cbb_definition",
+    "intent_prediction": {
+      "name": "cbb_cause",
+      "confidence": 0.06787831336259842
+    }
+  },
+  {
+    "text": "What does [Cassava Bacterial Blight [{\"entity\":\"CBB\",\"value\":\"Cassava Bacterial Blight (CBB)\"}]][{\"entity\":\"CBB\",\"value\":\"Cassava Bacterial Blight (CBB)\"}] refer to?",
+    "intent": "cbb_definition",
+    "intent_prediction": {
+      "name": "cbb_cause",
+      "confidence": 0.06933896243572235
+    }
+  },
+  {
+    "text": "What is the importance of controlling CBB?",
+    "intent": "cbb_importance_of_control",
+    "intent_prediction": {
+      "name": "complete_fertilizers_definition",
+      "confidence": 0.021291637793183327
+    }
+  },
+  {
+    "text": "What are fertilizers?",
+    "intent": "fertilizers_definition",
+    "intent_prediction": {
+      "name": "fertilizer_definition",
+      "confidence": 0.04300304129719734
+    }
+  },
+  {
+    "text": "How would you define fertilizers?",
+    "intent": "fertilizers_definition",
+    "intent_prediction": {
+      "name": "complete_fertilizers_definition",
+      "confidence": 0.03196678310632706
+    }
+  },
+  {
+    "text": "Why are fertilizers used in farming?",
+    "intent": "fertilizers_purpose",
+    "intent_prediction": {
+      "name": "fertilizer_application_methods",
+      "confidence": 0.03352391719818115
+    }
+  },
+  {
+    "text": "What is the purpose of fertilizers in farming?",
+    "intent": "fertilizers_purpose",
+    "intent_prediction": {
+      "name": "fertilizer_application_methods",
+      "confidence": 0.021345237269997597
+    }
+  },
+  {
+    "text": "How can the impacts of climate change on agriculture be mitigated?",
+    "intent": "mitigation_strategies_for_climate_change_effects",
+    "intent_prediction": {
+      "name": "climate_change_effects_on_agriculture",
+      "confidence": 0.07919112592935562
+    }
+  },
+  {
+    "text": "Can you suggest ways to reduce the effects of climate change on agriculture?",
+    "intent": "mitigation_strategies_for_climate_change_effects",
+    "intent_prediction": {
+      "name": "climate_change_effects_on_agriculture",
+      "confidence": 0.09994608908891678
+    }
+  },
+  {
+    "text": "Can you describe the data collected in precision agriculture?",
+    "intent": "information_collected_in_precision_agriculture",
+    "intent_prediction": {
+      "name": "utilization_of_information_in_precision_agriculture",
+      "confidence": 0.12278571724891663
+    }
+  },
+  {
+    "text": "Why is Integrated Pest Management used?",
+    "intent": "reasons_for_using_ipm",
+    "intent_prediction": {
+      "name": "ipm_definition",
+      "confidence": 0.06569544225931168
+    }
+  },
+  {
+    "text": "What are the ideal conditions for planting maize?",
+    "intent": "ideal_conditions_maize",
+    "intent_prediction": {
+      "name": "maize_planting",
+      "confidence": 0.03494460508227348
+    }
+  },
+  {
+    "text": "What factors contribute to successful maize cultivation?",
+    "intent": "ideal_conditions_maize",
+    "intent_prediction": {
+      "name": "facilitate_seedling_growth",
+      "confidence": 0.03524426743388176
+    }
+  },
+  {
+    "text": "What is the spacing between plants and rows when planting maize?",
+    "intent": "maize_spacing",
+    "intent_prediction": {
+      "name": "spacing_maize_planting",
+      "confidence": 0.08323515206575394
+    }
+  },
+  {
+    "text": "How is maize prepared for storage after harvesting?",
+    "intent": "maize_post_harvest_management",
+    "intent_prediction": {
+      "name": "maize_storage_after_harvesting",
+      "confidence": 0.11298258602619171
+    }
+  },
+  {
+    "text": "Which types of fertilizers are commonly used for maize production?",
+    "intent": "maize_fertilizers",
+    "intent_prediction": {
+      "name": "examples_of_compound_fertilizers",
+      "confidence": 0.028320780023932457
+    }
+  },
+  {
+    "text": "How does testing for viruses benefit cassava cultivation?",
+    "intent": "cassava_virus_testing_importance",
+    "intent_prediction": {
+      "name": "cassava_virus_testing_benefits",
+      "confidence": 0.05929624289274216
+    }
+  },
+  {
+    "text": "What are the benefits of testing cassava for viruses?",
+    "intent": "cassava_virus_testing_benefits",
+    "intent_prediction": {
+      "name": "cassava_virus_testing_importance",
+      "confidence": 0.04726366326212883
+    }
+  },
+  {
+    "text": "Why is reliable rainfall important for agriculture?",
+    "intent": "rainfall_crop_yield",
+    "intent_prediction": {
+      "name": "rainfall_effects",
+      "confidence": 0.06616701930761337
+    }
+  },
+  {
+    "text": "What impact does consistent rainfall have on soil quality?",
+    "intent": "rainfall_soil_health",
+    "intent_prediction": {
+      "name": "rainfall_water_quality",
+      "confidence": 0.11277181655168533
+    }
+  },
+  {
+    "text": "What important role does agriculture play?",
+    "intent": "role_of_agriculture",
+    "intent_prediction": {
+      "name": "importance_of_agriculture",
+      "confidence": 0.04914863035082817
+    }
+  },
+  {
+    "text": "What is the significance of agriculture in modern society?",
+    "intent": "role_of_agriculture",
+    "intent_prediction": {
+      "name": "importance_of_agriculture",
+      "confidence": 0.05390574038028717
+    }
+  },
+  {
+    "text": "Is there a difference in nutrition between frozen vegetables and fresh vegetables?",
+    "intent": "nutrition_comparison_frozen_vs_fresh_vegetables",
+    "intent_prediction": {
+      "name": "benefits_of_frozen_vegetables",
+      "confidence": 0.12215123325586319
+    }
+  },
+  {
+    "text": "How is biological pest control done?",
+    "intent": "process_biological_pest_control",
+    "intent_prediction": {
+      "name": "definition_biological_pest_control",
+      "confidence": 0.06470844894647598
+    }
+  },
+  {
+    "text": "What is the process of biological pest control?",
+    "intent": "process_biological_pest_control",
+    "intent_prediction": {
+      "name": "definition_biological_pest_control",
+      "confidence": 0.052402425557374954
+    }
+  },
+  {
+    "text": "How long does the cassava plant take to mature?",
+    "intent": "cassava_maturity_time",
+    "intent_prediction": {
+      "name": "cassava_mature_identification",
+      "confidence": 0.045281264930963516
+    }
+  },
+  {
+    "text": "What is the typical maturity period for cassava plants?",
+    "intent": "cassava_maturity_time",
+    "intent_prediction": {
+      "name": "cassava_mature_identification",
+      "confidence": 0.04315834492444992
+    }
+  },
+  {
+    "text": "What are the indications of cassava mealybug damage?",
+    "intent": "cassava_mealybug_symptoms",
+    "intent_prediction": {
+      "name": "cassava_mealybug_definition",
+      "confidence": 0.07320653647184372
+    }
+  },
+  {
+    "text": "What are the effects of armyworm infestation?",
+    "intent": "effects_of_armyworm_infestation",
+    "intent_prediction": {
+      "name": "armyworm_crop_losses",
+      "confidence": 0.041752371937036514
+    }
+  },
+  {
+    "text": "What damage can be caused by armyworms infestation?",
+    "intent": "effects_of_armyworm_infestation",
+    "intent_prediction": {
+      "name": "armyworm_crop_losses",
+      "confidence": 0.03387638181447983
+    }
+  },
+  {
+    "text": "What are the consequences of armyworm infestation?",
+    "intent": "effects_of_armyworm_infestation",
+    "intent_prediction": {
+      "name": "armyworm_crop_losses",
+      "confidence": 0.04746793583035469
+    }
+  },
+  {
+    "text": "What are some of the ways of managing armyworms?",
+    "intent": "ways_of_managing_armyworms",
+    "intent_prediction": {
+      "name": "first_stage_of_managing_armyworms",
+      "confidence": 0.04779200255870819
+    }
+  },
+  {
+    "text": "What are some of the pest management practices for armyworm?",
+    "intent": "pest_management_practices_for_armyworms",
+    "intent_prediction": {
+      "name": "first_stage_of_managing_armyworms",
+      "confidence": 0.029589146375656128
+    }
+  },
+  {
+    "text": "What are the effective strategies for managing armyworm?",
+    "intent": "pest_management_practices_for_armyworms",
+    "intent_prediction": {
+      "name": "ways_of_managing_armyworms",
+      "confidence": 0.04693668708205223
+    }
+  },
+  {
+    "text": "How do you prevent armyworm infestation?",
+    "intent": "pest_management_practices_for_armyworms",
+    "intent_prediction": {
+      "name": "armyworm_crop_losses",
+      "confidence": 0.05749792605638504
+    }
+  },
+  {
+    "text": "What is [Cassava Mosaic Disease [{\"entity\":\"CMD\",\"value\":\"Cassava Mosaic Disease (CMD)\"}]][{\"entity\":\"CMD\",\"value\":\"Cassava Mosaic Disease (CMD)\"}] in severe condition?",
+    "intent": "cmd_effect_severe_condition",
+    "intent_prediction": {
+      "name": "cmd_definition",
+      "confidence": 0.08145042508840561
+    }
+  },
+  {
+    "text": "How severe can the impact of [Cassava Mosaic Disease [{\"entity\":\"CMD\",\"value\":\"Cassava Mosaic Disease (CMD)\"}]][{\"entity\":\"CMD\",\"value\":\"Cassava Mosaic Disease (CMD)\"}] be?",
+    "intent": "cmd_effect_severe_condition",
+    "intent_prediction": {
+      "name": "cmd_definition",
+      "confidence": 0.0809406116604805
+    }
+  },
+  {
+    "text": "What are the consequences of severe [Cassava Mosaic Disease [{\"entity\":\"CMD\",\"value\":\"Cassava Mosaic Disease (CMD)\"}]][{\"entity\":\"CMD\",\"value\":\"Cassava Mosaic Disease (CMD)\"}]?",
+    "intent": "cmd_effect_severe_condition",
+    "intent_prediction": {
+      "name": "cmd_definition",
+      "confidence": 0.0844985693693161
+    }
+  },
+  {
+    "text": "In severe cases, what is the outcome of [Cassava Mosaic Disease [{\"entity\":\"CMD\",\"value\":\"Cassava Mosaic Disease (CMD)\"}]][{\"entity\":\"CMD\",\"value\":\"Cassava Mosaic Disease (CMD)\"}]?",
+    "intent": "cmd_effect_severe_condition",
+    "intent_prediction": {
+      "name": "cmd_definition",
+      "confidence": 0.07850199192762375
+    }
+  },
+  {
+    "text": "What spreads [Cassava Mosaic Disease [{\"entity\":\"CMD\",\"value\":\"Cassava Mosaic Disease (CMD)\"}]][{\"entity\":\"CMD\",\"value\":\"Cassava Mosaic Disease (CMD)\"}]?",
+    "intent": "cmd_spread_method",
+    "intent_prediction": {
+      "name": "cmd_definition",
+      "confidence": 0.08116953819990158
+    }
+  },
+  {
+    "text": "How does [Cassava Mosaic Disease [{\"entity\":\"CMD\",\"value\":\"Cassava Mosaic Disease (CMD)\"}]][{\"entity\":\"CMD\",\"value\":\"Cassava Mosaic Disease (CMD)\"}] spread?",
+    "intent": "cmd_spread_method",
+    "intent_prediction": {
+      "name": "cmd_definition",
+      "confidence": 0.0806015133857727
+    }
+  },
+  {
+    "text": "By what means is [Cassava Mosaic Disease [{\"entity\":\"CMD\",\"value\":\"Cassava Mosaic Disease (CMD)\"}]][{\"entity\":\"CMD\",\"value\":\"Cassava Mosaic Disease (CMD)\"}] transmitted?",
+    "intent": "cmd_spread_method",
+    "intent_prediction": {
+      "name": "cmd_definition",
+      "confidence": 0.07645249366760254
+    }
+  },
+  {
+    "text": "What is the transmission method of [Cassava Mosaic Disease [{\"entity\":\"CMD\",\"value\":\"Cassava Mosaic Disease (CMD)\"}]][{\"entity\":\"CMD\",\"value\":\"Cassava Mosaic Disease (CMD)\"}]?",
+    "intent": "cmd_spread_method",
+    "intent_prediction": {
+      "name": "cmd_definition",
+      "confidence": 0.06716103851795197
+    }
+  },
+  {
+    "text": "What is the effect of CMD?",
+    "intent": "cmd_effect",
+    "intent_prediction": {
+      "name": "cmd_spread_method",
+      "confidence": 0.022265348583459854
+    }
+  },
+  {
+    "text": "How does [Cassava Mosaic Disease [{\"entity\":\"CMD\",\"value\":\"Cassava Mosaic Disease (CMD)\"}]][{\"entity\":\"CMD\",\"value\":\"Cassava Mosaic Disease (CMD)\"}] affect cassava plants?",
+    "intent": "cmd_effect",
+    "intent_prediction": {
+      "name": "cmd_definition",
+      "confidence": 0.08466237038373947
+    }
+  },
+  {
+    "text": "What are the consequences of [Cassava Mosaic Disease [{\"entity\":\"CMD\",\"value\":\"Cassava Mosaic Disease (CMD)\"}]][{\"entity\":\"CMD\",\"value\":\"Cassava Mosaic Disease (CMD)\"}]?",
+    "intent": "cmd_effect",
+    "intent_prediction": {
+      "name": "cmd_definition",
+      "confidence": 0.08400927484035492
+    }
+  },
+  {
+    "text": "What impact does [Cassava Mosaic Disease [{\"entity\":\"CMD\",\"value\":\"Cassava Mosaic Disease (CMD)\"}]][{\"entity\":\"CMD\",\"value\":\"Cassava Mosaic Disease (CMD)\"}] have on cassava ?",
+    "intent": "cmd_effect",
+    "intent_prediction": {
+      "name": "cmd_definition",
+      "confidence": 0.07825442403554916
+    }
+  },
+  {
+    "text": "How can crop rotation be used to control cassava mosaic disease?",
+    "intent": "cmd_control_crop_rotation",
+    "intent_prediction": {
+      "name": "reasons_for_spraying_crops",
+      "confidence": 0.009365525096654892
+    }
+  },
+  {
+    "text": "What other way can a farmer control [Cassava Mosaic Disease [{\"entity\":\"CMD\",\"value\":\"Cassava Mosaic Disease (CMD)\"}]][{\"entity\":\"CMD\",\"value\":\"Cassava Mosaic Disease (CMD)\"}]?",
+    "intent": "cmd_control_resistant_varieties",
+    "intent_prediction": {
+      "name": "cmd_definition",
+      "confidence": 0.06974056363105774
+    }
+  },
+  {
+    "text": "Aside from crop rotation, what other method can be used to control [Cassava Mosaic Disease [{\"entity\":\"practice\",\"value\":\"crop rotation\"}]][{\"entity\":\"practice\",\"value\":\"crop rotation\"}]?",
+    "intent": "cmd_control_resistant_varieties",
+    "intent_prediction": {
+      "name": "cmd_control_crop_rotation",
+      "confidence": 0.0290958434343338
+    }
+  },
+  {
+    "text": "How can farmers combat [Cassava Mosaic Disease [{\"entity\":\"CMD\",\"value\":\"Cassava Mosaic Disease (CMD)\"}]][{\"entity\":\"CMD\",\"value\":\"Cassava Mosaic Disease (CMD)\"}] besides using crop rotation?",
+    "intent": "cmd_control_resistant_varieties",
+    "intent_prediction": {
+      "name": "cmd_definition",
+      "confidence": 0.060779497027397156
+    }
+  },
+  {
+    "text": "What alternative methods are available for controlling [Cassava Mosaic Disease [{\"entity\":\"CMD\",\"value\":\"Cassava Mosaic Disease (CMD)\"}]][{\"entity\":\"CMD\",\"value\":\"Cassava Mosaic Disease (CMD)\"}]?",
+    "intent": "cmd_control_resistant_varieties",
+    "intent_prediction": {
+      "name": "cmd_definition",
+      "confidence": 0.06711460649967194
+    }
+  },
+  {
+    "text": "How is [Cassava Bacterial Blight [{\"entity\":\"CBB\",\"value\":\"Cassava Bacterial Blight (CBB)\"}]][{\"entity\":\"CBB\",\"value\":\"Cassava Bacterial Blight (CBB)\"}] spread?",
+    "intent": "cbb_spread_method",
+    "intent_prediction": {
+      "name": "cbb_cause",
+      "confidence": 0.06373076885938644
+    }
+  },
+  {
+    "text": "What are the modes of transmission for [Cassava Bacterial Blight [{\"entity\":\"CBB\",\"value\":\"Cassava Bacterial Blight (CBB)\"}]][{\"entity\":\"CBB\",\"value\":\"Cassava Bacterial Blight (CBB)\"}]?",
+    "intent": "cbb_spread_method",
+    "intent_prediction": {
+      "name": "cbb_fungicides",
+      "confidence": 0.056391842663288116
+    }
+  },
+  {
+    "text": "By what means does [Cassava Bacterial Blight [{\"entity\":\"CBB\",\"value\":\"Cassava Bacterial Blight (CBB)\"}]][{\"entity\":\"CBB\",\"value\":\"Cassava Bacterial Blight (CBB)\"}] disseminate?",
+    "intent": "cbb_spread_method",
+    "intent_prediction": {
+      "name": "cbb_cause",
+      "confidence": 0.06368635594844818
+    }
+  },
+  {
+    "text": "What is the spread mechanism of [Cassava Bacterial Blight [{\"entity\":\"CBB\",\"value\":\"Cassava Bacterial Blight (CBB)\"}]][{\"entity\":\"CBB\",\"value\":\"Cassava Bacterial Blight (CBB)\"}]?",
+    "intent": "cbb_spread_method",
+    "intent_prediction": {
+      "name": "cbb_cause",
+      "confidence": 0.0627456083893776
+    }
+  },
+  {
+    "text": "How can you ensure sanitation control for [Cassava Bacterial Blight [{\"entity\":\"CBB\",\"value\":\"Cassava Bacterial Blight (CBB)\"}]][{\"entity\":\"CBB\",\"value\":\"Cassava Bacterial Blight (CBB)\"}]?",
+    "intent": "cbb_sanitation_control",
+    "intent_prediction": {
+      "name": "cbb_fungicides",
+      "confidence": 0.06355994194746017
+    }
+  },
+  {
+    "text": "What measures can be taken to maintain sanitation control for [Cassava Bacterial Blight [{\"entity\":\"CBB\",\"value\":\"Cassava Bacterial Blight (CBB)\"}]][{\"entity\":\"CBB\",\"value\":\"Cassava Bacterial Blight (CBB)\"}]?",
+    "intent": "cbb_sanitation_control",
+    "intent_prediction": {
+      "name": "cbb_fungicides",
+      "confidence": 0.05325101688504219
+    }
+  },
+  {
+    "text": "What steps should be followed to implement sanitation control for [Cassava Bacterial Blight [{\"entity\":\"CBB\",\"value\":\"Cassava Bacterial Blight (CBB)\"}]][{\"entity\":\"CBB\",\"value\":\"Cassava Bacterial Blight (CBB)\"}]?",
+    "intent": "cbb_sanitation_control",
+    "intent_prediction": {
+      "name": "cbb_fungicides",
+      "confidence": 0.052865833044052124
+    }
+  },
+  {
+    "text": "Which practices are effective for maintaining sanitation control for [Cassava Bacterial Blight [{\"entity\":\"CBB\",\"value\":\"Cassava Bacterial Blight (CBB)\"}]][{\"entity\":\"CBB\",\"value\":\"Cassava Bacterial Blight (CBB)\"}]?",
+    "intent": "cbb_sanitation_control",
+    "intent_prediction": {
+      "name": "cbb_fungicides",
+      "confidence": 0.05845772102475166
+    }
+  },
+  {
+    "text": "How can crop rotation be used to control [Cassava Bacterial Blight [{\"entity\":\"CBB\",\"value\":\"Cassava Bacterial Blight (CBB)\"}]][{\"entity\":\"CBB\",\"value\":\"Cassava Bacterial Blight (CBB)\"}]?",
+    "intent": "cbb_control_crop_rotation",
+    "intent_prediction": {
+      "name": "cbb_fungicides",
+      "confidence": 0.063139908015728
+    }
+  },
+  {
+    "text": "What role does crop rotation play in controlling [Cassava Bacterial Blight [{\"entity\":\"CBB\",\"value\":\"Cassava Bacterial Blight (CBB)\"}]][{\"entity\":\"CBB\",\"value\":\"Cassava Bacterial Blight (CBB)\"}]?",
+    "intent": "cbb_control_crop_rotation",
+    "intent_prediction": {
+      "name": "cbb_fungicides",
+      "confidence": 0.05984818562865257
+    }
+  },
+  {
+    "text": "In what way does crop rotation help manage [Cassava Bacterial Blight [{\"entity\":\"CBB\",\"value\":\"Cassava Bacterial Blight (CBB)\"}]][{\"entity\":\"CBB\",\"value\":\"Cassava Bacterial Blight (CBB)\"}]?",
+    "intent": "cbb_control_crop_rotation",
+    "intent_prediction": {
+      "name": "cbb_fungicides",
+      "confidence": 0.059658829122781754
+    }
+  },
+  {
+    "text": "Are there some [Cassava Bacterial Blight [{\"entity\":\"CBB\",\"value\":\"Cassava Bacterial Blight (CBB)\"}]][{\"entity\":\"CBB\",\"value\":\"Cassava Bacterial Blight (CBB)\"}] resistant crops?",
+    "intent": "cbb_resistant_crops",
+    "intent_prediction": {
+      "name": "cbb_cause",
+      "confidence": 0.06616292893886566
+    }
+  },
+  {
+    "text": "What spreads cassava mosaic disease?",
+    "intent": "cassava_mosaic_disease_spread",
+    "intent_prediction": {
+      "name": "spread_of_cassava_mosaic_disease",
+      "confidence": 0.055563267320394516
+    }
+  },
+  {
+    "text": "How does cassava mosaic disease spread?",
+    "intent": "cassava_mosaic_disease_spread",
+    "intent_prediction": {
+      "name": "spread_of_cassava_mosaic_disease",
+      "confidence": 0.05942131578922272
+    }
+  },
+  {
+    "text": "What are the modes of transmission for cassava mosaic disease?",
+    "intent": "cassava_mosaic_disease_spread",
+    "intent_prediction": {
+      "name": "spread_of_cassava_mosaic_disease",
+      "confidence": 0.03850170969963074
+    }
+  },
+  {
+    "text": "Can you explain fertilizers?",
+    "intent": "fertilizer_definition",
+    "intent_prediction": {
+      "name": "types_fertilizers",
+      "confidence": 0.041216686367988586
+    }
+  },
+  {
+    "text": "What are some examples of phosphorus fertilizers?",
+    "intent": "phosphorus_fertilizers_examples",
+    "intent_prediction": {
+      "name": "phosphorus_fertilizers_definition",
+      "confidence": 0.0799228623509407
+    }
+  },
+  {
+    "text": "What actions should farmers take to mitigate bacterial blight?",
+    "intent": "bacterial_blight_control_measures",
+    "intent_prediction": {
+      "name": "bacterial_blight_spread_water",
+      "confidence": 0.036541666835546494
+    }
+  },
+  {
+    "text": "Which fertilizers are commonly used for cassava cultivation?",
+    "intent": "fertilizers_used_to_grow_cassava",
+    "intent_prediction": {
+      "name": "examples_of_compound_fertilizers",
+      "confidence": 0.03793537989258766
+    }
+  },
+  {
+    "text": "List the ways in which maize streak disease transmission occurs.",
+    "intent": "transmission_process",
+    "intent_prediction": {
+      "name": "transmission_method",
+      "confidence": 0.06035875156521797
+    }
+  },
+  {
+    "text": "How does maize streak disease spread from one plant to another?",
+    "intent": "transmission_process",
+    "intent_prediction": {
+      "name": "transmission_method",
+      "confidence": 0.05807964876294136
+    }
+  },
+  {
+    "text": "What are the steps involved in the transmission of maize streak disease?",
+    "intent": "transmission_process",
+    "intent_prediction": {
+      "name": "transmission_method",
+      "confidence": 0.05579150468111038
+    }
+  },
+  {
+    "text": "What are the methods by which maize streak disease is transmitted?",
+    "intent": "transmission_process",
+    "intent_prediction": {
+      "name": "transmission_method",
+      "confidence": 0.05485078692436218
+    }
+  },
+  {
+    "text": "At which point in its growth cycle does cassava need about 750 to 1000 mm of rainfall?",
+    "intent": "rainfall_requirement_late_vegetative_stage",
+    "intent_prediction": {
+      "name": "rainfall_requirement_maturation_stage",
+      "confidence": 0.22744634747505188
+    }
+  },
+  {
+    "text": "When does cassava need approximately 750 to 1000 mm of rainfall?",
+    "intent": "rainfall_requirement_late_vegetative_stage",
+    "intent_prediction": {
+      "name": "rainfall_requirement_maturation_stage",
+      "confidence": 0.18127116560935974
+    }
+  },
+  {
+    "text": "During which phase of growth does cassava require roughly 750 to 1000 mm of rainfall?",
+    "intent": "rainfall_requirement_late_vegetative_stage",
+    "intent_prediction": {
+      "name": "rainfall_requirement_maturation_stage",
+      "confidence": 0.2188420295715332
+    }
+  },
+  {
+    "text": "Why is it important to avoid using old seeds for planting?",
+    "intent": "impact_using_old_seeds",
+    "intent_prediction": {
+      "name": "reason_replace_old_seeds",
+      "confidence": 0.05273278430104256
+    }
+  },
+  {
+    "text": "To manage and control cassava mosaic disease, what measures should farmers take into consideration?",
+    "intent": "control_cassava_mosaic",
+    "intent_prediction": {
+      "name": "control_of_cassava_mosaic_disease",
+      "confidence": 0.028171680867671967
+    }
+  },
+  {
+    "text": "How can cassava mosaic disease be effectively managed and controlled?",
+    "intent": "control_cassava_mosaic",
+    "intent_prediction": {
+      "name": "control_of_cassava_mosaic_disease",
+      "confidence": 0.027144594117999077
+    }
+  },
+  {
+    "text": "By what means is cassava mosaic transmitted?",
+    "intent": "cassava_mosaic_transmission",
+    "intent_prediction": {
+      "name": "transmit_cassava_mosaic",
+      "confidence": 0.04395437240600586
+    }
+  },
+  {
+    "text": "How does cassava mosaic spread?",
+    "intent": "cassava_mosaic_transmission",
+    "intent_prediction": {
+      "name": "transmit_cassava_mosaic",
+      "confidence": 0.04994731396436691
+    }
+  },
+  {
+    "text": "Which insect is responsible for transmitting cassava mosaic disease?",
+    "intent": "cassava_mosaic_transmission",
+    "intent_prediction": {
+      "name": "spread_of_cassava_mosaic_disease",
+      "confidence": 0.02847067266702652
+    }
+  },
+  {
+    "text": "How can cassava mosaic disease be prevented?",
+    "intent": "cassava_mosaic_preventive_measures",
+    "intent_prediction": {
+      "name": "control_of_cassava_mosaic_disease",
+      "confidence": 0.04055406525731087
+    }
+  },
+  {
+    "text": "What steps can be taken to prevent cassava mosaic disease?",
+    "intent": "cassava_mosaic_preventive_measures",
+    "intent_prediction": {
+      "name": "control_of_cassava_mosaic_disease",
+      "confidence": 0.033709753304719925
+    }
+  }
+]

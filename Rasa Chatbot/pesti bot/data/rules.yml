@@ -1,93 +1,2268 @@
 version: "3.1"
 
 rules:
-- rule: Respond to greet
-  steps:
-  - intent: greet
-  - action: utter_greet
+  - rule: Respond to greet
+    steps:
+      - intent: greet
+      - action: utter_greet
 
-- rule: Respond to thank you
-  steps:
-  - intent: thank_you
-  - action: utter_thank_you
+  - rule: Respond to thank you
+    steps:
+      - intent: thank_you
+      - action: utter_thank_you
 
-- rule: Respond to goodbye
-  steps:
-  - intent: goodbye
-  - action: utter_goodbye
+  - rule: Respond to goodbye
+    steps:
+      - intent: goodbye
+      - action: utter_goodbye
 
-- rule: Respond to mood_great
-  steps:
-  - intent: mood_great
-  - action: utter_happy
+  - rule: Respond to mood_great
+    steps:
+    - intent: mood_great
+    - action: utter_happy
 
-- rule: Respond to mood_unhappy
-  steps:
-  - intent: mood_unhappy
-  - action: utter_cheer_up
-  - action: utter_did_that_help
+  - rule: Handle affirm
+    steps:
+    - intent: affirm
+    - action: utter_happy
 
-- rule: Handle affirm
-  steps:
-  - intent: affirm
-  - action: utter_happy
+  - rule: Handle deny
+    steps:
+    - intent: deny
+    - action: utter_goodbye
 
-- rule: Handle deny
-  steps:
-  - intent: deny
-  - action: utter_goodbye
+  - rule: Handle bot challenge
+    steps:
+    - intent: bot_challenge
+    - action: utter_iamabot
 
-- rule: Handle bot challenge
-  steps:
-  - intent: bot_challenge
-  - action: utter_iamabot
+  - rule: Respond to explain_crop_rotation intent
+    steps:
+      - intent: explain_crop_rotation
+      - action: utter_explain_crop_rotation
 
-- rule: ylcv primary vector
-  steps:
-  - intent: ylcv_primary_vector
-  - action: utter_ylcv_primary_vector
-  
-- rule: ylcv symptoms
-  steps:
-  - intent: ylcv_symptoms
-  - action: utter_ylcv_symptoms
-  
-- rule: ylcv impact
-  steps:
-  - intent: ylcv_impact
-  - action: utter_ylcv_impact
-  
-- rule: ylcv preventive measures
-  steps:
-  - intent: ylcv_preventive_measures
-  - action: utter_ylcv_preventive_measures
-  
-- rule: ylcv treatment
-  steps:
-  - intent: ylcv_treatment
-  - action: utter_ylcv_treatment
-  
-- rule: leaf blight affected plants
-  steps:
-  - intent: leaf_blight_affected_plants
-  - action: utter_leaf_blight_affected_plants
-  
-- rule: leaf blight symptoms
-  steps:
-  - intent: leaf_blight_symptoms
-  - action: utter_leaf_blight_symptoms
-  
-- rule: leaf blight fungal pathogens
-  steps:
-  - intent: leaf_blight_fungal_pathogens
-  - action: utter_leaf_blight_fungal_pathogens
-  
-- rule: leaf blight environmental conditions
-  steps:
-  - intent: leaf_blight_environmental_conditions
-  - action: utter_leaf_blight_environmental_conditions
-  
-- rule: leaf blight management
-  steps:
-  - intent: leaf_blight_management
-  - action: utter_leaf_blight_management
+  - rule: Respond to crop_rotation_importance intent
+    steps:
+      - intent: crop_rotation_importance
+      - action: utter_crop_rotation_importance
+
+  - rule: Respond to farming_practices_soil_erosion intent
+    steps:
+      - intent: farming_practices_soil_erosion
+      - action: utter_farming_practices_soil_erosion
+
+  - rule: Respond to ylcv_primary_vector intent
+    steps:
+      - intent: ylcv_primary_vector
+      - action: utter_ylcv_primary_vector
+
+  - rule: Respond to ylcv_symptoms intent
+    steps:
+      - intent: ylcv_symptoms
+      - action: utter_ylcv_symptoms
+
+  - rule: Respond to ylcv_impact intent
+    steps:
+      - intent: ylcv_impact
+      - action: utter_ylcv_impact
+
+  - rule: Respond to ylcv_preventive_measures intent
+    steps:
+      - intent: ylcv_preventive_measures
+      - action: utter_ylcv_preventive_measures
+
+  - rule: Respond to ylcv_treatment intent
+    steps:
+      - intent: ylcv_treatment
+      - action: utter_ylcv_treatment
+
+  - rule: Respond to leaf_blight_affected_plants intent
+    steps:
+      - intent: leaf_blight_affected_plants
+      - action: utter_leaf_blight_affected_plants
+
+  - rule: Respond to leaf_blight_symptoms intent
+    steps:
+      - intent: leaf_blight_symptoms
+      - action: utter_leaf_blight_symptoms
+
+  - rule: Respond to leaf_blight_fungal_pathogens intent
+    steps:
+      - intent: leaf_blight_fungal_pathogens
+      - action: utter_leaf_blight_fungal_pathogens
+
+  - rule: Respond to leaf_blight_environmental_conditions intent
+    steps:
+      - intent: leaf_blight_environmental_conditions
+      - action: utter_leaf_blight_environmental_conditions
+
+  - rule: Respond to leaf_blight_management intent
+    steps:
+      - intent: leaf_blight_management
+      - action: utter_leaf_blight_management
+
+  - rule: Respond to leaf_mold_fungal_species intent
+    steps:
+      - intent: leaf_mold_fungal_species
+      - action: utter_leaf_mold_fungal_species
+
+  - rule: Respond to leaf_mold_susceptible_plants intent
+    steps:
+      - intent: leaf_mold_susceptible_plants
+      - action: utter_leaf_mold_susceptible_plants
+
+  - rule: Respond to leaf_mold_symptoms intent
+    steps:
+      - intent: leaf_mold_symptoms
+      - action: utter_leaf_mold_symptoms
+
+  - rule: Respond to leaf_mold_environmental_conditions intent
+    steps:
+      - intent: leaf_mold_environmental_conditions
+      - action: utter_leaf_mold_environmental_conditions
+
+  - rule: Respond to leaf_mold_management intent
+    steps:
+      - intent: leaf_mold_management
+      - action: utter_leaf_mold_management
+
+  - rule: Respond to septoria_leaf_spot_causal_agent intent
+    steps:
+      - intent: septoria_leaf_spot_causal_agent
+      - action: utter_septoria_leaf_spot_causal_agent
+
+  - rule: Respond to septoria_leaf_spot_affected_crops intent
+    steps:
+      - intent: septoria_leaf_spot_affected_crops
+      - action: utter_septoria_leaf_spot_affected_crops
+
+  - rule: Respond to septoria_leaf_spot_symptoms intent
+    steps:
+      - intent: septoria_leaf_spot_symptoms
+      - action: utter_septoria_leaf_spot_symptoms
+
+  - rule: Respond to septoria_leaf_spot_climate intent
+    steps:
+      - intent: septoria_leaf_spot_climate
+      - action: utter_septoria_leaf_spot_climate
+
+  - rule: Respond to septoria_leaf_spot_effect_on_plants_yield intent
+    steps:
+      - intent: septoria_leaf_spot_effect_on_plants_yield
+      - action: utter_septoria_leaf_spot_effect_on_plants_yield
+
+  - rule: Respond to septoria_leaf_spot_management_cultural_practices intent
+    steps:
+      - intent: septoria_leaf_spot_management_cultural_practices
+      - action: utter_septoria_leaf_spot_management_cultural_practices
+
+  - rule: Respond to septoria_leaf_spot_management_chemical_control intent
+    steps:
+      - intent: septoria_leaf_spot_management_chemical_control
+      - action: utter_septoria_leaf_spot_management_chemical_control
+
+  - rule: Respond to septoria_leaf_spot_prevention intent
+    steps:
+      - intent: septoria_leaf_spot_prevention
+      - action: utter_septoria_leaf_spot_prevention
+
+  - rule: Respond to septoria_leaf_spot_resistant_varieties intent
+    steps:
+      - intent: septoria_leaf_spot_resistant_varieties
+      - action: utter_septoria_leaf_spot_resistant_varieties
+
+  - rule: Respond to septoria_leaf_spot_early_detection intent
+    steps:
+      - intent: septoria_leaf_spot_early_detection
+      - action: utter_septoria_leaf_spot_early_detection
+
+  - rule: Respond to verticillium_wilt_fungal_pathogens intent
+    steps:
+      - intent: verticillium_wilt_fungal_pathogens
+      - action: utter_verticillium_wilt_fungal_pathogens
+
+  - rule: Respond to verticillium_wilt_affected_plants intent
+    steps:
+      - intent: verticillium_wilt_affected_plants
+      - action: utter_verticillium_wilt_affected_plants
+
+  - rule: Respond to verticillium_wilt_symptoms intent
+    steps:
+      - intent: verticillium_wilt_symptoms
+      - action: utter_verticillium_wilt_symptoms
+
+  - rule: Respond to verticillium_wilt_spread intent
+    steps:
+      - intent: verticillium_wilt_spread
+      - action: utter_verticillium_wilt_spread
+
+  - rule: Respond to verticillium_wilt_management_cultural_practices intent
+    steps:
+      - intent: verticillium_wilt_management_cultural_practices
+      - action: utter_verticillium_wilt_management_cultural_practices
+
+  - rule: Respond to verticillium_wilt_management_chemical_control intent
+    steps:
+      - intent: verticillium_wilt_management_chemical_control
+      - action: utter_verticillium_wilt_management_chemical_control
+
+  - rule: Respond to verticillium_wilt_prevention intent
+    steps:
+      - intent: verticillium_wilt_prevention
+      - action: utter_verticillium_wilt_prevention
+
+  - rule: Respond to verticillium_wilt_symptoms_in_tomatoes intent
+    steps:
+      - intent: verticillium_wilt_symptoms_in_tomatoes
+      - action: utter_verticillium_wilt_symptoms_in_tomatoes
+
+  - rule: Respond to verticillium_wilt_genetic_resistance intent
+    steps:
+      - intent: verticillium_wilt_genetic_resistance
+      - action: utter_verticillium_wilt_genetic_resistance
+
+  - rule: Respond to gummosis_definition intent
+    steps:
+      - intent: gummosis_definition
+      - action: utter_gummosis_definition
+
+  - rule: Respond to gummosis_affected_trees intent
+    steps:
+      - intent: gummosis_affected_trees
+      - action: utter_gummosis_affected_trees
+
+  - rule: Respond to gummosis_common_causes intent
+    steps:
+      - intent: gummosis_common_causes
+      - action: utter_gummosis_common_causes
+
+  - rule: Respond to gummosis_symptoms intent
+    steps:
+      - intent: gummosis_symptoms
+      - action: utter_gummosis_symptoms
+
+  - rule: Respond to gummosis_management_prevention intent
+    steps:
+      - intent: gummosis_management_prevention
+      - action: utter_gummosis_management_prevention
+
+  - rule: Respond to gummosis_symptoms_in_citrus_trees intent
+    steps:
+      - intent: gummosis_symptoms_in_citrus_trees
+      - action: utter_gummosis_symptoms_in_citrus_trees
+
+  - rule: Respond to gummosis_effect_on_fruit_production intent
+    steps:
+      - intent: gummosis_effect_on_fruit_production
+      - action: utter_gummosis_effect_on_fruit_production
+
+  - rule: Respond to gummosis_chemical_treatment intent
+    steps:
+      - intent: gummosis_chemical_treatment
+      - action: utter_gummosis_chemical_treatment
+
+  - rule: Respond to red_rust_fungal_pathogen intent
+    steps:
+      - intent: red_rust_fungal_pathogen
+      - action: utter_red_rust_fungal_pathogen
+
+  - rule: Respond to red_rust_affected_crops intent
+    steps:
+      - intent: red_rust_affected_crops
+      - action: utter_red_rust_affected_crops
+
+  - rule: Respond to red_rust_identification intent
+    steps:
+      - intent: red_rust_identification
+      - action: utter_red_rust_identification
+
+  - rule: Respond to red_rust_symptoms_in_wheat intent
+    steps:
+      - intent: red_rust_symptoms_in_wheat
+      - action: utter_red_rust_symptoms_in_wheat
+
+  - rule: Respond to red_rust_environmental_conditions intent
+    steps:
+      - intent: red_rust_environmental_conditions
+      - action: utter_red_rust_environmental_conditions
+
+  - rule: Respond to red_rust_impact_on_yield intent
+    steps:
+      - intent: red_rust_impact_on_yield
+      - action: utter_red_rust_impact_on_yield
+
+  - rule: Respond to red_rust_management intent
+    steps:
+      - intent: red_rust_management
+      - action: utter_red_rust_management
+
+  - rule: Respond to red_rust_fungicides intent
+    steps:
+      - intent: red_rust_fungicides
+      - action: utter_red_rust_fungicides
+
+  - rule: Respond to red_rust_monitoring intent
+    steps:
+      - intent: red_rust_monitoring
+      - action: utter_red_rust_monitoring
+
+  - rule: Respond to red_rust_genetic_resistance intent
+    steps:
+      - intent: red_rust_genetic_resistance
+      - action: utter_red_rust_genetic_resistance
+
+  - rule: Respond to brown_spot_primary_pathogen intent
+    steps:
+      - intent: brown_spot_primary_pathogen
+      - action: utter_brown_spot_primary_pathogen
+
+  - rule: Respond to brown_spot_affected_crop intent
+    steps:
+      - intent: brown_spot_affected_crop
+      - action: utter_brown_spot_affected_crop
+
+  - rule: Respond to brown_spot_identification intent
+    steps:
+      - intent: brown_spot_identification
+      - action: utter_brown_spot_identification
+
+  - rule: Respond to brown_spot_symptoms_soybean intent
+    steps:
+      - intent: brown_spot_symptoms_soybean
+      - action: utter_brown_spot_symptoms_soybean
+
+  - rule: Respond to brown_spot_environmental_conditions intent
+    steps:
+      - intent: brown_spot_environmental_conditions
+      - action: utter_brown_spot_environmental_conditions
+
+  - rule: Respond to brown_spot_effect_on_yield intent
+    steps:
+      - intent: brown_spot_effect_on_yield
+      - action: utter_brown_spot_effect_on_yield
+
+  - rule: Respond to brown_spot_management_practices intent
+    steps:
+      - intent: brown_spot_management_practices
+      - action: utter_brown_spot_management_practices
+
+  - rule: Respond to brown_spot_fungicides intent
+    steps:
+      - intent: brown_spot_fungicides
+      - action: utter_brown_spot_fungicides
+
+  - rule: Respond to brown_spot_monitoring intent
+    steps:
+      - intent: brown_spot_monitoring
+      - action: utter_brown_spot_monitoring
+
+  - rule: Respond to brown_spot_genetic_resistance intent
+    steps:
+      - intent: brown_spot_genetic_resistance
+      - action: utter_brown_spot_genetic_resistance
+
+  - rule: Respond to maize_streak_primary_vector intent
+    steps:
+      - intent: maize_streak_primary_vector
+      - action: utter_maize_streak_primary_vector
+
+  - rule: Respond to maize_streak_affected_crop intent
+    steps:
+      - intent: maize_streak_affected_crop
+      - action: utter_maize_streak_affected_crop
+
+  - rule: Respond to maize_streak_symptoms intent
+    steps:
+      - intent: maize_streak_symptoms
+      - action: utter_maize_streak_symptoms
+
+  - rule: Respond to maize_streak_family_genus intent
+    steps:
+      - intent: maize_streak_family_genus
+      - action: utter_maize_streak_family_genus
+
+  - rule: Respond to maize_streak_transmission intent
+    steps:
+      - intent: maize_streak_transmission
+      - action: utter_maize_streak_transmission
+
+  - rule: Respond to maize_streak_consequences intent
+    steps:
+      - intent: maize_streak_consequences
+      - action: utter_maize_streak_consequences
+
+  - rule: Respond to maize_streak_management intent
+    steps:
+      - intent: maize_streak_management
+      - action: utter_maize_streak_management
+
+  - rule: Respond to maize_streak_chemical_control intent
+    steps:
+      - intent: maize_streak_chemical_control
+      - action: utter_maize_streak_chemical_control
+
+  - rule: Respond to leaf_smut_primary_pathogen intent
+    steps:
+      - intent: leaf_smut_primary_pathogen
+      - action: utter_leaf_smut_primary_pathogen
+
+  - rule: Respond to leaf_smut_affected_crops intent
+    steps:
+      - intent: leaf_smut_affected_crops
+      - action: utter_leaf_smut_affected_crops
+
+  - rule: Respond to leaf_smut_identification intent
+    steps:
+      - intent: leaf_smut_identification
+      - action: utter_leaf_smut_identification
+
+  - rule: Respond to leaf_smut_symptoms intent
+    steps:
+      - intent: leaf_smut_symptoms
+      - action: utter_leaf_smut_symptoms
+
+  - rule: Respond to leaf_smut_spread intent
+    steps:
+      - intent: leaf_smut_spread
+      - action: utter_leaf_smut_spread
+
+  - rule: Respond to leaf_smut_environmental_conditions intent
+    steps:
+      - intent: leaf_smut_environmental_conditions
+      - action: utter_leaf_smut_environmental_conditions
+
+  - rule: Respond to leaf_smut_management intent
+    steps:
+      - intent: leaf_smut_management
+      - action: utter_leaf_smut_management
+
+  - rule: Respond to leaf_smut_chemical_control intent
+    steps:
+      - intent: leaf_smut_chemical_control
+      - action: utter_leaf_smut_chemical_control
+
+  - rule: Respond to leaf_smut_prevention intent
+    steps:
+      - intent: leaf_smut_prevention
+      - action: utter_leaf_smut_prevention
+
+  - rule: Respond to spider_mites_type intent
+    steps:
+      - intent: spider_mites_type
+      - action: utter_spider_mites_type
+
+  - rule: Respond to spider_mites_infested_plants intent
+    steps:
+      - intent: spider_mites_infested_plants
+      - action: utter_spider_mites_infested_plants
+
+  - rule: Respond to spider_mites_feeding intent
+    steps:
+      - intent: spider_mites_feeding
+      - action: utter_spider_mites_feeding
+
+  - rule: Respond to spider_mites_thrive_conditions intent
+    steps:
+      - intent: spider_mites_thrive_conditions
+      - action: utter_spider_mites_thrive_conditions
+
+  - rule: Respond to spider_mites_signs_infestation intent
+    steps:
+      - intent: spider_mites_signs_infestation
+      - action: utter_spider_mites_signs_infestation
+
+  - rule: Respond to spider_mites_control intent
+    steps:
+      - intent: spider_mites_control
+      - action: utter_spider_mites_control
+
+  - rule: Respond to spider_mites_natural_predators intent
+    steps:
+      - intent: spider_mites_natural_predators
+      - action: utter_spider_mites_natural_predators
+
+  - rule: Respond to spider_mites_preventive_measures intent
+    steps:
+      - intent: spider_mites_preventive_measures
+      - action: utter_spider_mites_preventive_measures
+
+  - rule: Respond to leaf_miners_type intent
+    steps:
+      - intent: leaf_miners_type
+      - action: utter_leaf_miners_type
+
+  - rule: Respond to leaf_miners_infested_plants intent
+    steps:
+      - intent: leaf_miners_infested_plants
+      - action: utter_leaf_miners_infested_plants
+
+  - rule: Respond to leaf_miners_damage intent
+    steps:
+      - intent: leaf_miners_damage
+      - action: utter_leaf_miners_damage
+
+  - rule: Respond to leaf_miners_signs_infestation intent
+    steps:
+      - intent: leaf_miners_signs_infestation
+      - action: utter_leaf_miners_signs_infestation
+
+  - rule: Respond to leaf_miners_management intent
+    steps:
+      - intent: leaf_miners_management
+      - action: utter_leaf_miners_management
+
+  - rule: Respond to leaf_miners_chemical_insecticides intent
+    steps:
+      - intent: leaf_miners_chemical_insecticides
+      - action: utter_leaf_miners_chemical_insecticides
+
+  - rule: Respond to leaf_miners_preventive_measures intent
+    steps:
+      - intent: leaf_miners_preventive_measures
+      - action: utter_leaf_miners_preventive_measures
+
+  - rule: Respond to grasshoppers_type intent
+    steps:
+      - intent: grasshoppers_type
+      - action: utter_grasshoppers_type
+
+  - rule: Respond to grasshoppers_feeding intent
+    steps:
+      - intent: grasshoppers_feeding
+      - action: utter_grasshoppers_feeding
+
+  - rule: Respond to grasshoppers_damage intent
+    steps:
+      - intent: grasshoppers_damage
+      - action: utter_grasshoppers_damage
+
+  - rule: Respond to grasshoppers_active_conditions intent
+    steps:
+      - intent: grasshoppers_active_conditions
+      - action: utter_grasshoppers_active_conditions
+
+  - rule: Respond to grasshoppers_signs_infestation intent
+    steps:
+      - intent: grasshoppers_signs_infestation
+      - action: utter_grasshoppers_signs_infestation
+
+  - rule: Respond to grasshoppers_management intent
+    steps:
+      - intent: grasshoppers_management
+      - action: utter_grasshoppers_management
+
+  - rule: Respond to grasshoppers_natural_predators intent
+    steps:
+      - intent: grasshoppers_natural_predators
+      - action: utter_grasshoppers_natural_predators
+
+  - rule: Respond to grasshoppers_preventive_measures intent
+    steps:
+      - intent: grasshoppers_preventive_measures
+      - action: utter_grasshoppers_preventive_measures
+
+  - rule: Respond to leaf_beetles_type intent
+    steps:
+      - intent: leaf_beetles_type
+      - action: utter_leaf_beetles_type
+
+  - rule: Respond to leaf_beetles_infested_plants intent
+    steps:
+      - intent: leaf_beetles_infested_plants
+      - action: utter_leaf_beetles_infested_plants
+
+  - rule: Respond to leaf_beetles_damage intent
+    steps:
+      - intent: leaf_beetles_damage
+      - action: utter_leaf_beetles_damage
+
+  - rule: Respond to leaf_beetles_signs_infestation intent
+    steps:
+      - intent: leaf_beetles_signs_infestation
+      - action: utter_leaf_beetles_signs_infestation
+
+  - rule: Respond to leaf_beetles_management intent
+    steps:
+      - intent: leaf_beetles_management
+      - action: utter_leaf_beetles_management
+
+  - rule: Respond to leaf_beetles_natural_predators intent
+    steps:
+      - intent: leaf_beetles_natural_predators
+      - action: utter_leaf_beetles_natural_predators
+
+  - rule: Respond to leaf_beetles_preventive_measures intent
+    steps:
+      - intent: leaf_beetles_preventive_measures
+      - action: utter_leaf_beetles_preventive_measures
+
+  - rule: Respond to hispa_beetle_common_name intent
+    steps:
+      - intent: hispa_beetle_common_name
+      - action: utter_hispa_beetle_common_name
+
+  - rule: Respond to hispa_beetle_family intent
+    steps:
+      - intent: hispa_beetle_family
+      - action: utter_hispa_beetle_family
+
+  - rule: Respond to hispa_beetle_plants_attacked intent
+    steps:
+      - intent: hispa_beetle_plants_attacked
+      - action: utter_hispa_beetle_plants_attacked
+
+  - rule: Respond to hispa_beetle_damage intent
+    steps:
+      - intent: hispa_beetle_damage
+      - action: utter_hispa_beetle_damage
+
+  - rule: Respond to hispa_beetle_identification intent
+    steps:
+      - intent: hispa_beetle_identification
+      - action: utter_hispa_beetle_identification
+
+  - rule: Respond to hispa_beetle_management intent
+    steps:
+      - intent: hispa_beetle_management
+      - action: utter_hispa_beetle_management
+
+  - rule: Respond to hispa_beetle_natural_predators intent
+    steps:
+      - intent: hispa_beetle_natural_predators
+      - action: utter_hispa_beetle_natural_predators
+
+  - rule: Respond to hispa_beetle_preventive_measures intent
+    steps:
+      - intent: hispa_beetle_preventive_measures
+      - action: utter_hispa_beetle_preventive_measures
+
+  - rule: Respond to irrigation_methods intent
+    steps:
+      - intent: irrigation_methods
+      - action: utter_irrigation_methods
+
+  - rule: Respond to irrigation_definition intent
+    steps:
+      - intent: irrigation_definition
+      - action: utter_irrigation_definition
+
+  - rule: Respond to surface_irrigation_working intent
+    steps:
+      - intent: surface_irrigation_working
+      - action: utter_surface_irrigation_working
+
+  - rule: Respond to drip_irrigation_definition intent
+    steps:
+      - intent: drip_irrigation_definition
+      - action: utter_drip_irrigation_definition
+
+  - rule: Respond to sprinkler_irrigation_working intent
+    steps:
+      - intent: sprinkler_irrigation_working
+      - action: utter_sprinkler_irrigation_working
+
+  - rule: Respond to center_pivot_irrigation_definition intent
+    steps:
+      - intent: center_pivot_irrigation_definition
+      - action: utter_center_pivot_irrigation_definition
+
+  - rule: Respond to irrigation_method_choice_factors intent
+    steps:
+      - intent: irrigation_method_choice_factors
+      - action: utter_irrigation_method_choice_factors
+
+  - rule: Respond to drip_irrigation_advantages intent
+    steps:
+      - intent: drip_irrigation_advantages
+      - action: utter_drip_irrigation_advantages
+
+  - rule: Respond to sprinkler_irrigation_disadvantages intent
+    steps:
+      - intent: sprinkler_irrigation_disadvantages
+      - action: utter_sprinkler_irrigation_disadvantages
+
+  - rule: Respond to soil_health_importance intent
+    steps:
+      - intent: soil_health_importance
+      - action: utter_soil_health_importance
+
+  - rule: Respond to soil_degradation_causes intent
+    steps:
+      - intent: soil_degradation_causes
+      - action: utter_soil_degradation_causes
+
+  - rule: Respond to erosion_impact_soil_health intent
+    steps:
+      - intent: erosion_impact_soil_health
+      - action: utter_erosion_impact_soil_health
+
+  - rule: Respond to soil_compaction_definition intent
+    steps:
+      - intent: soil_compaction_definition
+      - action: utter_soil_compaction_definition
+
+  - rule: Respond to nutrient_depletion_impact_soil_health intent
+    steps:
+      - intent: nutrient_depletion_impact_soil_health
+      - action: utter_nutrient_depletion_impact_soil_health
+
+  - rule: Respond to poor_soil_health_signs intent
+    steps:
+      - intent: poor_soil_health_signs
+      - action: utter_poor_soil_health_signs
+
+  - rule: Respond to improve_soil_health_methods intent
+    steps:
+      - intent: improve_soil_health_methods
+      - action: utter_improve_soil_health_methods
+
+  - rule: Respond to soil_organic_matter_importance intent
+    steps:
+      - intent: soil_organic_matter_importance
+      - action: utter_soil_organic_matter_importance
+
+  - rule: Respond to soil_microorganisms_role intent
+    steps:
+      - intent: soil_microorganisms_role
+      - action: utter_soil_microorganisms_role
+
+  - rule: Respond to organic_farming_definition intent
+    steps:
+      - intent: organic_farming_definition
+      - action: utter_organic_farming_definition
+
+  - rule: Respond to importance_of_organic_farming intent
+    steps:
+      - intent: importance_of_organic_farming
+      - action: utter_importance_of_organic_farming
+
+  - rule: Respond to organic_farming_soil_health intent
+    steps:
+      - intent: organic_farming_soil_health
+      - action: utter_organic_farming_soil_health
+
+  - rule: Respond to sustainable_practices_organic_farming intent
+    steps:
+      - intent: sustainable_practices_organic_farming
+      - action: utter_sustainable_practices_organic_farming
+
+  - rule: Respond to benefits_organic_farming_environment intent
+    steps:
+      - intent: benefits_organic_farming_environment
+      - action: utter_benefits_organic_farming_environment
+
+  - rule: Respond to challenges_organic_farming intent
+    steps:
+      - intent: challenges_organic_farming
+      - action: utter_challenges_organic_farming
+
+  - rule: Respond to regulation_organic_farming intent
+    steps:
+      - intent: regulation_organic_farming
+      - action: utter_regulation_organic_farming
+
+  - rule: Respond to difference_organic_conventional_farming intent
+    steps:
+      - intent: difference_organic_conventional_farming
+      - action: utter_difference_organic_conventional_farming
+
+  - rule: Respond to major_source_food_africa intent
+    steps:
+      - intent: major_source_food_africa
+      - action: utter_major_source_food_africa
+
+  - rule: Respond to major_cassava_disease intent
+    steps:
+      - intent: major_cassava_disease
+      - action: utter_major_cassava_disease
+
+  - rule: Respond to cbb_definition intent
+    steps:
+      - intent: cbb_definition
+      - action: utter_cbb_definition
+
+  - rule: Respond to cbb_symptoms intent
+    steps:
+      - intent: cbb_symptoms
+      - action: utter_cbb_symptoms
+
+  - rule: Respond to cbb_effects_on_cassava intent
+    steps:
+      - intent: cbb_effects_on_cassava
+      - action: utter_cbb_effects_on_cassava
+
+  - rule: Respond to cbb_spread_factors intent
+    steps:
+      - intent: cbb_spread_factors
+      - action: utter_cbb_spread_factors
+
+  - rule: Respond to cbb_management intent
+    steps:
+      - intent: cbb_management
+      - action: utter_cbb_management
+
+  - rule: Respond to cbb_resistant_varieties intent
+    steps:
+      - intent: cbb_resistant_varieties
+      - action: utter_cbb_resistant_varieties
+
+  - rule: Respond to cbb_economic_impacts intent
+    steps:
+      - intent: cbb_economic_impacts
+      - action: utter_cbb_economic_impacts
+
+  - rule: Respond to cbb_importance_of_control intent
+    steps:
+      - intent: cbb_importance_of_control
+      - action: utter_cbb_importance_of_control
+
+  - rule: Respond to sustainable_approaches_to_management intent
+    steps:
+      - intent: sustainable_approaches_to_management
+      - action: utter_sustainable_approaches_to_management
+
+  - rule: Respond to diseases_spread_by_whiteflies intent
+    steps:
+      - intent: diseases_spread_by_whiteflies
+      - action: utter_diseases_spread_by_whiteflies
+
+  - rule: Respond to organic_fertilizers_definition intent
+    steps:
+      - intent: organic_fertilizers_definition
+      - action: utter_organic_fertilizers_definition
+
+  - rule: Respond to fertilizers_definition intent
+    steps:
+      - intent: fertilizers_definition
+      - action: utter_fertilizers_definition
+
+  - rule: Respond to fertilizers_purpose intent
+    steps:
+      - intent: fertilizers_purpose
+      - action: utter_fertilizers_purpose
+
+  - rule: Respond to chemical_fertilizers_type intent
+    steps:
+      - intent: chemical_fertilizers_type
+      - action: utter_chemical_fertilizers_type
+
+  - rule: Respond to pest_management_definition intent
+    steps:
+      - intent: pest_management_definition
+      - action: utter_pest_management_definition
+
+  - rule: Respond to pest_management_methods intent
+    steps:
+      - intent: pest_management_methods
+      - action: utter_pest_management_methods
+
+  - rule: Respond to biological_control_definition intent
+    steps:
+      - intent: biological_control_definition
+      - action: utter_biological_control_definition
+
+  - rule: Respond to cultural_control_definition intent
+    steps:
+      - intent: cultural_control_definition
+      - action: utter_cultural_control_definition
+
+  - rule: Respond to chemical_control_definition intent
+    steps:
+      - intent: chemical_control_definition
+      - action: utter_chemical_control_definition
+
+  - rule: Respond to physical_control_definition intent
+    steps:
+      - intent: physical_control_definition
+      - action: utter_physical_control_definition
+
+  - rule: Respond to ipm_definition intent
+    steps:
+      - intent: ipm_definition
+      - action: utter_ipm_definition
+
+  - rule: Respond to ipm_benefits intent
+    steps:
+      - intent: ipm_benefits
+      - action: utter_ipm_benefits
+
+  - rule: Respond to ipm_implementation intent
+    steps:
+      - intent: ipm_implementation
+      - action: utter_ipm_implementation
+
+  - rule: Respond to climate_change_effects_on_agriculture intent
+    steps:
+      - intent: climate_change_effects_on_agriculture
+      - action: utter_climate_change_effects_on_agriculture
+
+  - rule: Respond to climate_change_temperature_impact intent
+    steps:
+      - intent: climate_change_temperature_impact
+      - action: utter_climate_change_temperature_impact
+
+  - rule: Respond to mitigation_strategies_for_climate_change_effects intent
+    steps:
+      - intent: mitigation_strategies_for_climate_change_effects
+      - action: utter_mitigation_strategies_for_climate_change_effects
+
+  - rule: Respond to adaptation_strategies_for_climate_change intent
+    steps:
+      - intent: adaptation_strategies_for_climate_change
+      - action: utter_adaptation_strategies_for_climate_change
+
+  - rule: Respond to policy_interventions_for_climate_change_and_agriculture intent
+    steps:
+      - intent: policy_interventions_for_climate_change_and_agriculture
+      - action: utter_policy_interventions_for_climate_change_and_agriculture
+
+  - rule: Respond to improving_resilience_of_agricultural_systems_to_climate_change intent
+    steps:
+      - intent: improving_resilience_of_agricultural_systems_to_climate_change
+      - action: utter_improving_resilience_of_agricultural_systems_to_climate_change
+
+  - rule: Respond to crop_protection_definition intent
+    steps:
+      - intent: crop_protection_definition
+      - action: utter_crop_protection_definition
+
+  - rule: Respond to crop_protection_methods intent
+    steps:
+      - intent: crop_protection_methods
+      - action: utter_crop_protection_methods
+
+  - rule: Respond to cultural_practices_for_crop_protection intent
+    steps:
+      - intent: cultural_practices_for_crop_protection
+      - action: utter_cultural_practices_for_crop_protection
+
+  - rule: Respond to precision_agriculture_definition intent
+    steps:
+      - intent: precision_agriculture_definition
+      - action: utter_precision_agriculture_definition
+
+  - rule: Respond to tools_used_in_precision_agriculture intent
+    steps:
+      - intent: tools_used_in_precision_agriculture
+      - action: utter_tools_used_in_precision_agriculture
+
+  - rule: Respond to information_collected_in_precision_agriculture intent
+    steps:
+      - intent: information_collected_in_precision_agriculture
+      - action: utter_information_collected_in_precision_agriculture
+
+  - rule: Respond to utilization_of_information_in_precision_agriculture intent
+    steps:
+      - intent: utilization_of_information_in_precision_agriculture
+      - action: utter_utilization_of_information_in_precision_agriculture
+
+  - rule: Respond to reasons_for_using_ipm intent
+    steps:
+      - intent: reasons_for_using_ipm
+      - action: utter_reasons_for_using_ipm
+
+  - rule: Respond to plant_disease_causes intent
+    steps:
+      - intent: plant_disease_causes
+      - action: utter_plant_disease_causes
+
+  - rule: Respond to plant_disease_control intent
+    steps:
+      - intent: plant_disease_control
+      - action: utter_plant_disease_control
+
+  - rule: Respond to wheat_storage_prevention intent
+    steps:
+      - intent: wheat_storage_prevention
+      - action: utter_wheat_storage_prevention
+
+  - rule: Respond to moisture_content_storage intent
+    steps:
+      - intent: moisture_content_storage
+      - action: utter_moisture_content_storage
+
+  - rule: Respond to increase_potato_yield intent
+    steps:
+      - intent: increase_potato_yield
+      - action: utter_increase_potato_yield
+
+  - rule: Respond to control_fungal_diseases_tomato_plants intent
+    steps:
+      - intent: control_fungal_diseases_tomato_plants
+      - action: utter_control_fungal_diseases_tomato_plants
+
+  - rule: Respond to prevent_soil_erosion_farm intent
+    steps:
+      - intent: prevent_soil_erosion_farm
+      - action: utter_prevent_soil_erosion_farm
+
+  - rule: Respond to corn_harvest_ready intent
+    steps:
+      - intent: corn_harvest_ready
+      - action: utter_corn_harvest_ready
+
+  - rule: Respond to corn_maturity_check intent
+    steps:
+      - intent: corn_maturity_check
+      - action: utter_corn_maturity_check
+
+  - rule: Respond to common_maize_pests intent
+    steps:
+      - intent: common_maize_pests
+      - action: utter_common_maize_pests
+
+  - rule: Respond to ideal_maize_planting_density intent
+    steps:
+      - intent: ideal_maize_planting_density
+      - action: utter_ideal_maize_planting_density
+
+  - rule: Respond to maize_importance intent
+    steps:
+      - intent: maize_importance
+      - action: utter_maize_importance
+
+  - rule: Respond to ideal_conditions_maize intent
+    steps:
+      - intent: ideal_conditions_maize
+      - action: utter_ideal_conditions_maize
+
+  - rule: Respond to maize_planting intent
+    steps:
+      - intent: maize_planting
+      - action: utter_maize_planting
+
+  - rule: Respond to maize_spacing intent
+    steps:
+      - intent: maize_spacing
+      - action: utter_maize_spacing
+
+  - rule: Respond to facilitate_seedling_growth intent
+    steps:
+      - intent: facilitate_seedling_growth
+      - action: utter_facilitate_seedling_growth
+
+  - rule: Respond to maize_pests_diseases_management intent
+    steps:
+      - intent: maize_pests_diseases_management
+      - action: utter_maize_pests_diseases_management
+
+  - rule: Respond to maize_harvesting_time intent
+    steps:
+      - intent: maize_harvesting_time
+      - action: utter_maize_harvesting_time
+
+  - rule: Respond to maize_harvesting_process intent
+    steps:
+      - intent: maize_harvesting_process
+      - action: utter_maize_harvesting_process
+
+  - rule: Respond to maize_post_harvest_management intent
+    steps:
+      - intent: maize_post_harvest_management
+      - action: utter_maize_post_harvest_management
+
+  - rule: Respond to maize_storage_after_harvesting intent
+    steps:
+      - intent: maize_storage_after_harvesting
+      - action: utter_maize_storage_after_harvesting
+
+  - rule: Respond to ideal_storage_conditions_maize intent
+    steps:
+      - intent: ideal_storage_conditions_maize
+      - action: utter_ideal_storage_conditions_maize
+
+  - rule: Respond to fall_armyworm_concern intent
+    steps:
+      - intent: fall_armyworm_concern
+      - action: utter_fall_armyworm_concern
+
+  - rule: Respond to fall_armyworm_detection intent
+    steps:
+      - intent: fall_armyworm_detection
+      - action: utter_fall_armyworm_detection
+
+  - rule: Respond to armyworm_susceptible_crops intent
+    steps:
+      - intent: armyworm_susceptible_crops
+      - action: utter_armyworm_susceptible_crops
+
+  - rule: Respond to armyworm_crop_losses intent
+    steps:
+      - intent: armyworm_crop_losses
+      - action: utter_armyworm_crop_losses
+
+  - rule: Respond to armyworm_spread_challenge intent
+    steps:
+      - intent: armyworm_spread_challenge
+      - action: utter_armyworm_spread_challenge
+
+  - rule: Respond to armyworm_control_methods intent
+    steps:
+      - intent: armyworm_control_methods
+      - action: utter_armyworm_control_methods
+
+  - rule: Respond to cassava_harvest_timing intent
+    steps:
+      - intent: cassava_harvest_timing
+      - action: utter_cassava_harvest_timing
+
+  - rule: Respond to cassava_harvest_supervision intent
+    steps:
+      - intent: cassava_harvest_supervision
+      - action: utter_cassava_harvest_supervision
+
+  - rule: Respond to cassava_harvest_methods intent
+    steps:
+      - intent: cassava_harvest_methods
+      - action: utter_cassava_harvest_methods
+
+  - rule: Respond to cassava_stem_cuttings intent
+    steps:
+      - intent: cassava_stem_cuttings
+      - action: utter_cassava_stem_cuttings
+
+  - rule: Respond to maize_fertilizers intent
+    steps:
+      - intent: maize_fertilizers
+      - action: utter_maize_fertilizers
+
+  - rule: Respond to CAN_application_maize intent
+    steps:
+      - intent: CAN_application_maize
+      - action: utter_CAN_application_maize
+
+  - rule: Respond to cassava_tests_common intent
+    steps:
+      - intent: cassava_tests_common
+      - action: utter_cassava_tests_common
+
+  - rule: Respond to cassava_virus_testing_importance intent
+    steps:
+      - intent: cassava_virus_testing_importance
+      - action: utter_cassava_virus_testing_importance
+
+  - rule: Respond to cassava_virus_testing_methods intent
+    steps:
+      - intent: cassava_virus_testing_methods
+      - action: utter_cassava_virus_testing_methods
+
+  - rule: Respond to cassava_virus_testing_symptoms intent
+    steps:
+      - intent: cassava_virus_testing_symptoms
+      - action: utter_cassava_virus_testing_symptoms
+
+  - rule: Respond to cassava_virus_testing_access intent
+    steps:
+      - intent: cassava_virus_testing_access
+      - action: utter_cassava_virus_testing_access
+
+  - rule: Respond to cassava_virus_testing_benefits intent
+    steps:
+      - intent: cassava_virus_testing_benefits
+      - action: utter_cassava_virus_testing_benefits
+
+  - rule: Respond to cassava_virus_testing_rapid_tests intent
+    steps:
+      - intent: cassava_virus_testing_rapid_tests
+      - action: utter_cassava_virus_testing_rapid_tests
+
+  - rule: Respond to cassava_virus_testing_management intent
+    steps:
+      - intent: cassava_virus_testing_management
+      - action: utter_cassava_virus_testing_management
+
+  - rule: Respond to rainfall_effects intent
+    steps:
+      - intent: rainfall_effects
+      - action: utter_rainfall_effects
+
+  - rule: Respond to rainfall_crop_yield intent
+    steps:
+      - intent: rainfall_crop_yield
+      - action: utter_rainfall_crop_yield
+
+  - rule: Respond to rainfall_soil_health intent
+    steps:
+      - intent: rainfall_soil_health
+      - action: utter_rainfall_soil_health
+
+  - rule: Respond to rainfall_water_quality intent
+    steps:
+      - intent: rainfall_water_quality
+      - action: utter_rainfall_water_quality
+
+  - rule: Respond to seed_dormancy_definition intent
+    steps:
+      - intent: seed_dormancy_definition
+      - action: utter_seed_dormancy_definition
+
+  - rule: Respond to seed_dormancy_factors intent
+    steps:
+      - intent: seed_dormancy_factors
+      - action: utter_seed_dormancy_factors
+
+  - rule: Respond to soil_fertility_definition intent
+    steps:
+      - intent: soil_fertility_definition
+      - action: utter_soil_fertility_definition
+
+  - rule: Respond to improving_soil_fertility intent
+    steps:
+      - intent: improving_soil_fertility
+      - action: utter_improving_soil_fertility
+
+  - rule: Respond to recommended_cassava_spacing intent
+    steps:
+      - intent: recommended_cassava_spacing
+      - action: utter_recommended_cassava_spacing
+
+  - rule: Respond to cassava_mosaic_symptoms intent
+    steps:
+      - intent: cassava_mosaic_symptoms
+      - action: utter_cassava_mosaic_symptoms
+
+  - rule: Respond to factors_affecting_crop_response_to_fertilizers intent
+    steps:
+      - intent: factors_affecting_crop_response_to_fertilizers
+      - action: utter_factors_affecting_crop_response_to_fertilizers
+
+  - rule: Respond to causes_of_cassava_mosaic_disease intent
+    steps:
+      - intent: causes_of_cassava_mosaic_disease
+      - action: utter_causes_of_cassava_mosaic_disease
+
+  - rule: Respond to control_of_cassava_mosaic_disease intent
+    steps:
+      - intent: control_of_cassava_mosaic_disease
+      - action: utter_control_of_cassava_mosaic_disease
+
+  - rule: Respond to spread_of_cassava_mosaic_disease intent
+    steps:
+      - intent: spread_of_cassava_mosaic_disease
+      - action: utter_spread_of_cassava_mosaic_disease
+
+  - rule: Respond to benefits_of_combine_harvester intent
+    steps:
+      - intent: benefits_of_combine_harvester
+      - action: utter_benefits_of_combine_harvester
+
+  - rule: Respond to harvesting_before_machinery intent
+    steps:
+      - intent: harvesting_before_machinery
+      - action: utter_harvesting_before_machinery
+
+  - rule: Respond to tool_for_threshing_wheat intent
+    steps:
+      - intent: tool_for_threshing_wheat
+      - action: utter_tool_for_threshing_wheat
+
+  - rule: Respond to definition_of_combine_harvester intent
+    steps:
+      - intent: definition_of_combine_harvester
+      - action: utter_definition_of_combine_harvester
+
+  - rule: Respond to definition_of_seed_drill intent
+    steps:
+      - intent: definition_of_seed_drill
+      - action: utter_definition_of_seed_drill
+
+  - rule: Respond to benefits_of_seed_drill intent
+    steps:
+      - intent: benefits_of_seed_drill
+      - action: utter_benefits_of_seed_drill
+
+  - rule: Respond to uses_of_windmills intent
+    steps:
+      - intent: uses_of_windmills
+      - action: utter_uses_of_windmills
+
+  - rule: Respond to use_of_wind_mill intent
+    steps:
+      - intent: use_of_wind_mill
+      - action: utter_use_of_wind_mill
+
+  - rule: Respond to reasons_for_spraying_crops intent
+    steps:
+      - intent: reasons_for_spraying_crops
+      - action: utter_reasons_for_spraying_crops
+
+  - rule: Respond to organic_farming_pollution_contribution intent
+    steps:
+      - intent: organic_farming_pollution_contribution
+      - action: utter_organic_farming_pollution_contribution
+
+  - rule: Respond to farmers_use_chemicals intent
+    steps:
+      - intent: farmers_use_chemicals
+      - action: utter_farmers_use_chemicals
+
+  - rule: Respond to principle_organic_farming intent
+    steps:
+      - intent: principle_organic_farming
+      - action: utter_principle_organic_farming
+
+  - rule: Respond to insect_control_organic_farming intent
+    steps:
+      - intent: insect_control_organic_farming
+      - action: utter_insect_control_organic_farming
+
+  - rule: Respond to farmers_waste_water intent
+    steps:
+      - intent: farmers_waste_water
+      - action: utter_farmers_waste_water
+
+  - rule: Respond to consumptive_water_use intent
+    steps:
+      - intent: consumptive_water_use
+      - action: utter_consumptive_water_use
+
+  - rule: Respond to farmers_conserve_water intent
+    steps:
+      - intent: farmers_conserve_water
+      - action: utter_farmers_conserve_water
+
+  - rule: Respond to role_of_agriculture intent
+    steps:
+      - intent: role_of_agriculture
+      - action: utter_role_of_agriculture
+
+  - rule: Respond to importance_of_agriculture intent
+    steps:
+      - intent: importance_of_agriculture
+      - action: utter_importance_of_agriculture
+
+  - rule: Respond to necessity_of_agriculture intent
+    steps:
+      - intent: necessity_of_agriculture
+      - action: utter_necessity_of_agriculture
+
+  - rule: Respond to nutrition_comparison_frozen_vs_fresh_vegetables intent
+    steps:
+      - intent: nutrition_comparison_frozen_vs_fresh_vegetables
+      - action: utter_nutrition_comparison_frozen_vs_fresh_vegetables
+
+  - rule: Respond to benefits_of_frozen_vegetables intent
+    steps:
+      - intent: benefits_of_frozen_vegetables
+      - action: utter_benefits_of_frozen_vegetables
+
+  - rule: Respond to nutritional_loss_fresh_broccoli intent
+    steps:
+      - intent: nutritional_loss_fresh_broccoli
+      - action: utter_nutritional_loss_fresh_broccoli
+
+  - rule: Respond to environment_friendly_technology_farmers_use intent
+    steps:
+      - intent: environment_friendly_technology_farmers_use
+      - action: utter_environment_friendly_technology_farmers_use
+
+  - rule: Respond to changing_technology_agriculture intent
+    steps:
+      - intent: changing_technology_agriculture
+      - action: utter_changing_technology_agriculture
+
+  - rule: Respond to soil_science_management_definition intent
+    steps:
+      - intent: soil_science_management_definition
+      - action: utter_soil_science_management_definition
+
+  - rule: Respond to importance_soil_science_agriculture intent
+    steps:
+      - intent: importance_soil_science_agriculture
+      - action: utter_importance_soil_science_agriculture
+
+  - rule: Respond to physical_chemical_properties_soil intent
+    steps:
+      - intent: physical_chemical_properties_soil
+      - action: utter_physical_chemical_properties_soil
+
+  - rule: Respond to biological_properties_soil intent
+    steps:
+      - intent: biological_properties_soil
+      - action: utter_biological_properties_soil
+
+  - rule: Respond to soil_definition intent
+    steps:
+      - intent: soil_definition
+      - action: utter_soil_definition
+
+  - rule: Respond to soil_management_activities intent
+    steps:
+      - intent: soil_management_activities
+      - action: utter_soil_management_activities
+
+  - rule: Respond to importance_soil_management intent
+    steps:
+      - intent: importance_soil_management
+      - action: utter_importance_soil_management
+
+  - rule: Respond to fertilization_definition intent
+    steps:
+      - intent: fertilization_definition
+      - action: utter_fertilization_definition
+
+  - rule: Respond to types_fertilizers intent
+    steps:
+      - intent: types_fertilizers
+      - action: utter_types_fertilizers
+
+  - rule: Respond to irrigation_areas intent
+    steps:
+      - intent: irrigation_areas
+      - action: utter_irrigation_areas
+
+  - rule: Respond to reasons_practice_irrigation intent
+    steps:
+      - intent: reasons_practice_irrigation
+      - action: utter_reasons_practice_irrigation
+
+  - rule: Respond to tillage_definition intent
+    steps:
+      - intent: tillage_definition
+      - action: utter_tillage_definition
+
+  - rule: Respond to negative_impacts_excessive_tillage intent
+    steps:
+      - intent: negative_impacts_excessive_tillage
+      - action: utter_negative_impacts_excessive_tillage
+
+  - rule: Respond to benefits_tillage_balanced intent
+    steps:
+      - intent: benefits_tillage_balanced
+      - action: utter_benefits_tillage_balanced
+
+  - rule: Respond to crop_rotation_definition intent
+    steps:
+      - intent: crop_rotation_definition
+      - action: utter_crop_rotation_definition
+
+  - rule: Respond to importance_crop_rotation intent
+    steps:
+      - intent: importance_crop_rotation
+      - action: utter_importance_crop_rotation
+
+  - rule: Respond to final_stage_crop_cultivation intent
+    steps:
+      - intent: final_stage_crop_cultivation
+      - action: utter_final_stage_crop_cultivation
+
+  - rule: Respond to definition_harvesting intent
+    steps:
+      - intent: definition_harvesting
+      - action: utter_definition_harvesting
+
+  - rule: Respond to crop_maintenance_activities intent
+    steps:
+      - intent: crop_maintenance_activities
+      - action: utter_crop_maintenance_activities
+
+  - rule: Respond to first_step_crop_cultivation intent
+    steps:
+      - intent: first_step_crop_cultivation
+      - action: utter_first_step_crop_cultivation
+
+  - rule: Respond to pest_control_management_practices intent
+    steps:
+      - intent: pest_control_management_practices
+      - action: utter_pest_control_management_practices
+
+  - rule: Respond to cultural_pest_control_practices intent
+    steps:
+      - intent: cultural_pest_control_practices
+      - action: utter_cultural_pest_control_practices
+
+  - rule: Respond to cultural_techniques_crop_nutrients intent
+    steps:
+      - intent: cultural_techniques_crop_nutrients
+      - action: utter_cultural_techniques_crop_nutrients
+
+  - rule: Respond to define_pest_control intent
+    steps:
+      - intent: define_pest_control
+      - action: utter_define_pest_control
+
+  - rule: Respond to farming_techniques_reduce_pest_species intent
+    steps:
+      - intent: farming_techniques_reduce_pest_species
+      - action: utter_farming_techniques_reduce_pest_species
+
+  - rule: Respond to definition_biological_pest_control intent
+    steps:
+      - intent: definition_biological_pest_control
+      - action: utter_definition_biological_pest_control
+
+  - rule: Respond to process_biological_pest_control intent
+    steps:
+      - intent: process_biological_pest_control
+      - action: utter_process_biological_pest_control
+
+  - rule: Respond to mosquito_control_biological intent
+    steps:
+      - intent: mosquito_control_biological
+      - action: utter_mosquito_control_biological
+
+  - rule: Respond to definition_mechanical_pest_control intent
+    steps:
+      - intent: definition_mechanical_pest_control
+      - action: utter_definition_mechanical_pest_control
+
+  - rule: Respond to definition_fumigation intent
+    steps:
+      - intent: definition_fumigation
+      - action: utter_definition_fumigation
+
+  - rule: Respond to best_time_plant_maize intent
+    steps:
+      - intent: best_time_plant_maize
+      - action: utter_best_time_plant_maize
+
+  - rule: Respond to depth_soil_planting_maize intent
+    steps:
+      - intent: depth_soil_planting_maize
+      - action: utter_depth_soil_planting_maize
+
+  - rule: Respond to spacing_maize_planting intent
+    steps:
+      - intent: spacing_maize_planting
+      - action: utter_spacing_maize_planting
+
+  - rule: Respond to recommended_spacing_long_1 intent
+    steps:
+      - intent: recommended_spacing_long_1
+      - action: utter_recommended_spacing_long_1
+
+  - rule: Respond to spacing_long_2H intent
+    steps:
+      - intent: spacing_long_2H
+      - action: utter_spacing_long_2H
+
+  - rule: Respond to cassava_maturity_time intent
+    steps:
+      - intent: cassava_maturity_time
+      - action: utter_cassava_maturity_time
+
+  - rule: Respond to tool_cut_cassava_stems intent
+    steps:
+      - intent: tool_cut_cassava_stems
+      - action: utter_tool_cut_cassava_stems
+
+  - rule: Respond to cassava_mature_identification intent
+    steps:
+      - intent: cassava_mature_identification
+      - action: utter_cassava_mature_identification
+
+  - rule: Respond to mechanical_planting_definition intent
+    steps:
+      - intent: mechanical_planting_definition
+      - action: utter_mechanical_planting_definition
+
+  - rule: Respond to tools_for_marking_rows intent
+    steps:
+      - intent: tools_for_marking_rows
+      - action: utter_tools_for_marking_rows
+
+  - rule: Respond to suitable_planting_method_large_scale_farmers intent
+    steps:
+      - intent: suitable_planting_method_large_scale_farmers
+      - action: utter_suitable_planting_method_large_scale_farmers
+
+  - rule: Respond to cassava_mealybug_definition intent
+    steps:
+      - intent: cassava_mealybug_definition
+      - action: utter_cassava_mealybug_definition
+
+  - rule: Respond to cassava_mealybug_botanical_name intent
+    steps:
+      - intent: cassava_mealybug_botanical_name
+      - action: utter_cassava_mealybug_botanical_name
+
+  - rule: Respond to cassava_mealybug_symptoms intent
+    steps:
+      - intent: cassava_mealybug_symptoms
+      - action: utter_cassava_mealybug_symptoms
+
+  - rule: Respond to mealybug_control_biologically intent
+    steps:
+      - intent: mealybug_control_biologically
+      - action: utter_mealybug_control_biologically
+
+  - rule: Respond to mealybug_management_practices intent
+    steps:
+      - intent: mealybug_management_practices
+      - action: utter_mealybug_management_practices
+
+  - rule: Respond to caterpillar_pests_cause_damage_to_cassava intent
+    steps:
+      - intent: caterpillar_pests_cause_damage_to_cassava
+      - action: utter_caterpillar_pests_cause_damage_to_cassava
+
+  - rule: Respond to most_common_species_of_armyworms intent
+    steps:
+      - intent: most_common_species_of_armyworms
+      - action: utter_most_common_species_of_armyworms
+
+  - rule: Respond to effects_of_armyworm_infestation intent
+    steps:
+      - intent: effects_of_armyworm_infestation
+      - action: utter_effects_of_armyworm_infestation
+
+  - rule: Respond to first_stage_of_managing_armyworms intent
+    steps:
+      - intent: first_stage_of_managing_armyworms
+      - action: utter_first_stage_of_managing_armyworms
+
+  - rule: Respond to ways_of_managing_armyworms intent
+    steps:
+      - intent: ways_of_managing_armyworms
+      - action: utter_ways_of_managing_armyworms
+
+  - rule: Respond to natural_predators_used_to_control_armyworms intent
+    steps:
+      - intent: natural_predators_used_to_control_armyworms
+      - action: utter_natural_predators_used_to_control_armyworms
+
+  - rule: Respond to pest_management_practices_for_armyworms intent
+    steps:
+      - intent: pest_management_practices_for_armyworms
+      - action: utter_pest_management_practices_for_armyworms
+
+  - rule: Respond to cmd_effect_severe_condition intent
+    steps:
+      - intent: cmd_effect_severe_condition
+      - action: utter_cmd_effect_severe_condition
+
+  - rule: Respond to cmd_spread_method intent
+    steps:
+      - intent: cmd_spread_method
+      - action: utter_cmd_spread_method
+
+  - rule: Respond to cmd_definition intent
+    steps:
+      - intent: cmd_definition
+      - action: utter_cmd_definition
+
+  - rule: Respond to cmd_effect intent
+    steps:
+      - intent: cmd_effect
+      - action: utter_cmd_effect
+
+  - rule: Respond to cmd_control_crop_rotation intent
+    steps:
+      - intent: cmd_control_crop_rotation
+      - action: utter_cmd_control_crop_rotation
+
+  - rule: Respond to cmd_control_resistant_varieties intent
+    steps:
+      - intent: cmd_control_resistant_varieties
+      - action: utter_cmd_control_resistant_varieties
+
+  - rule: Respond to cbb_cause intent
+    steps:
+      - intent: cbb_cause
+      - action: utter_cbb_cause
+
+  - rule: Respond to cbb_spread_method intent
+    steps:
+      - intent: cbb_spread_method
+      - action: utter_cbb_spread_method
+
+  - rule: Respond to cbb_sanitation_control intent
+    steps:
+      - intent: cbb_sanitation_control
+      - action: utter_cbb_sanitation_control
+
+  - rule: Respond to cbb_fungicides intent
+    steps:
+      - intent: cbb_fungicides
+      - action: utter_cbb_fungicides
+
+  - rule: Respond to cbb_control_crop_rotation intent
+    steps:
+      - intent: cbb_control_crop_rotation
+      - action: utter_cbb_control_crop_rotation
+
+  - rule: Respond to cbb_resistant_crops intent
+    steps:
+      - intent: cbb_resistant_crops
+      - action: utter_cbb_resistant_crops
+
+  - rule: Respond to cassava_mosaic_disease intent
+    steps:
+      - intent: cassava_mosaic_disease
+      - action: utter_cassava_mosaic_disease
+
+  - rule: Respond to cassava_mosaic_disease_spread intent
+    steps:
+      - intent: cassava_mosaic_disease_spread
+      - action: utter_cassava_mosaic_disease_spread
+
+  - rule: Respond to cassava_brown_streak_disease_symptoms intent
+    steps:
+      - intent: cassava_brown_streak_disease_symptoms
+      - action: utter_cassava_brown_streak_disease_symptoms
+
+  - rule: Respond to cassava_bacterial_blight_effects intent
+    steps:
+      - intent: cassava_bacterial_blight_effects
+      - action: utter_cassava_bacterial_blight_effects
+
+  - rule: Respond to cassava_anthracnose_disease_effects intent
+    steps:
+      - intent: cassava_anthracnose_disease_effects
+      - action: utter_cassava_anthracnose_disease_effects
+
+  - rule: Respond to root_rot_disease intent
+    steps:
+      - intent: root_rot_disease
+      - action: utter_root_rot_disease
+
+  - rule: Respond to cassava_anthracnose_disease_control_measures intent
+    steps:
+      - intent: cassava_anthracnose_disease_control_measures
+      - action: utter_cassava_anthracnose_disease_control_measures
+
+  - rule: Respond to long_term_control_measures_cassava_diseases intent
+    steps:
+      - intent: long_term_control_measures_cassava_diseases
+      - action: utter_long_term_control_measures_cassava_diseases
+
+  - rule: Respond to fertilizer_definition intent
+    steps:
+      - intent: fertilizer_definition
+      - action: utter_fertilizer_definition
+
+  - rule: Respond to fertilizer_nutrients intent
+    steps:
+      - intent: fertilizer_nutrients
+      - action: utter_fertilizer_nutrients
+
+  - rule: Respond to fertilizer_factors_healthy_growth intent
+    steps:
+      - intent: fertilizer_factors_healthy_growth
+      - action: utter_fertilizer_factors_healthy_growth
+
+  - rule: Respond to fertilizer_micronutrients intent
+    steps:
+      - intent: fertilizer_micronutrients
+      - action: utter_fertilizer_micronutrients
+
+  - rule: Respond to fertilizer_benefits intent
+    steps:
+      - intent: fertilizer_benefits
+      - action: utter_fertilizer_benefits
+
+  - rule: Respond to fertilizer_application_methods intent
+    steps:
+      - intent: fertilizer_application_methods
+      - action: utter_fertilizer_application_methods
+
+  - rule: Respond to fertilizer_negative_consequences intent
+    steps:
+      - intent: fertilizer_negative_consequences
+      - action: utter_fertilizer_negative_consequences
+
+  - rule: Respond to fertilizer_natural_composition intent
+    steps:
+      - intent: fertilizer_natural_composition
+      - action: utter_fertilizer_natural_composition
+
+  - rule: Respond to fertilizer_synthetic_definition intent
+    steps:
+      - intent: fertilizer_synthetic_definition
+      - action: utter_fertilizer_synthetic_definition
+
+  - rule: Respond to nitrogen_fertilizers_definition intent
+    steps:
+      - intent: nitrogen_fertilizers_definition
+      - action: utter_nitrogen_fertilizers_definition
+
+  - rule: Respond to nitrogen_fertilizers_components intent
+    steps:
+      - intent: nitrogen_fertilizers_components
+      - action: utter_nitrogen_fertilizers_components
+
+  - rule: Respond to phosphorus_fertilizers_definition intent
+    steps:
+      - intent: phosphorus_fertilizers_definition
+      - action: utter_phosphorus_fertilizers_definition
+
+  - rule: Respond to phosphorus_fertilizers_examples intent
+    steps:
+      - intent: phosphorus_fertilizers_examples
+      - action: utter_phosphorus_fertilizers_examples
+
+  - rule: Respond to potassium_fertilizers_definition intent
+    steps:
+      - intent: potassium_fertilizers_definition
+      - action: utter_potassium_fertilizers_definition
+
+  - rule: Respond to potassium_fertilizers_examples intent
+    steps:
+      - intent: potassium_fertilizers_examples
+      - action: utter_potassium_fertilizers_examples
+
+  - rule: Respond to complete_fertilizers_definition intent
+    steps:
+      - intent: complete_fertilizers_definition
+      - action: utter_complete_fertilizers_definition
+
+  - rule: Respond to liquid_fertilizers_usage intent
+    steps:
+      - intent: liquid_fertilizers_usage
+      - action: utter_liquid_fertilizers_usage
+
+  - rule: Respond to slow_release_fertilizers_usage intent
+    steps:
+      - intent: slow_release_fertilizers_usage
+      - action: utter_slow_release_fertilizers_usage
+
+  - rule: Respond to microbial_fertilizers_microorganisms intent
+    steps:
+      - intent: microbial_fertilizers_microorganisms
+      - action: utter_microbial_fertilizers_microorganisms
+
+  - rule: Respond to maize_chlorotic_mottle_virus_effect intent
+    steps:
+      - intent: maize_chlorotic_mottle_virus_effect
+      - action: utter_maize_chlorotic_mottle_virus_effect
+
+  - rule: Respond to maize_streak_virus_transmission intent
+    steps:
+      - intent: maize_streak_virus_transmission
+      - action: utter_maize_streak_virus_transmission
+
+  - rule: Respond to northern_corn_leaf_blight_characteristics intent
+    steps:
+      - intent: northern_corn_leaf_blight_characteristics
+      - action: utter_northern_corn_leaf_blight_characteristics
+
+  - rule: Respond to gray_leaf_spot_preferred_conditions intent
+    steps:
+      - intent: gray_leaf_spot_preferred_conditions
+      - action: utter_gray_leaf_spot_preferred_conditions
+
+  - rule: Respond to common_rust_characteristics intent
+    steps:
+      - intent: common_rust_characteristics
+      - action: utter_common_rust_characteristics
+
+  - rule: Respond to bacterial_blight_cause intent
+    steps:
+      - intent: bacterial_blight_cause
+      - action: utter_bacterial_blight_cause
+
+  - rule: Respond to bacterial_blight_spread_planting_material intent
+    steps:
+      - intent: bacterial_blight_spread_planting_material
+      - action: utter_bacterial_blight_spread_planting_material
+
+  - rule: Respond to bacterial_blight_spread_insects intent
+    steps:
+      - intent: bacterial_blight_spread_insects
+      - action: utter_bacterial_blight_spread_insects
+
+  - rule: Respond to bacterial_blight_spread_human_activity intent
+    steps:
+      - intent: bacterial_blight_spread_human_activity
+      - action: utter_bacterial_blight_spread_human_activity
+
+  - rule: Respond to bacterial_blight_spread_water intent
+    steps:
+      - intent: bacterial_blight_spread_water
+      - action: utter_bacterial_blight_spread_water
+
+  - rule: Respond to bacterial_blight_spread_farming_tools intent
+    steps:
+      - intent: bacterial_blight_spread_farming_tools
+      - action: utter_bacterial_blight_spread_farming_tools
+
+  - rule: Respond to bacterial_blight_control_measures intent
+    steps:
+      - intent: bacterial_blight_control_measures
+      - action: utter_bacterial_blight_control_measures
+
+  - rule: Respond to overuse_synthetic_fertilizers_effect intent
+    steps:
+      - intent: overuse_synthetic_fertilizers_effect
+      - action: utter_overuse_synthetic_fertilizers_effect
+
+  - rule: Respond to overuse_pesticides_effect intent
+    steps:
+      - intent: overuse_pesticides_effect
+      - action: utter_overuse_pesticides_effect
+
+  - rule: Respond to overgrazing_effect intent
+    steps:
+      - intent: overgrazing_effect
+      - action: utter_overgrazing_effect
+
+  - rule: Respond to deforestation_effect intent
+    steps:
+      - intent: deforestation_effect
+      - action: utter_deforestation_effect
+
+  - rule: Respond to intensive_tillage_effect intent
+    steps:
+      - intent: intensive_tillage_effect
+      - action: utter_intensive_tillage_effect
+
+  - rule: Respond to monoculture_effect intent
+    steps:
+      - intent: monoculture_effect
+      - action: utter_monoculture_effect
+
+  - rule: Respond to fertilizers_used_to_grow_cassava intent
+    steps:
+      - intent: fertilizers_used_to_grow_cassava
+      - action: utter_fertilizers_used_to_grow_cassava
+
+  - rule: Respond to examples_of_compound_fertilizers intent
+    steps:
+      - intent: examples_of_compound_fertilizers
+      - action: utter_examples_of_compound_fertilizers
+
+  - rule: Respond to single_nutrient_fertilizers_definition intent
+    steps:
+      - intent: single_nutrient_fertilizers_definition
+      - action: utter_single_nutrient_fertilizers_definition
+
+  - rule: Respond to nutrient_uptake intent
+    steps:
+      - intent: nutrient_uptake
+      - action: utter_nutrient_uptake
+
+  - rule: Respond to photosynthesis_role intent
+    steps:
+      - intent: photosynthesis_role
+      - action: utter_photosynthesis_role
+
+  - rule: Respond to soil_temperature_regulation intent
+    steps:
+      - intent: soil_temperature_regulation
+      - action: utter_soil_temperature_regulation
+
+  - rule: Respond to soil_structure_improvement intent
+    steps:
+      - intent: soil_structure_improvement
+      - action: utter_soil_structure_improvement
+
+  - rule: Respond to cultural_practices intent
+    steps:
+      - intent: cultural_practices
+      - action: utter_cultural_practices
+
+  - rule: Respond to chemical_control_methods intent
+    steps:
+      - intent: chemical_control_methods
+      - action: utter_chemical_control_methods
+
+  - rule: Respond to natural_enemies intent
+    steps:
+      - intent: natural_enemies
+      - action: utter_natural_enemies
+
+  - rule: Respond to reproductive_rate intent
+    steps:
+      - intent: reproductive_rate
+      - action: utter_reproductive_rate
+
+  - rule: Respond to short_life_cycle intent
+    steps:
+      - intent: short_life_cycle
+      - action: utter_short_life_cycle
+
+  - rule: Respond to planting_timing intent
+    steps:
+      - intent: planting_timing
+      - action: utter_planting_timing
+
+  - rule: Respond to reason_for_drying intent
+    steps:
+      - intent: reason_for_drying
+      - action: utter_reason_for_drying
+
+  - rule: Respond to general_steps intent
+    steps:
+      - intent: general_steps
+      - action: utter_general_steps
+
+  - rule: Respond to transmission_method intent
+    steps:
+      - intent: transmission_method
+      - action: utter_transmission_method
+
+  - rule: Respond to transmission_process intent
+    steps:
+      - intent: transmission_process
+      - action: utter_transmission_process
+
+  - rule: Respond to boiling_duration intent
+    steps:
+      - intent: boiling_duration
+      - action: utter_boiling_duration
+
+  - rule: Respond to protein_retention_boiling intent
+    steps:
+      - intent: protein_retention_boiling
+      - action: utter_protein_retention_boiling
+
+  - rule: Respond to carbohydrate_loss_boiling intent
+    steps:
+      - intent: carbohydrate_loss_boiling
+      - action: utter_carbohydrate_loss_boiling
+
+  - rule: Respond to vitamin_retention_boiling intent
+    steps:
+      - intent: vitamin_retention_boiling
+      - action: utter_vitamin_retention_boiling
+
+  - rule: Respond to rainfall_sunshine_requirements intent
+    steps:
+      - intent: rainfall_sunshine_requirements
+      - action: utter_rainfall_sunshine_requirements
+
+  - rule: Respond to rainfall_requirement_maturation_stage intent
+    steps:
+      - intent: rainfall_requirement_maturation_stage
+      - action: utter_rainfall_requirement_maturation_stage
+
+  - rule: Respond to rainfall_requirement_late_vegetative_stage intent
+    steps:
+      - intent: rainfall_requirement_late_vegetative_stage
+      - action: utter_rainfall_requirement_late_vegetative_stage
+
+  - rule: Respond to test_soil_ph_with_kit intent
+    steps:
+      - intent: test_soil_ph_with_kit
+      - action: utter_test_soil_ph_with_kit
+
+  - rule: Respond to determine_soil_acidity intent
+    steps:
+      - intent: determine_soil_acidity
+      - action: utter_determine_soil_acidity
+
+  - rule: Respond to maize_growing_conditions intent
+    steps:
+      - intent: maize_growing_conditions
+      - action: utter_maize_growing_conditions
+
+  - rule: Respond to characteristics_crop_store_prevent_pest_infestation intent
+    steps:
+      - intent: characteristics_crop_store_prevent_pest_infestation
+      - action: utter_characteristics_crop_store_prevent_pest_infestation
+
+  - rule: Respond to soil_for_maize_production intent
+    steps:
+      - intent: soil_for_maize_production
+      - action: utter_soil_for_maize_production
+
+  - rule: Respond to resistant_seeds_types intent
+    steps:
+      - intent: resistant_seeds_types
+      - action: utter_resistant_seeds_types
+
+  - rule: Respond to critical_role_nutrient_cycling intent
+    steps:
+      - intent: critical_role_nutrient_cycling
+      - action: utter_critical_role_nutrient_cycling
+
+  - rule: Respond to use_of_living_organisms_in_soil intent
+    steps:
+      - intent: use_of_living_organisms_in_soil
+      - action: utter_use_of_living_organisms_in_soil
+
+  - rule: Respond to nitrogen_fixing_bacteria_soil_fertility intent
+    steps:
+      - intent: nitrogen_fixing_bacteria_soil_fertility
+      - action: utter_nitrogen_fixing_bacteria_soil_fertility
+
+  - rule: Respond to soil_organism_control_pest_diseases intent
+    steps:
+      - intent: soil_organism_control_pest_diseases
+      - action: utter_soil_organism_control_pest_diseases
+
+  - rule: Respond to soil_organism_carbon_sequestration intent
+    steps:
+      - intent: soil_organism_carbon_sequestration
+      - action: utter_soil_organism_carbon_sequestration
+
+  - rule: Respond to recommended_season_planting_cassava intent
+    steps:
+      - intent: recommended_season_planting_cassava
+      - action: utter_recommended_season_planting_cassava
+
+  - rule: Respond to required_depth_planting_cassava intent
+    steps:
+      - intent: required_depth_planting_cassava
+      - action: utter_required_depth_planting_cassava
+
+  - rule: Respond to measures_ensure_successful_germination_cassava_plants intent
+    steps:
+      - intent: measures_ensure_successful_germination_cassava_plants
+      - action: utter_measures_ensure_successful_germination_cassava_plants
+
+  - rule: Respond to waiting_period_planting_cassava_field_affected_cbsd intent
+    steps:
+      - intent: waiting_period_planting_cassava_field_affected_cbsd
+      - action: utter_waiting_period_planting_cassava_field_affected_cbsd
+
+  - rule: Respond to effects_not_replacing_new_seeds intent
+    steps:
+      - intent: effects_not_replacing_new_seeds
+      - action: utter_effects_not_replacing_new_seeds
+
+  - rule: Respond to impact_using_old_seeds intent
+    steps:
+      - intent: impact_using_old_seeds
+      - action: utter_impact_using_old_seeds
+
+  - rule: Respond to reason_replace_old_seeds intent
+    steps:
+      - intent: reason_replace_old_seeds
+      - action: utter_reason_replace_old_seeds
+
+  - rule: Respond to symptoms_maize_streak_disease intent
+    steps:
+      - intent: symptoms_maize_streak_disease
+      - action: utter_symptoms_maize_streak_disease
+
+  - rule: Respond to mitigate_leaf_shedding_cassava_during_dry_season intent
+    steps:
+      - intent: mitigate_leaf_shedding_cassava_during_dry_season
+      - action: utter_mitigate_leaf_shedding_cassava_during_dry_season
+
+  - rule: Respond to reasons_cassava_plants_shed_leaves_during_dry_season intent
+    steps:
+      - intent: reasons_cassava_plants_shed_leaves_during_dry_season
+      - action: utter_reasons_cassava_plants_shed_leaves_during_dry_season
+
+  - rule: Respond to reason_cassava_poor_yield_wetlands intent
+    steps:
+      - intent: reason_cassava_poor_yield_wetlands
+      - action: utter_reason_cassava_poor_yield_wetlands
+
+  - rule: Respond to impact_nutrient_leaching_cassava_yield intent
+    steps:
+      - intent: impact_nutrient_leaching_cassava_yield
+      - action: utter_impact_nutrient_leaching_cassava_yield
+
+  - rule: Respond to importance_seed_drying_farmers intent
+    steps:
+      - intent: importance_seed_drying_farmers
+      - action: utter_importance_seed_drying_farmers
+
+  - rule: Respond to importance_seed_drying_storage_handling intent
+    steps:
+      - intent: importance_seed_drying_storage_handling
+      - action: utter_importance_seed_drying_storage_handling
+
+  - rule: Respond to seed_drying_prevent_spoilage intent
+    steps:
+      - intent: seed_drying_prevent_spoilage
+      - action: utter_seed_drying_prevent_spoilage
+
+  - rule: Respond to manage_maize_streak_disease intent
+    steps:
+      - intent: manage_maize_streak_disease
+      - action: utter_manage_maize_streak_disease
+
+  - rule: Respond to contribution_environment_spread_maize_streak_disease intent
+    steps:
+      - intent: contribution_environment_spread_maize_streak_disease
+      - action: utter_contribution_environment_spread_maize_streak_disease
+
+  - rule: Respond to leafhoppers_species_spread_maize_streak_disease intent
+    steps:
+      - intent: leafhoppers_species_spread_maize_streak_disease
+      - action: utter_leafhoppers_species_spread_maize_streak_disease
+
+  - rule: Respond to transmit_cassava_mosaic intent
+    steps:
+      - intent: transmit_cassava_mosaic
+      - action: utter_transmit_cassava_mosaic
+
+  - rule: Respond to control_cassava_mosaic intent
+    steps:
+      - intent: control_cassava_mosaic
+      - action: utter_control_cassava_mosaic
+
+  - rule: Respond to factors_contribute_spread_CMD intent
+    steps:
+      - intent: factors_contribute_spread_CMD
+      - action: utter_factors_contribute_spread_CMD
+
+  - rule: Respond to cassava_stem_size intent
+    steps:
+      - intent: cassava_stem_size
+      - action: utter_cassava_stem_size
+
+  - rule: Respond to moisture_test_maize intent
+    steps:
+      - intent: moisture_test_maize
+      - action: utter_moisture_test_maize
+
+  - rule: Respond to pest_control_steps intent
+    steps:
+      - intent: pest_control_steps
+      - action: utter_pest_control_steps
+
+  - rule: Respond to maize_streak_seed_affect intent
+    steps:
+      - intent: maize_streak_seed_affect
+      - action: utter_maize_streak_seed_affect
+
+  - rule: Respond to field_pest_control intent
+    steps:
+      - intent: field_pest_control
+      - action: utter_field_pest_control
+
+  - rule: Respond to maize_growing_in_rocky_soils intent
+    steps:
+      - intent: maize_growing_in_rocky_soils
+      - action: utter_maize_growing_in_rocky_soils
+
+  - rule: Respond to cassava_mosaic_transmission intent
+    steps:
+      - intent: cassava_mosaic_transmission
+      - action: utter_cassava_mosaic_transmission
+
+  - rule: Respond to cassava_mosaic_virus_family intent
+    steps:
+      - intent: cassava_mosaic_virus_family
+      - action: utter_cassava_mosaic_virus_family
+
+  - rule: Respond to cassava_mosaic_preventive_measures intent
+    steps:
+      - intent: cassava_mosaic_preventive_measures
+      - action: utter_cassava_mosaic_preventive_measures
+
+  - rule: Respond to factors_for_planting_timing intent
+    steps:
+      - intent: factors_for_planting_timing
+      - action: utter_factors_for_planting_timing
+
+  - rule: Respond to cassava_green_mite_botanical_name intent
+    steps:
+      - intent: cassava_green_mite_botanical_name
+      - action: utter_cassava_green_mite_botanical_name
+
+  - rule: Respond to cassava_green_mite_environmental_condition intent
+    steps:
+      - intent: cassava_green_mite_environmental_condition
+      - action: utter_cassava_green_mite_environmental_condition
+
+  - rule: Respond to cassava_green_mite_estimated_eggs intent
+    steps:
+      - intent: cassava_green_mite_estimated_eggs
+      - action: utter_cassava_green_mite_estimated_eggs
+
+  - rule: Respond to cassava_green_mite_control_methods intent
+    steps:
+      - intent: cassava_green_mite_control_methods
+      - action: utter_cassava_green_mite_control_methods
+
+  - rule: Respond to cassava_green_mite_management_practices intent
+    steps:
+      - intent: cassava_green_mite_management_practices
+      - action: utter_cassava_green_mite_management_practices
+
