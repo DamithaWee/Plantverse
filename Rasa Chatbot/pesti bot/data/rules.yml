@@ -3,23 +3,29 @@ version: "3.1"
 rules:
   - rule: Respond to greet
     steps:
-      - intent: greet
-      - action: utter_greet
+    - intent: greet
+    - action: utter_greet
 
   - rule: Respond to thank you
     steps:
-      - intent: thank_you
-      - action: utter_thank_you
+    - intent: thank_you
+    - action: utter_thank_you
 
   - rule: Respond to goodbye
     steps:
-      - intent: goodbye
-      - action: utter_goodbye
+    - intent: goodbye
+    - action: utter_goodbye
 
   - rule: Respond to mood_great
     steps:
     - intent: mood_great
     - action: utter_happy
+
+  - rule: Respond to mood_unhappy
+    steps:
+    - intent: mood_unhappy
+    - action: utter_cheer_up
+    - action: utter_did_that_help
 
   - rule: Handle affirm
     steps:

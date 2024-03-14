@@ -3,11 +3,12 @@ version: '3.1'
 intents:
   - greet
   - thank_you
-  - goodbye
   - mood_great
+  - mood_unhappy
   - affirm
-  - bot_challenge
   - deny
+  - goodbye
+  - bot_challenge
   - explain_crop_rotation
   - crop_rotation_importance
   - farming_practices_soil_erosion
@@ -459,11 +460,9 @@ entities:
   - practice
   - disease
   - crops
-  - plant
   - pests
   - health
   - erosion
-  - healht
   - location
   - CBB
   - fertilizers
@@ -471,36 +470,34 @@ entities:
   - phenomenon
   - CAN
   - tools
-  - threshing
   - foods
   - water
   - agriculture
   - environment
   - technology
   - soil
-  - pest control
   - technique
-  - tool
   - name
-  - common species
-  - CMD
   - tillage
   - Water
   - Cuttings
   - seeds
-  - field pests
 
 responses:
   utter_greet:
-    - text: Hello! How can I help you today?
+    - text: "Hello! How can I assist you today?"
   utter_thank_you:
-    - text: You're welcome!
-  utter_goodbye:
-    - text: Goodbye! Have a great day!
+    - text: "You're welcome! If you have any more questions, feel free to ask."
   utter_happy:
-    - text: I'm glad to hear that you're feeling amazing!
+    - text: "I'm glad to hear that you're feeling amazing!"
+  utter_cheer_up:
+    - text: "I'm sorry to hear that you're not feeling good. Here's a little pick-me-up for you: Every day may not be good, but there is something good in every day."
+  utter_did_that_help:
+    - text: "Did that help cheer you up?"
+  utter_goodbye:
+    - text: "Goodbye! Take care."
   utter_iamabot:
-    - text: Yes, I am a bot. But I'm here to assist you!
+    - text: "Yes, I am a bot. But I'm here to assist you!"
   utter_explain_crop_rotation:
     - text: "Crop rotation is the practice of growing a series of different crops in the same area over several seasons."
   utter_crop_rotation_importance:
@@ -1399,164 +1396,163 @@ session_config:
   carry_over_slots_to_new_session: true
 
 practice:
-  - agriculture
-  - Cultural Control
-  - deforestation
-  - Biological Control
-  - biological control
-  - government interventions
-  - pest control management
-  - harvesting
-  - biological pest control
-  - Integrated Pest Management
-  - agricultural systems
-  - plant disease control
-  - Chemical Control
-  - cultural pest control
-  - biological control measures
-  - cultural practices
-  - thresh
-  - pest management
-  - pest control practices
-  - Physical Control
-  - Pest Management
-  - soil management activities
-  - fumigation
-  - control plant diseases
   - mechanical planting
-  - soil management
-  - mechanical pest control
-  - soil science and management
-  - crop maintenance
-  - fertilization
-  - organic farming
-  - crop cultivation
-  - crop rotation
+  - pest control management
+  - Cultural Control
+  - pest control practices
   - mark rows
   - seed drying
-  - drying seeds
+  - crop cultivation
+  - pest control
+  - fertilization
+  - pest management
+  - mechanical pest control
   - maize farming
+  - thresh
   - precision agriculture
-  - soil compaction
+  - drying seeds
+  - Integrated Pest Management
+  - threshing
+  - agricultural systems
+  - Physical Control
+  - harvesting
+  - Pest Management
+  - cultural practices
+  - biological control
   - crop protection
+  - cultural pest control
+  - biological pest control
+  - biological control measures
+  - soil science and management
+  - fumigation
+  - soil compaction
+  - Biological Control
+  - government interventions
+  - organic farming
+  - Chemical Control
+  - soil management
+  - plant disease control
+  - deforestation
+  - crop rotation
+  - crop maintenance
+  - control plant diseases
+  - soil management activities
+  - agriculture
 
 disease:
-  - CMD
-  - root rot disease
-  - bacterial blight
-  - maize streak disease
-  - red rust
-  - leaf blight
-  - leaf mold
-  - gummosis
-  - Common rust
-  - leaf smut
-  - Verticillium wilt
-  - Yellow Leaf Curl Virus
+  - brown spot
   - Maize chlorotic mottle virus
   - Maize streak virus
-  - Cassava Bacterial Blight
-  - CBB
-  - brown spot
-  - cassava mosaic
-  - plant diseases
-  - Cassava Anthracnose Disease
   - Gray leaf spot
-  - Septoria leaf spot
-  - Northern corn leaf blight
+  - CMD
+  - leaf blight
+  - Cassava Anthracnose Disease
   - cassava mosaic disease
+  - bacterial blight
+  - leaf smut
+  - CBB
+  - root rot disease
+  - Common rust
+  - plant diseases
+  - leaf mold
+  - cassava mosaic
+  - Verticillium wilt
+  - Cassava Mosaic Disease
+  - gummosis
+  - Cassava Bacterial Blight
+  - Septoria leaf spot
+  - Yellow Leaf Curl Virus
   - Cassava Brown Streak Disease
   - CBSD
+  - maize streak disease
+  - Northern corn leaf blight
+  - red rust
 
 crops:
-  - maize
-  - wheat
+  - cassava
+  - crops
   - tomato plants
   - maize crops
-  - crops
-  - corn
-  - cassava
+  - plants
+  - wheat
+  - potato
+  - maize plants
   - citrus
   - soybean
-  - potato
+  - corn
   - tomatoes
-  - space [maize
-
-plant:
-  - maize plants
-  - plants
+  - maize
 
 pests:
-  - green mite
-  - mealybug
-  - fall armyworm
-  - whiteflies
-  - leaf beetles
-  - caterpillar pests
-  - armyworms
-  - grasshoppers
-  - Cassava green mite
-  - cassava mealybugs
-  - Hispa
-  - spider mites
-  - termites
-  - leafhopper
-  - armyworm
-  - pest
-  - leaf miners
   - cassava mealybug
-  - leafhoppers
-  - pests
+  - armyworm
+  - Cassava green mite
+  - pest
   - spider mite
+  - caterpillar pests
+  - leafhoppers
+  - fall armyworm
+  - armyworms
+  - mealybug
+  - leaf miners
+  - field pests
+  - Hispa
+  - leaf beetles
+  - spider mites
+  - pests
+  - cassava mealybugs
+  - whiteflies
+  - green mite
+  - leafhopper
+  - termites
+  - grasshoppers
 
 health:
-  - pesticides
-  - monoculture
-  - soil science
-  - soil PH
-  - soil acidity
-  - soil organism
-  - soil
-  - nitrogen-fixing bacteria
-  - environment
-  - soil organisms
-  - soil living organisms
   - nutrient depletion
-  - soil health
+  - soil organisms
+  - monoculture
+  - pesticides
   - environmental condition
+  - soil science
+  - soil microorganisms
+  - soil health
+  - soil acidity
+  - soil living organisms
+  - environment
+  - soil PH
+  - nitrogen-fixing bacteria
+  - soil
+  - soil organism
   - nutrition
   - poor soil health
 
 erosion:
   - erosion
 
-healht:
-  - soil microorganisms
-
 location:
-  - Africa
   - Uganda
+  - Africa
 
 CBB:
   - Cassava Bacterial Blight (CBB)
 
 fertilizers:
-  - phosphorus fertilizers
-  - chemical
-  - potassium fertilizers
-  - microbial fertilizers
   - slow-release fertilizers
-  - Synthetic fertilizers
-  - complete fertilizers
   - synthetic fertilizers
+  - Synthetic fertilizers
   - fertilizers
+  - liquid fertilizers
+  - chemical
+  - phosphorus fertilizers
+  - microbial fertilizers
+  - potassium fertilizers
   - organic fertilizers
   - nitrogen fertilizers
-  - liquid fertilizers
+  - complete fertilizers
 
 climate:
-  - climate change
   - dry season
+  - climate change
 
 phenomenon:
   - temperature
@@ -1565,27 +1561,24 @@ CAN:
   - maize
 
 tools:
-  - test kit
-  - wind mill
+  - windmills
   - implements
   - seed drill
-  - wind mills
+  - farm tool
   - combine harvesters
-  - tool
+  - wind mill
+  - wind mills
+  - test kit
   - tools
   - combine harvester
-  - farm tool
-  - windmills
-
-threshing:
-  - threshing
+  - tool
 
 foods:
-  - vegetables
-  - broccoli
   - grain seeds
   - maize grains
   - frozen vegetables
+  - broccoli
+  - vegetables
 
 water:
   - water
@@ -1600,38 +1593,26 @@ technology:
   - technology
 
 soil:
-  - irrigation
-  - soil
-  - tillage
   - rocky soils
-
-pest control:
-  - pest control
+  - tillage
+  - soil
+  - irrigation
 
 technique:
   - spaced
+  - overgrazing
   - planting technique
   - planting method
   - spacing pattern
-  - overgrazing
-
-tool:
-  - tool
 
 name:
   - botanical name
   - family
-  - virus family
   - taxonomy
+  - virus family
   - scientific name
-  - family classification
   - binomial nomenclature
-
-common species:
-  - common species
-
-CMD:
-  - Cassava Mosaic Disease (CMD)
+  - family classification
 
 tillage:
   - intensive tillage
@@ -1644,7 +1625,3 @@ Cuttings:
 
 seeds:
   - seeds
-
-field pests:
-  - field pests
-

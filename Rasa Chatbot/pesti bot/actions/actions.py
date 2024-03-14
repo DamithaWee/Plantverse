@@ -12,5 +12,5 @@ class ActionFallback(Action):
             domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
             last_user_message = tracker.get_last_event_for("user")
             if last_user_message:
-                dispatcher.utter_message("I'm sorry, I didn't understand. Can you please rephrase your message?")
+                dispatcher.utter_message("I'm sorry, I didn't understand. Can you please rephrase your question?")
                 return [UserUtteranceReverted()]
