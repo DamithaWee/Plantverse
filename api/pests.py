@@ -21,7 +21,7 @@ async def ping():
 # Define a function to read a file as an image
 def read_file_as_image(data) -> np.ndarray:
     image = np.array(Image.open(BytesIO(data)))
-    return image
+    return image #123
 
 # Define a route for making predictions using a file upload
 @app.post("/predict")
