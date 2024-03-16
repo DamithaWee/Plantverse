@@ -1,71 +1,33 @@
 [
   {
-    "text": "What are some of biological properties of soil that soil scientists study?",
+    "text": "How is mechanical planting different from manual planting?",
     "entities": [
       {
-        "start": 42,
-        "end": 46,
-        "value": "soil",
-        "entity": "soil"
+        "start": 7,
+        "end": 26,
+        "value": "mechanical planting",
+        "entity": "practice"
       }
     ],
     "predicted_entities": [
       {
-        "entity": "soil",
-        "start": 42,
-        "end": 46,
-        "confidence_entity": 0.980138897895813,
-        "value": "soil",
+        "entity": "practice",
+        "start": 7,
+        "end": 26,
+        "confidence_entity": 0.9986347556114197,
+        "value": "mechanical planting",
         "extractor": "DIETClassifier",
         "processors": [
           "EntitySynonymMapper"
         ]
       },
       {
-        "entity": "soil",
-        "start": 52,
-        "end": 56,
-        "confidence_entity": 0.7507049441337585,
-        "value": "soil",
-        "extractor": "DIETClassifier",
-        "processors": [
-          "EntitySynonymMapper"
-        ]
-      }
-    ]
-  },
-  {
-    "text": "Which fertilizers are considered potassium fertilizers?",
-    "entities": [
-      {
-        "start": 33,
-        "end": 54,
-        "value": "potassium fertilizers",
-        "entity": "fertilizers"
-      }
-    ],
-    "predicted_entities": [
-      {
-        "entity": "fertilizers",
-        "start": 6,
-        "end": 17,
-        "confidence_entity": 0.846891462802887,
-        "value": "fertilizers",
-        "extractor": "DIETClassifier",
-        "processors": [
-          "EntitySynonymMapper"
-        ]
-      },
-      {
-        "entity": "fertilizers",
-        "start": 33,
-        "end": 54,
-        "confidence_entity": 0.9996565580368042,
-        "value": "potassium fertilizers",
-        "extractor": "DIETClassifier",
-        "processors": [
-          "EntitySynonymMapper"
-        ]
+        "entity": "practice",
+        "start": 49,
+        "end": 57,
+        "confidence_entity": 0.593453049659729,
+        "value": "planting",
+        "extractor": "DIETClassifier"
       }
     ]
   }
