@@ -1,20 +1,14 @@
 version: '3.1'
 
 intents:
-  - greet
   - thank_you
-  - mood_great
-  - mood_unhappy
-  - affirm
-  - deny
   - goodbye
-  - bot_challenge
+  - greet
   - explain_crop_rotation
   - crop_rotation_importance
   - farming_practices_soil_erosion
   - ylcv_primary_vector
   - ylcv_symptoms
-  - ylcv_impact
   - ylcv_preventive_measures
   - ylcv_treatment
   - leaf_blight_affected_plants
@@ -51,7 +45,6 @@ intents:
   - gummosis_common_causes
   - gummosis_symptoms
   - gummosis_management_prevention
-  - gummosis_symptoms_in_citrus_trees
   - gummosis_effect_on_fruit_production
   - gummosis_chemical_treatment
   - red_rust_fungal_pathogen
@@ -74,7 +67,6 @@ intents:
   - brown_spot_fungicides
   - brown_spot_monitoring
   - brown_spot_genetic_resistance
-  - maize_streak_primary_vector
   - maize_streak_affected_crop
   - maize_streak_symptoms
   - maize_streak_family_genus
@@ -107,7 +99,6 @@ intents:
   - leaf_miners_chemical_insecticides
   - leaf_miners_preventive_measures
   - grasshoppers_type
-  - grasshoppers_feeding
   - grasshoppers_damage
   - grasshoppers_active_conditions
   - grasshoppers_signs_infestation
@@ -164,11 +155,9 @@ intents:
   - cbb_management
   - cbb_resistant_varieties
   - cbb_economic_impacts
-  - cbb_importance_of_control
   - sustainable_approaches_to_management
   - diseases_spread_by_whiteflies
   - organic_fertilizers_definition
-  - fertilizers_definition
   - fertilizers_purpose
   - chemical_fertilizers_type
   - pest_management_definition
@@ -200,13 +189,11 @@ intents:
   - moisture_content_storage
   - increase_potato_yield
   - control_fungal_diseases_tomato_plants
-  - prevent_soil_erosion_farm
   - corn_harvest_ready
   - corn_maturity_check
   - common_maize_pests
   - ideal_maize_planting_density
   - maize_importance
-  - ideal_conditions_maize
   - maize_planting
   - maize_spacing
   - facilitate_seedling_growth
@@ -217,7 +204,6 @@ intents:
   - maize_storage_after_harvesting
   - ideal_storage_conditions_maize
   - fall_armyworm_concern
-  - fall_armyworm_detection
   - armyworm_susceptible_crops
   - armyworm_crop_losses
   - armyworm_spread_challenge
@@ -229,7 +215,6 @@ intents:
   - maize_fertilizers
   - CAN_application_maize
   - cassava_tests_common
-  - cassava_virus_testing_importance
   - cassava_virus_testing_methods
   - cassava_virus_testing_symptoms
   - cassava_virus_testing_access
@@ -249,7 +234,6 @@ intents:
   - factors_affecting_crop_response_to_fertilizers
   - causes_of_cassava_mosaic_disease
   - control_of_cassava_mosaic_disease
-  - spread_of_cassava_mosaic_disease
   - benefits_of_combine_harvester
   - harvesting_before_machinery
   - tool_for_threshing_wheat
@@ -266,7 +250,6 @@ intents:
   - farmers_waste_water
   - consumptive_water_use
   - farmers_conserve_water
-  - role_of_agriculture
   - importance_of_agriculture
   - necessity_of_agriculture
   - nutrition_comparison_frozen_vs_fresh_vegetables
@@ -284,12 +267,10 @@ intents:
   - fertilization_definition
   - types_fertilizers
   - irrigation_areas
-  - reasons_practice_irrigation
   - tillage_definition
   - negative_impacts_excessive_tillage
   - benefits_tillage_balanced
   - crop_rotation_definition
-  - importance_crop_rotation
   - final_stage_crop_cultivation
   - definition_harvesting
   - crop_maintenance_activities
@@ -324,16 +305,11 @@ intents:
   - most_common_species_of_armyworms
   - effects_of_armyworm_infestation
   - first_stage_of_managing_armyworms
-  - ways_of_managing_armyworms
   - natural_predators_used_to_control_armyworms
   - pest_management_practices_for_armyworms
   - cmd_effect_severe_condition
-  - cmd_spread_method
-  - cmd_definition
   - cmd_effect
   - cmd_control_crop_rotation
-  - cmd_control_resistant_varieties
-  - cbb_cause
   - cbb_spread_method
   - cbb_sanitation_control
   - cbb_fungicides
@@ -367,7 +343,6 @@ intents:
   - slow_release_fertilizers_usage
   - microbial_fertilizers_microorganisms
   - maize_chlorotic_mottle_virus_effect
-  - maize_streak_virus_transmission
   - northern_corn_leaf_blight_characteristics
   - gray_leaf_spot_preferred_conditions
   - common_rust_characteristics
@@ -407,7 +382,6 @@ intents:
   - vitamin_retention_boiling
   - rainfall_sunshine_requirements
   - rainfall_requirement_maturation_stage
-  - rainfall_requirement_late_vegetative_stage
   - test_soil_ph_with_kit
   - determine_soil_acidity
   - maize_growing_conditions
@@ -446,7 +420,6 @@ intents:
   - maize_streak_seed_affect
   - field_pest_control
   - maize_growing_in_rocky_soils
-  - cassava_mosaic_transmission
   - cassava_mosaic_virus_family
   - cassava_mosaic_preventive_measures
   - factors_for_planting_timing
@@ -485,19 +458,11 @@ entities:
 
 responses:
   utter_greet:
-    - text: "Hello! How can I assist you today?"
+    - text: Hello! How can I help you today?
   utter_thank_you:
-    - text: "You're welcome! If you have any more questions, feel free to ask."
-  utter_happy:
-    - text: "I'm glad to hear that you're feeling amazing!"
-  utter_cheer_up:
-    - text: "I'm sorry to hear that you're not feeling good. Here's a little pick-me-up for you: Every day may not be good, but there is something good in every day."
-  utter_did_that_help:
-    - text: "Did that help cheer you up?"
+    - text: You're welcome!
   utter_goodbye:
-    - text: "Goodbye! Take care."
-  utter_iamabot:
-    - text: "Yes, I am a bot. But I'm here to assist you!"
+    - text: Goodbye! Have a great day!
   utter_explain_crop_rotation:
     - text: "Crop rotation is the practice of growing a series of different crops in the same area over several seasons."
   utter_crop_rotation_importance:
@@ -508,8 +473,6 @@ responses:
     - text: "The whitefly Bemisia tabaci is the primary vector responsible for transmitting Yellow Leaf Curl Virus."
   utter_ylcv_symptoms:
     - text: "Tomato plants infected with [Yellow Leaf Curl Virus](disease) exhibit symptoms such as yellowing and curling of leaves, stunted growth, and reduced fruit yield."
-  utter_ylcv_impact:
-    - text: "[Yellow Leaf Curl Virus](disease) can cause significant damage to tomato crops, leading to reduced yields."
   utter_ylcv_preventive_measures:
     - text: "Farmers can reduce the spread of [Yellow Leaf Curl Virus](disease) by using reflective mulches, planting resistant varieties, and employing biological control agents against whiteflies."
   utter_ylcv_treatment:
@@ -582,8 +545,6 @@ responses:
     - text: "Gummosis manifests as the exudation of gum or resin from wounds or lesions on the bark or branches of affected trees. In severe cases, it may lead to cankers or dieback of branches."
   utter_gummosis_management_prevention:
     - text: "Gummosis can be managed or prevented by practicing proper cultural practices, such as avoiding mechanical injuries, maintaining tree health through proper irrigation and fertilization, and promptly treating fungal or bacterial infections."
-  utter_gummosis_symptoms_in_citrus_trees:
-    - text: "Symptoms of gummosis in citrus trees include the exudation of gum from bark lesions, which may lead to the formation of cankers and dieback of branches."
   utter_gummosis_effect_on_fruit_production:
     - text: "Yes, severe cases of gummosis can lead to reduced fruit production or quality in affected fruit trees."
   utter_gummosis_chemical_treatment:
@@ -628,8 +589,6 @@ responses:
     - text: "Farmers can monitor for [brown spot](disease) by regularly scouting their fields for characteristic symptoms and signs of the disease."
   utter_brown_spot_genetic_resistance:
     - text: "Yes, several soybean varieties with genetic resistance to [brown spot](disease) are available, which can help reduce the severity of the disease."
-  utter_maize_streak_primary_vector:
-    - text: "The leafhopper insect is the primary vector responsible for transmitting [Maize streak virus](disease)."
   utter_maize_streak_affected_crop:
     - text: "Maize (corn) crops are primarily affected by [Maize streak virus](disease)."
   utter_maize_streak_symptoms:
@@ -694,8 +653,6 @@ responses:
     - text: "Preventive measures include practicing crop rotation, maintaining good garden hygiene, and selecting resistant plant varieties. Additionally, covering vulnerable plants with floating row covers can help prevent adult leaf miner flies from laying eggs."
   utter_grasshoppers_type:
     - text: "Grasshoppers are herbivorous insects belonging to the suborder Caelifera."
-  utter_grasshoppers_feeding:
-    - text: "Grasshoppers feed on a wide variety of crops, grasses, and other vegetation."
   utter_grasshoppers_damage:
     - text: "Grasshoppers cause damage to crops by consuming foliage, stems, and fruits."
   utter_grasshoppers_active_conditions:
@@ -793,9 +750,9 @@ responses:
   utter_major_source_food_africa:
     - text: "Cassava"
   utter_major_cassava_disease:
-    - text: "Cassava Mosaic Disease (CMD)"
+    - text: "Cassava Mosaic Disease CMD"
   utter_cbb_definition:
-    - text: "Cassava Bacterial Blight (CBB) is a disease caused by a bacterium that affects the leaves, stems, and roots of the cassava plant."
+    - text: "Cassava Bacterial Blight is a disease caused by a bacterium that affects the leaves, stems, and roots of the cassava plant."
   utter_cbb_symptoms:
     - text: "Signs and symptoms of CBB disease include wilting, yellowing of the leaves, and rotting of the stems and roots."
   utter_cbb_effects_on_cassava:
@@ -808,16 +765,12 @@ responses:
     - text: "Yes, some cassava varieties have shown resistance to CBB, and breeding efforts continue to develop more resistant varieties."
   utter_cbb_economic_impacts:
     - text: "CBB can cause significant economic losses for cassava farmers due to reduced yields, lower crop quality, and increased production costs associated with disease management."
-  utter_cbb_importance_of_control:
-    - text: "Controlling CBB is important for maintaining cassava production and food security, as cassava is a staple crop for millions of people in West Africa and other cassava-growing regions."
   utter_sustainable_approaches_to_management:
     - text: "Breeding disease-resistant varieties and using natural pest control methods."
   utter_diseases_spread_by_whiteflies:
     - text: "The whiteflies can spread viruses such as CMD and CBSD, which can cause significant losses for farmers."
   utter_organic_fertilizers_definition:
     - text: "Organic fertilizers, which are made from natural materials such as manure and compost."
-  utter_fertilizers_definition:
-    - text: "Fertilizers are substances that are added to soil to improve the growth and quality of crops."
   utter_fertilizers_purpose:
     - text: "To improve the growth and quality of crops."
   utter_chemical_fertilizers_type:
@@ -880,8 +833,6 @@ responses:
     - text: "Potato yield can be increased by taking steps to improve soil fertility, such as using organic matter and maintaining proper soil pH. Additionally, planting certified seed potatoes can help reduce disease and increase yield. It's also important to manage pests and diseases effectively, as they can cause significant damage to the crop."
   utter_control_fungal_diseases_tomato_plants:
     - text: "One effective strategy is to ensure good airflow around the plants by spacing them properly and pruning them as needed. Additionally, using a fungicide can help control fungal growth. It's also important to avoid overhead watering, which can promote the spread of disease by splashing spores from one plant to another."
-  utter_prevent_soil_erosion_farm:
-    - text: "Several strategies can be used to prevent soil erosion on farms, including planting cover crops, using conservation tillage practices, and building contour terraces. It's also important to avoid overgrazing and to maintain vegetation along streams and other waterways to prevent bank erosion."
   utter_corn_harvest_ready:
     - text: "Corn is typically ready to harvest when the kernels are firm and have reached their full size, and the ears have a mature appearance."
   utter_corn_maturity_check:
@@ -892,8 +843,6 @@ responses:
     - text: "The ideal planting density for maize can vary depending on the specific climate and soil conditions. In general, a planting density of around 70,000 to 80,000 plants per hectare is recommended for optimal yield. However, the ideal density may vary depending on factors such as the variety of maize being planted and the availability of water and nutrients."
   utter_maize_importance:
     - text: "Maize, also known as corn, is one of the most widely cultivated crops in the world, and is a staple food in many regions."
-  utter_ideal_conditions_maize:
-    - text: "Maize requires well-draining soils with a pH level between 5.5 and 7.5. The site should also receive full sunlight to promote optimal growth."
   utter_maize_planting:
     - text: "The maize seeds are planted either by hand or machine, depending on the scale of the operation."
   utter_maize_spacing:
@@ -914,8 +863,6 @@ responses:
     - text: "Temperatures between 10-15°C."
   utter_fall_armyworm_concern:
     - text: "The fall armyworm, in particular, is a major concern for farmers as it is highly invasive, can reproduce quickly, and can cause significant crop losses."
-  utter_fall_armyworm_detection:
-    - text: "2016"
   utter_armyworm_susceptible_crops:
     - text: "maize, sorghum, millet, and rice"
   utter_armyworm_crop_losses:
@@ -938,8 +885,6 @@ responses:
     - text: "After 2-3 weeks or when the crop is about 45cm high"
   utter_cassava_tests_common:
     - text: "Some common tests conducted on cassava include testing for viruses, assessing starch content, measuring cyanide levels, evaluating nutritional content, and analyzing for pesticide residues."
-  utter_cassava_virus_testing_importance:
-    - text: "Testing for viruses in cassava is important to identify and manage viral diseases, which can cause significant yield losses and reduce crop quality. It helps in selecting disease-free planting material and implementing control measures to prevent further spread."
   utter_cassava_virus_testing_methods:
     - text: "Testing for viruses in cassava is often done through laboratory-based diagnostic methods such as enzyme-linked immunosorbent assay (ELISA), polymerase chain reaction (PCR), and serological tests. These techniques allow for the detection and identification of specific viruses infecting cassava plants."
   utter_cassava_virus_testing_symptoms:
@@ -975,11 +920,9 @@ responses:
   utter_factors_affecting_crop_response_to_fertilizers:
     - text: "Some of the most important factors affecting the response of crops to fertilizers include: soil type and properties (such as soil texture, organic matter content, pH, and nutrient status), crop type and stage of growth, environmental conditions (such as temperature, moisture, and sunlight), fertilizer type, application method, and timing."
   utter_causes_of_cassava_mosaic_disease:
-    - text: "Cassava mosaic disease (CMD) is caused by several species of single-stranded DNA viruses in the genus Begomovirus, family Geminiviridae."
+    - text: "Cassava mosaic disease CMD is caused by several species of single-stranded DNA viruses in the genus Begomovirus, family Geminiviridae."
   utter_control_of_cassava_mosaic_disease:
     - text: "Control measures for Cassava mosaic disease include planting disease-resistant varieties, using virus-free planting materials, and maintaining good field sanitation, as well as chemical control measures."
-  utter_spread_of_cassava_mosaic_disease:
-    - text: "Cassava mosaic disease can spread through whitefly infestations."
   utter_benefits_of_combine_harvester:
     - text: "The combine harvester saves the farmers time and labor."
   utter_harvesting_before_machinery:
@@ -1012,8 +955,6 @@ responses:
     - text: "Consumptive water use is the term that describes water used and not returned to the original source."
   utter_farmers_conserve_water:
     - text: "Farmers are focused on conserving water for several reasons: 1) They know water wasted could mean a lack of the resource for future crops. 2) Water is expensive, and water wasted means money lost. 3) Farmers use precise technology to determine how much water a plant needs to grow, as too much water could lead to poor production. 4) Many farmers rely on Mother Nature for water."
-  utter_role_of_agriculture:
-    - text: "Agriculture plays an important role in feeding the growing population."
   utter_importance_of_agriculture:
     - text: "It creates jobs, helps our economy and provides our basic necessities."
   utter_necessity_of_agriculture:
@@ -1048,8 +989,6 @@ responses:
     - text: "organic and inorganic fertilizers"
   utter_irrigation_areas:
     - text: "areas with low rainfall or unreliable water sources."
-  utter_reasons_practice_irrigation:
-    - text: "to conserve water while ensuring that crops receive the necessary moisture for healthy growth."
   utter_tillage_definition:
     - text: "the process of preparing the soil for planting by breaking up the soil and creating a suitable seedbed"
   utter_negative_impacts_excessive_tillage:
@@ -1058,8 +997,6 @@ responses:
     - text: "excessive tillage can lead to soil erosion and nutrient loss"
   utter_crop_rotation_definition:
     - text: "a technique used in soil management to reduce soil-borne diseases and pests and improve soil fertility"
-  utter_importance_crop_rotation:
-    - text: "help to maintain soil health and improve crop yields over time"
   utter_final_stage_crop_cultivation:
     - text: "Harvesting"
   utter_definition_harvesting:
@@ -1128,26 +1065,16 @@ responses:
     - text: "Significant defoliation and reducing the plant's ability to produce healthy tubers."
   utter_first_stage_of_managing_armyworms:
     - text: "Regularly monitor the crop for signs of infestation, such as chewed leaves and the presence of armyworms."
-  utter_ways_of_managing_armyworms:
-    - text: "Use of insecticides, such as pyrethroids or neem oil, applied directly to the cassava plant or to the soil."
   utter_natural_predators_used_to_control_armyworms:
     - text: "Birds and parasitic wasps."
   utter_pest_management_practices_for_armyworms:
     - text: "Planting cassava in well-drained soil, maintaining a healthy crop by providing adequate water and nutrients, and rotating crops to reduce armyworm populations."
   utter_cmd_effect_severe_condition:
     - text: "Yield losses of up to 100%."
-  utter_cmd_spread_method:
-    - text: "Whitefly."
-  utter_cmd_definition:
-    - text: "It is a viral disease that is caused by different strains of the cassava mosaic virus."
   utter_cmd_effect:
     - text: "The disease affects the leaves of cassava plants, causing yellowing and mottling, as well as stunted growth and reduced yield."
   utter_cmd_control_crop_rotation:
     - text: "Planting cassava in the same field year after year can increase the risk of CMD. Crop rotation can help to break the cycle of disease and reduce the risk of infection."
-  utter_cmd_control_resistant_varieties:
-    - text: "Planting resistant varieties: Some cassava varieties have been developed that are resistant to CMD. These varieties should be used whenever possible to reduce the risk of disease."
-  utter_cbb_cause:
-    - text: "It is caused by the bacterium Xanthomonas axonopodis pv. manihotis."
   utter_cbb_spread_method:
     - text: "CBB is spread through infected planting material, contaminated soil, and water."
   utter_cbb_sanitation_control:
@@ -1214,8 +1141,6 @@ responses:
     - text: "Bacteria and fungi."
   utter_maize_chlorotic_mottle_virus_effect:
     - text: "This viral disease causes yellowing of the leaves, as well as stunting and reduced yields. The virus is transmitted by insects, particularly thrips, and can be difficult to control."
-  utter_maize_streak_virus_transmission:
-    - text: "Another viral disease that causes yellowing of the leaves, as well as streaking and distortion."
   utter_northern_corn_leaf_blight_characteristics:
     - text: "Yellowing and browning of the leaves, with characteristic cigar-shaped lesions."
   utter_gray_leaf_spot_preferred_conditions:
@@ -1281,7 +1206,7 @@ responses:
   utter_transmission_method:
     - text: "Maize streak disease is transmitted by an insect vector called the maize streak virus vector or leafhopper."
   utter_transmission_process:
-    - text: "1. Infection of the maize plant: The virus is initially introduced into the maize plant through a bite by the maize streak virus vector or leafhopper insect, which feeds on the sap of the plant.2. Replication and spread: Once the virus has infected the plant, it replicates and spreads within the plant, causing damage to the leaves, stem, and grains of the plant.3. Transmission to new plants: The virus can be transmitted to new plants when an infected leafhopper feeds on a healthy plant. The virus can also be spread through infected seeds or plant debris.4. Environmental factors: Environmental factors such as temperature, rainfall, and the presence of other pests and diseases can affect the severity and spread of MSD."
+    - text: "1. Infection of the maize plant: The virus is initially introduced into the maize plant through a bite by the maize streak virus vector or 'leafhopper' insect, which feeds on the sap of the plant.2. Replication and spread: Once the virus has infected the plant, it replicates and spreads within the plant, causing damage to the leaves, stem, and grains of the plant.3. Transmission to new plants: The virus can be transmitted to new plants when an infected leafhopper feeds on a healthy plant. The virus can also be spread through infected seeds or plant debris.4. Environmental factors: Environmental factors such as temperature, rainfall, and the presence of other pests and diseases can affect the severity and spread of MSD."
   utter_boiling_duration:
     - text: "Maize grains can be boiled until they are tender, which usually takes around 30 to 45 minutes, depending on the variety and maturity of the maize. However, the length of time that maize grains should be boiled for optimal nutrient retention can vary depending on the specific nutrient in question."
   utter_protein_retention_boiling:
@@ -1294,8 +1219,6 @@ responses:
     - text: "Cassava needs a good amount of rainfall during its early vegetative stage, which is the first 3 to 4 months after planting. During this time, cassava requires about 500 to 1000 mm of rainfall. Adequate rainfall during this stage is crucial for good root development."
   utter_rainfall_requirement_maturation_stage:
     - text: "Maturation stage"
-  utter_rainfall_requirement_late_vegetative_stage:
-    - text: "About 750 to 1000 mm of rainfall."
   utter_test_soil_ph_with_kit:
     - text: "To use the kit, farmers can collect a soil sample from their field or garden, mix it with distilled water, and then add a few drops of the pH indicator solution. The color of the solution will then be compared to the chart, which indicates the pH level of the soil. A pH level of 7 is considered neutral, while levels below 7 indicate acidic soil and levels above 7 indicate alkaline soil."
   utter_determine_soil_acidity:
@@ -1307,7 +1230,7 @@ responses:
   utter_soil_for_maize_production:
     - text: "Maize requires well-drained soils with a good supply of nutrients and moisture. It cannot withstand even a slight degree of waterlogging and therefore can be killed if stands in water for a day. Preferred soil for maize production should also be deep, well-aerated with moderate pH 5.5-6.5, and rich in organic matter."
   utter_resistant_seeds_types:
-    - text: "Hybrid seeds: Hybrid seeds are produced by cross-breeding two or more distinct plant varieties to create a new variety with desirable traits, such as disease and pest resistance. Genetically modified (GM) seeds: GM seeds have been genetically altered to express certain traits, such as resistance to specific pests or diseases. For example, Bt (Bacillus thuringiensis) maize has been genetically modified to produce a protein toxic to certain insect pests. Heirloom or heritage seeds: Heirloom or heritage seeds are non-hybrid seeds that have been passed down from generation to generation, often for centuries. These seeds have developed natural resistance to local pests and diseases over time. Open-pollinated seeds: Open-pollinated seeds are non-hybrid seeds that have been pollinated by natural means, such as wind or insects. These seeds can be genetically diverse and may exhibit natural resistance to pests and diseases."
+    - text: "Hybrid seeds: Hybrid seeds are produced by cross-breeding two or more distinct plant varieties to create a new variety with desirable traits, such as disease and pest resistance.Genetically modified (GM) seeds: GM seeds have been genetically altered to express certain traits, such as resistance to specific pests or diseases. For example, Bt (Bacillus thuringiensis) maize has been genetically modified to produce a protein toxic to certain insect pests.Heirloom or heritage seeds: Heirloom or heritage seeds are non-hybrid seeds that have been passed down from generation to generation, often for centuries. These seeds have developed natural resistance to local pests and diseases over time.Open-pollinated seeds: Open-pollinated seeds are non-hybrid seeds that have been pollinated by natural means, such as wind or insects. These seeds can be genetically diverse and may exhibit natural resistance to pests and diseases."
   utter_critical_role_nutrient_cycling:
     - text: "Bacteria and fungi"
   utter_use_of_living_organisms_in_soil:
@@ -1333,11 +1256,11 @@ responses:
   utter_reason_replace_old_seeds:
     - text: "using old seeds can result in poor germination rates, uneven plant growth, and reduced resistance to environmental stressors such as drought, pests, and diseases."
   utter_symptoms_maize_streak_disease:
-    - text: "Stunted growth: Infected plants often show stunted or reduced growth compared to healthy plants. The overall size of the plant is smaller, and it may fail to reach its normal height. Yellowing or chlorosis: The leaves of infected plants exhibit yellowing or chlorosis. The chlorotic areas appear as irregular streaks or patches along the veins of the leaves. The yellowing may progress to the entire leaf, leading to leaf necrosis. Leaf curling: Infected plants may exhibit curling or rolling of the leaves. The leaves may curl upwards or downwards, giving a distorted appearance. Narrowing of leaves: The leaves of infected plants may become narrower and more erect than healthy leaves. This symptom is known as leaf strapiness."
+    - text: "Stunted growth: Infected plants often show stunted or reduced growth compared to healthy plants. The overall size of the plant is smaller, and it may fail to reach its normal height.Yellowing or chlorosis: The leaves of infected plants exhibit yellowing or chlorosis. The chlorotic areas appear as irregular streaks or patches along the veins of the leaves. The yellowing may progress to the entire leaf, leading to leaf necrosis.Leaf curling: Infected plants may exhibit curling or rolling of the leaves. The leaves may curl upwards or downwards, giving a distorted appearance.Narrowing of leaves: The leaves of infected plants may become narrower and more erect than healthy leaves. This symptom is known as leaf strapiness."
   utter_mitigate_leaf_shedding_cassava_during_dry_season:
-    - text: "Irrigation: Providing supplemental irrigation to [cassava](crops) plants during dry periods can help alleviate water stress and maintain adequate soil moisture levels. Mulching: Applying organic mulch around the [cassava](crops) plants can help conserve soil moisture, regulate soil temperature, and reduce water evaporation from the soil surface. Fertilization: Ensuring optimal nutrient levels through balanced fertilization can help maintain the health and vigor of [cassava](crops) plants, reducing the risk of nutrient deficiencies and associated leaf shedding. Pest and disease management: Implementing appropriate pest and disease control measures, such as regular scouting and timely application of recommended treatments, can help minimize leaf damage and subsequent leaf shedding."
+    - text: "Irrigation: Providing supplemental irrigation to [cassava](crops) plants during dry periods can help alleviate water stress and maintain adequate soil moisture levels.Mulching: Applying organic mulch around the [cassava](crops) plants can help conserve soil moisture, regulate soil temperature, and reduce water evaporation from the soil surface.Fertilization: Ensuring optimal nutrient levels through balanced fertilization can help maintain the health and vigor of [cassava](crops) plants, reducing the risk of nutrient deficiencies and associated leaf shedding.Pest and disease management: Implementing appropriate pest and disease control measures, such as regular scouting and timely application of recommended treatments, can help minimize leaf damage and subsequent leaf shedding."
   utter_reasons_cassava_plants_shed_leaves_during_dry_season:
-    - text: "Water stress: [cassava](crops) plants have a deep root system that helps them access water from deeper soil layers. However, during prolonged dry periods, the availability of water may become limited, leading to water stress in the plants. As a survival mechanism, [cassava](crops) plants shed their leaves to reduce water loss through transpiration and conserve moisture. Nutrient deficiency: Inadequate nutrient availability, particularly nitrogen, can cause [cassava](crops) plants to shed their leaves. During the [dry season](climate), nutrient uptake by the plants may be hampered, leading to nutrient deficiencies and subsequent leaf drop. Pests and diseases: Dry conditions can increase the vulnerability of [cassava](crops) plants to pests and diseases. Insect infestations, such as cassava green mites or cassava mealybugs, and diseases like cassava mosaic disease or cassava bacterial blight, can cause leaf damage and subsequent leaf shedding. Natural plant response: In some cases, leaf shedding during the [dry season](climate) may be a natural response of [cassava](crops) plants to conserve energy and focus resources on survival. By shedding leaves, the plant can reduce its overall water and nutrient requirements and redirect resources to essential parts such as the stem and tuberous roots."
+    - text: "Water stress: [cassava](crops) plants have a deep root system that helps them access water from deeper soil layers. However, during prolonged dry periods, the availability of water may become limited, leading to water stress in the plants. As a survival mechanism, [cassava](crops) plants shed their leaves to reduce water loss through transpiration and conserve moisture.Nutrient deficiency: Inadequate nutrient availability, particularly nitrogen, can cause [cassava](crops) plants to shed their leaves. During the [dry season](climate), nutrient uptake by the plants may be hampered, leading to nutrient deficiencies and subsequent leaf drop.Pests and diseases: Dry conditions can increase the vulnerability of [cassava](crops) plants to pests and diseases. Insect infestations, such as cassava green mites or cassava mealybugs, and diseases like cassava mosaic disease or cassava bacterial blight, can cause leaf damage and subsequent leaf shedding.Natural plant response: In some cases, leaf shedding during the [dry season](climate) may be a natural response of [cassava](crops) plants to conserve energy and focus resources on survival. By shedding leaves, the plant can reduce its overall water and nutrient requirements and redirect resources to essential parts such as the stem and tuberous roots."
   utter_reason_cassava_poor_yield_wetlands:
     - text: "Cassava roots require well-drained soils with good aeration. In wetland areas, the soil is often waterlogged, which leads to poor oxygen availability in the root zone. Insufficient oxygen can inhibit root development and restrict nutrient uptake, resulting in stunted growth and reduced yields."
   utter_impact_nutrient_leaching_cassava_yield:
@@ -1349,7 +1272,7 @@ responses:
   utter_seed_drying_prevent_spoilage:
     - text: "Drying seeds effectively reduces the risk of spoilage during storage. Moisture provides a favorable environment for the growth of microorganisms, such as fungi and bacteria, which can attack and damage seeds. By reducing moisture content through drying, farmers can inhibit the growth of these organisms and minimize the risk of seed spoilage and loss."
   utter_manage_maize_streak_disease:
-    - text: "Planting resistant or tolerant maize varieties that have been developed through breeding programs Practicing good weed control, as certain weed species can serve as alternative hosts for the virus and leafhoppers Implementing integrated pest management strategies to control leafhopper populations, such as using insecticides or employing physical barriers Proper crop rotation and maintaining good agronomic practices to enhance plant health and reduce disease pressure Removing and destroying infected plants and plant debris to reduce the source of the virus It is essential for farmers to work closely with agricultural extension services and research institutions to access information on resistant varieties, disease management strategies, and early warning systems for maize streak disease in their specific region."
+    - text: "Planting resistant or tolerant maize varieties that have been developed through breeding programs.Practicing good weed control, as certain weed species can serve as alternative hosts for the virus and leafhoppers.Implementing integrated pest management strategies to control leafhopper populations, such as using insecticides or employing physical barriers.Proper crop rotation and maintaining good agronomic practices to enhance plant health and reduce disease pressure.Removing and destroying infected plants and plant debris to reduce the source of the virus.It is essential for farmers to work closely with agricultural extension services and research institutions to access information on resistant varieties, disease management strategies, and early warning systems for maize streak disease in their specific region."
   utter_contribution_environment_spread_maize_streak_disease:
     - text: "Maize streak disease tends to be more prevalent and severe in regions with warmer temperatures and high humidity. These conditions favor the growth and activity of both the virus and its leafhopper vectors."
   utter_leafhoppers_species_spread_maize_streak_disease:
@@ -1357,29 +1280,27 @@ responses:
   utter_transmit_cassava_mosaic:
     - text: "The disease is primarily spread by whiteflies (Bemisia tabaci) that act as vectors, transmitting the virus from infected plants to healthy plants."
   utter_control_cassava_mosaic:
-    - text: "Planting disease-resistant varieties when available Using healthy planting materials from certified sources Practicing good sanitation, such as removing and destroying infected plants and plant debris Implementing integrated pest management strategies to control whitefly populations, such as using insecticides or employing physical barriers Promoting crop diversification and intercropping to reduce the spread of the disease Conducting regular scouting and monitoring to detect early signs of the disease and take appropriate action It is important for farmers to collaborate with agricultural extension services and research institutions to access updated information, improved varieties, and appropriate management practices for cassava mosaic disease in their specific region."
+    - text: "Planting disease-resistant varieties when available.Using healthy planting materials from certified sources.Practicing good sanitation, such as removing and destroying infected plants and plant debris.Implementing integrated pest management strategies to control whitefly populations, such as using insecticides or employing physical barriers.Promoting crop diversification and intercropping to reduce the spread of the disease.Conducting regular scouting and monitoring to detect early signs of the disease and take appropriate action.It is important for farmers to collaborate with agricultural extension services and research institutions to access updated information, improved varieties, and appropriate management practices for cassava mosaic disease in their specific region."
   utter_factors_contribute_spread_CMD:
-    - text: "Viral infection: The disease is caused by the presence of begomoviruses, particularly African cassava mosaic virus (ACMV) and East African cassava mosaic virus (EACMV). These viruses infect cassava plants and cause characteristic symptoms. Vector transmission: Whiteflies feed on the sap of infected cassava plants, acquiring the virus. When they subsequently feed on healthy plants, they transmit the virus, leading to new infections. The whiteflies are efficient vectors and can quickly spread the disease within a cassava-growing area."
+    - text: "Viral infection: The disease is caused by the presence of begomoviruses, particularly African cassava mosaic virus (ACMV) and East African cassava mosaic virus (EACMV). These viruses infect cassava plants and cause characteristic symptoms.Vector transmission: Whiteflies feed on the sap of infected cassava plants, acquiring the virus. When they subsequently feed on healthy plants, they transmit the virus, leading to new infections. The whiteflies are efficient vectors and can quickly spread the disease within a cassava-growing area."
   utter_cassava_stem_size:
     - text: "between 25 to 30 centimeters in length"
   utter_moisture_test_maize:
-    - text: "Hand Feel: Take a handful of maize kernels and squeeze them tightly in your hand. If the kernels feel hard and dry, it indicates low moisture content. If they feel slightly pliable or soft, it suggests higher moisture content. Bite Test: Take a few kernels and try to bite into them. If they crack easily, it indicates lower moisture content. If they are chewy or squashy, it suggests higher moisture content. Visual Inspection: Examine the appearance of the kernels. If they appear shriveled, discolored, or have damaged husks, it could indicate lower moisture content. If the kernels appear plump, shiny, and well-hydrated, it suggests higher moisture content."
+    - text: "Hand Feel: Take a handful of maize kernels and squeeze them tightly in your hand. If the kernels feel hard and dry, it indicates low moisture content. If they feel slightly pliable or soft, it suggests higher moisture content.Bite Test: Take a few kernels and try to bite into them. If they crack easily, it indicates lower moisture content. If they are chewy or squashy, it suggests higher moisture content.Visual Inspection: Examine the appearance of the kernels. If they appear shriveled, discolored, or have damaged husks, it could indicate lower moisture content. If the kernels appear plump, shiny, and well-hydrated, it suggests higher moisture content."
   utter_pest_control_steps:
-    - text: "Identify the disease: Try to identify the specific disease affecting the cassava plants. Observe the symptoms, such as leaf discoloration, wilting, lesions, or any other unusual signs. You can consult local agricultural extension services, agricultural experts, or plant pathologists to help identify the disease accurately. Isolate and remove infected plants: If the disease is confirmed, promptly isolate and remove the infected plants from the field. This prevents further spread of the disease to healthy plants. Properly dispose of the infected plants by burning, burying, or removing them from the field. Sanitize tools and equipment: Clean and sanitize any tools, equipment, or machinery that have come into contact with the infected plants. This helps prevent the disease from spreading to other fields or areas. Implement cultural practices: Adopt cultural practices that can help manage or control the disease. These may include adjusting planting density, optimizing nutrition and irrigation practices, and practicing crop rotation. Some diseases may be controlled by removing alternate host plants or weeds that can serve as reservoirs for the pathogens. Seek expert advice: Consult local agricultural extension services, agricultural experts, or plant pathologists for specific recommendations on disease management strategies. They can provide guidance on appropriate fungicides or other control measures if necessary. Monitor and scout regularly: Continuously monitor the field to track the spread and severity of the disease. Regular scouting helps identify any new infections and allows for timely intervention."
+    - text: "Identify the disease: Try to identify the specific disease affecting the cassava plants. Observe the symptoms, such as leaf discoloration, wilting, lesions, or any other unusual signs. You can consult local agricultural extension services, agricultural experts, or plant pathologists to help identify the disease accurately.Isolate and remove infected plants: If the disease is confirmed, promptly isolate and remove the infected plants from the field. This prevents further spread of the disease to healthy plants. Properly dispose of the infected plants by burning, burying, or removing them from the field.Sanitize tools and equipment: Clean and sanitize any tools, equipment, or machinery that have come into contact with the infected plants. This helps prevent the disease from spreading to other fields or areas.Implement cultural practices: Adopt cultural practices that can help manage or control the disease. These may include adjusting planting density, optimizing nutrition and irrigation practices, and practicing crop rotation. Some diseases may be controlled by removing alternate host plants or weeds that can serve as reservoirs for the pathogens.Seek expert advice: Consult local agricultural extension services, agricultural experts, or plant pathologists for specific recommendations on disease management strategies. They can provide guidance on appropriate fungicides or other control measures if necessary.Monitor and scout regularly: Continuously monitor the field to track the spread and severity of the disease. Regular scouting helps identify any new infections and allows for timely intervention."
   utter_maize_streak_seed_affect:
     - text: "Maize streak disease (MSD) primarily affects the leaves of maize plants, causing streaking and yellowing symptoms. However, if the infection is severe and occurs early in the growing season, it can also affect the developing maize cobs and subsequently impact the quality of the seeds."
   utter_field_pest_control:
-    - text: "Crop rotation: Rotating crops can help break pest cycles and reduce pest populations over time. Use of resistant varieties: Planting crop varieties that are resistant or tolerant to specific pests can help reduce pest damage. Proper field hygiene: Removing crop residue and weeds can eliminate potential hiding places and breeding grounds for pests. Sanitation: Proper disposal of infested plants, crop debris, and waste materials can help prevent the spread of pests. Biological control: Introducing beneficial insects, such as ladybugs or parasitic wasps, that prey on pests can help control their populations naturally. Mechanical methods: Handpicking pests, using traps, or employing physical barriers can be effective in managing certain pests. Integrated Pest Management (IPM): Implementing an integrated approach that combines multiple pest control strategies tailored to specific pest and crop conditions.imely planting and harvesting: Planting at the appropriate time and harvesting crops promptly can minimize exposure to pests."
+    - text: "Crop rotation: Rotating crops can help break pest cycles and reduce pest populations over time.Use of resistant varieties: Planting crop varieties that are resistant or tolerant to specific pests can help reduce pest damage.Proper field hygiene: Removing crop residue and weeds can eliminate potential hiding places and breeding grounds for pests.Sanitation: Proper disposal of infested plants, crop debris, and waste materials can help prevent the spread of pests.Biological control: Introducing beneficial insects, such as ladybugs or parasitic wasps, that prey on pests can help control their populations naturally.Mechanical methods: Handpicking pests, using traps, or employing physical barriers can be effective in managing certain pests.Integrated Pest Management (IPM): Implementing an integrated approach that combines multiple pest control strategies tailored to specific pest and crop conditions.Timely planting and harvesting: Planting at the appropriate time and harvesting crops promptly can minimize exposure to pests."
   utter_maize_growing_in_rocky_soils:
-    - text: "Soil drainage: Ensure that the rocky soil has adequate drainage to prevent waterlogging, as excessive water retention can negatively impact maize growth. Rocky soils with good drainage can be suitable for maize cultivation. Nutrient availability: Rocky soils may have lower nutrient content and limited organic matter. It's important to conduct a soil test to assess the nutrient levels and pH of the soil. Based on the test results, appropriate fertilizer and soil amendment recommendations can be made to provide the necessary nutrients for maize growth."
-  utter_cassava_mosaic_transmission:
-    - text: "primarily transmitted by [whiteflies](pests), specifically the species Bemisia tabaci"
+    - text: "Soil drainage: Ensure that the rocky soil has adequate drainage to prevent waterlogging, as excessive water retention can negatively impact maize growth. Rocky soils with good drainage can be suitable for maize cultivation.Nutrient availability: Rocky soils may have lower nutrient content and limited organic matter. It's important to conduct a soil test to assess the nutrient levels and pH of the soil. Based on the test results, appropriate fertilizer and soil amendment recommendations can be made to provide the necessary nutrients for maize growth."
   utter_cassava_mosaic_virus_family:
     - text: "Geminiviridae"
   utter_cassava_mosaic_preventive_measures:
     - text: "Planting virus-free or resistant cassava varieties, practicing good field sanitation, and controlling whitefly populations through integrated pest management strategies. Early detection and removal of infected plants can also help prevent the spread of the disease within a field or area."
   utter_factors_for_planting_timing:
-    - text: "Soil Moisture: The first rain should provide enough moisture to support seed germination and early growth. It's important to ensure that the soil has enough moisture content to facilitate seedling emergence and root development. Temperature: The temperature should be suitable for the specific crop being planted. Some crops have optimal temperature requirements for germination and early growth. If the first rain coincides with extremely cold or hot temperatures, it may negatively affect crop establishment. Rain Pattern: The first rain should ideally mark the beginning of a consistent rainy season. If the first rain is followed by a prolonged dry spell, it may result in inadequate moisture for crop growth, leading to poor germination and plant survival. Crop Requirements: Different crops have different preferences regarding moisture and temperature. It's essential to consider the specific requirements of the crop you intend to plant and ensure that the environmental conditions during the first rain align with those requirements. Field Preparation: Adequate field preparation, including soil tillage and weed control, should be completed before the first rain to optimize planting conditions."
+    - text: "Soil Moisture: The first rain should provide enough moisture to support seed germination and early growth. It's important to ensure that the soil has enough moisture content to facilitate seedling emergence and root development.Temperature: The temperature should be suitable for the specific crop being planted. Some crops have optimal temperature requirements for germination and early growth. If the first rain coincides with extremely cold or hot temperatures, it may negatively affect crop establishment.Rain Pattern: The first rain should ideally mark the beginning of a consistent rainy season. If the first rain is followed by a prolonged dry spell, it may result in inadequate moisture for crop growth, leading to poor germination and plant survival.Crop Requirements: Different crops have different preferences regarding moisture and temperature. It's essential to consider the specific requirements of the crop you intend to plant and ensure that the environmental conditions during the first rain align with those requirements.Field Preparation: Adequate field preparation, including soil tillage and weed control, should be completed before the first rain to optimize planting conditions."
   utter_cassava_green_mite_botanical_name:
     - text: "Mononychellus tanajoa"
   utter_cassava_green_mite_environmental_condition:
@@ -1391,140 +1312,562 @@ responses:
   utter_cassava_green_mite_management_practices:
     - text: "include crop rotation, use of resistant varieties, and maintaining proper plant nutrition and moisture levels."
 
-session_config:
-  session_expiration_time: 60
-  carry_over_slots_to_new_session: true
+actions:
+- utter_spider_mites_signs_infestation
+- utter_soil_microorganisms_role
+- utter_verticillium_wilt_prevention
+- utter_cbb_control_crop_rotation
+- utter_planting_timing
+- utter_pest_control_management_practices
+- utter_nutrient_depletion_impact_soil_health
+- utter_spider_mites_infested_plants
+- utter_define_pest_control
+- utter_spider_mites_thrive_conditions
+- utter_armyworm_spread_challenge
+- utter_sustainable_practices_organic_farming
+- utter_cultural_practices_for_crop_protection
+- utter_fertilizer_natural_composition
+- utter_effects_of_armyworm_infestation
+- utter_monoculture_effect
+- utter_organic_farming_pollution_contribution
+- utter_boiling_duration
+- utter_increase_potato_yield
+- utter_maize_streak_transmission
+- utter_cassava_virus_testing_symptoms
+- utter_seed_dormancy_definition
+- utter_maize_harvesting_process
+- utter_definition_of_seed_drill
+- utter_nitrogen_fertilizers_definition
+- utter_spacing_maize_planting
+- utter_precision_agriculture_definition
+- utter_cultural_pest_control_practices
+- utter_leaf_blight_symptoms
+- utter_crop_protection_methods
+- utter_regulation_organic_farming
+- utter_septoria_leaf_spot_affected_crops
+- utter_impact_using_old_seeds
+- utter_red_rust_fungal_pathogen
+- utter_hispa_beetle_family
+- utter_cbb_resistant_varieties
+- utter_cassava_green_mite_environmental_condition
+- utter_improve_soil_health_methods
+- utter_maize_streak_consequences
+- utter_overuse_synthetic_fertilizers_effect
+- utter_gummosis_affected_trees
+- utter_surface_irrigation_working
+- utter_challenges_organic_farming
+- utter_leaf_beetles_type
+- utter_use_of_living_organisms_in_soil
+- utter_leaf_blight_environmental_conditions
+- utter_slow_release_fertilizers_usage
+- utter_fertilizer_benefits
+- utter_septoria_leaf_spot_effect_on_plants_yield
+- utter_insect_control_organic_farming
+- utter_resistant_seeds_types
+- utter_bacterial_blight_spread_water
+- utter_pest_management_methods
+- utter_recommended_spacing_long_1
+- utter_drip_irrigation_definition
+- utter_determine_soil_acidity
+- utter_maize_growing_conditions
+- utter_leaf_mold_environmental_conditions
+- utter_fall_armyworm_concern
+- utter_leaf_mold_fungal_species
+- utter_definition_biological_pest_control
+- utter_brown_spot_environmental_conditions
+- utter_manage_maize_streak_disease
+- utter_field_pest_control
+- utter_gummosis_management_prevention
+- utter_crop_protection_definition
+- utter_ideal_maize_planting_density
+- utter_reasons_cassava_plants_shed_leaves_during_dry_season
+- utter_red_rust_environmental_conditions
+- utter_benefits_organic_farming_environment
+- utter_chemical_fertilizers_type
+- utter_tool_cut_cassava_stems
+- utter_overuse_pesticides_effect
+- utter_rainfall_sunshine_requirements
+- utter_mechanical_planting_definition
+- utter_brown_spot_monitoring
+- utter_leaf_beetles_preventive_measures
+- utter_importance_of_agriculture
+- utter_first_stage_of_managing_armyworms
+- utter_natural_enemies
+- utter_cassava_harvest_methods
+- utter_fertilization_definition
+- utter_importance_soil_management
+- utter_overgrazing_effect
+- utter_brown_spot_affected_crop
+- utter_photosynthesis_role
+- utter_benefits_of_seed_drill
+- utter_fertilizer_definition
+- utter_cultural_control_definition
+- utter_crop_rotation_definition
+- utter_wheat_storage_prevention
+- utter_final_stage_crop_cultivation
+- utter_cassava_green_mite_management_practices
+- utter_leaf_smut_spread
+- utter_cassava_green_mite_estimated_eggs
+- utter_factors_affecting_crop_response_to_fertilizers
+- utter_armyworm_susceptible_crops
+- utter_reason_replace_old_seeds
+- utter_maize_streak_chemical_control
+- utter_intensive_tillage_effect
+- utter_verticillium_wilt_genetic_resistance
+- utter_improving_resilience_of_agricultural_systems_to_climate_change
+- utter_farmers_use_chemicals
+- utter_center_pivot_irrigation_definition
+- utter_long_term_control_measures_cassava_diseases
+- utter_septoria_leaf_spot_causal_agent
+- utter_gummosis_definition
+- utter_corn_maturity_check
+- utter_armyworm_control_methods
+- utter_definition_mechanical_pest_control
+- utter_cassava_maturity_time
+- utter_fertilizer_negative_consequences
+- utter_crop_rotation_importance
+- utter_best_time_plant_maize
+- utter_cassava_virus_testing_methods
+- utter_farming_techniques_reduce_pest_species
+- utter_chemical_control_methods
+- utter_reasons_for_spraying_crops
+- utter_examples_of_compound_fertilizers
+- utter_tools_for_marking_rows
+- utter_cassava_virus_testing_benefits
+- utter_characteristics_crop_store_prevent_pest_infestation
+- utter_gummosis_chemical_treatment
+- utter_critical_role_nutrient_cycling
+- utter_soil_for_maize_production
+- utter_soil_health_importance
+- utter_soil_organism_control_pest_diseases
+- utter_maize_streak_seed_affect
+- utter_maize_chlorotic_mottle_virus_effect
+- utter_sprinkler_irrigation_working
+- utter_cbb_definition
+- utter_protein_retention_boiling
+- utter_plant_disease_control
+- utter_short_life_cycle
+- utter_difference_organic_conventional_farming
+- utter_hispa_beetle_identification
+- utter_policy_interventions_for_climate_change_and_agriculture
+- utter_irrigation_areas
+- utter_leaf_smut_environmental_conditions
+- utter_brown_spot_fungicides
+- utter_recommended_season_planting_cassava
+- utter_biological_properties_soil
+- utter_nutrition_comparison_frozen_vs_fresh_vegetables
+- utter_transmit_cassava_mosaic
+- utter_leaf_smut_primary_pathogen
+- utter_organic_farming_definition
+- utter_septoria_leaf_spot_climate
+- utter_symptoms_maize_streak_disease
+- utter_contribution_environment_spread_maize_streak_disease
+- utter_soil_temperature_regulation
+- utter_red_rust_symptoms_in_wheat
+- utter_ideal_storage_conditions_maize
+- utter_cassava_harvest_timing
+- utter_grasshoppers_natural_predators
+- utter_fertilizer_synthetic_definition
+- utter_cbb_management
+- utter_septoria_leaf_spot_symptoms
+- utter_septoria_leaf_spot_management_chemical_control
+- utter_plant_disease_causes
+- utter_verticillium_wilt_fungal_pathogens
+- utter_verticillium_wilt_symptoms
+- utter_spider_mites_feeding
+- utter_cassava_stem_cuttings
+- utter_brown_spot_effect_on_yield
+- utter_ylcv_primary_vector
+- utter_mealybug_management_practices
+- utter_spider_mites_preventive_measures
+- utter_maize_storage_after_harvesting
+- utter_benefits_of_combine_harvester
+- utter_deforestation_effect
+- utter_importance_seed_drying_storage_handling
+- utter_moisture_test_maize
+- utter_sprinkler_irrigation_disadvantages
+- utter_cassava_virus_testing_management
+- utter_definition_of_combine_harvester
+- utter_grasshoppers_preventive_measures
+- utter_seed_drying_prevent_spoilage
+- utter_maize_planting
+- utter_septoria_leaf_spot_prevention
+- utter_cmd_control_crop_rotation
+- utter_leaf_miners_type
+- utter_importance_of_organic_farming
+- utter_general_steps
+- utter_bacterial_blight_control_measures
+- utter_septoria_leaf_spot_resistant_varieties
+- utter_effects_not_replacing_new_seeds
+- utter_leaf_blight_management
+- utter_fertilizer_factors_healthy_growth
+- utter_cassava_mosaic_virus_family
+- utter_major_cassava_disease
+- utter_carbohydrate_loss_boiling
+- utter_facilitate_seedling_growth
+- utter_maize_growing_in_rocky_soils
+- utter_irrigation_definition
+- utter_caterpillar_pests_cause_damage_to_cassava
+- utter_leaf_miners_management
+- utter_climate_change_temperature_impact
+- utter_use_of_wind_mill
+- utter_septoria_leaf_spot_early_detection
+- utter_rainfall_water_quality
+- utter_maize_streak_management
+- utter_adaptation_strategies_for_climate_change
+- utter_leaf_blight_fungal_pathogens
+- utter_irrigation_method_choice_factors
+- utter_northern_corn_leaf_blight_characteristics
+- utter_brown_spot_management_practices
+- utter_cassava_virus_testing_access
+- utter_cassava_mosaic_disease
+- utter_common_rust_characteristics
+- utter_nitrogen_fertilizers_components
+- utter_phosphorus_fertilizers_examples
+- utter_corn_harvest_ready
+- utter_chemical_control_definition
+- utter_red_rust_impact_on_yield
+- utter_soil_organism_carbon_sequestration
+- utter_maize_streak_affected_crop
+- utter_mitigation_strategies_for_climate_change_effects
+- utter_verticillium_wilt_spread
+- utter_negative_impacts_excessive_tillage
+- utter_cassava_mosaic_disease_spread
+- utter_necessity_of_agriculture
+- utter_farmers_waste_water
+- utter_common_maize_pests
+- utter_cbb_symptoms
+- utter_cassava_mealybug_botanical_name
+- utter_measures_ensure_successful_germination_cassava_plants
+- utter_most_common_species_of_armyworms
+- utter_gummosis_symptoms
+- utter_red_rust_identification
+- utter_mosquito_control_biological
+- utter_bacterial_blight_spread_human_activity
+- utter_spider_mites_control
+- utter_leaf_miners_damage
+- utter_verticillium_wilt_management_cultural_practices
+- utter_root_rot_disease
+- utter_biological_control_definition
+- utter_farmers_conserve_water
+- utter_reason_for_drying
+- utter_cassava_mealybug_symptoms
+- utter_definition_fumigation
+- utter_changing_technology_agriculture
+- utter_gummosis_common_causes
+- utter_maize_post_harvest_management
+- utter_leaf_beetles_infested_plants
+- utter_CAN_application_maize
+- utter_principle_organic_farming
+- utter_fertilizer_application_methods
+- utter_ipm_implementation
+- utter_recommended_cassava_spacing
+- utter_reproductive_rate
+- utter_leaf_miners_preventive_measures
+- utter_ylcv_symptoms
+- utter_hispa_beetle_preventive_measures
+- utter_benefits_of_frozen_vegetables
+- utter_hispa_beetle_damage
+- utter_cassava_virus_testing_rapid_tests
+- utter_physical_control_definition
+- utter_consumptive_water_use
+- utter_crop_maintenance_activities
+- utter_rainfall_requirement_maturation_stage
+- utter_red_rust_fungicides
+- utter_improving_soil_fertility
+- utter_leaf_smut_identification
+- utter_rainfall_crop_yield
+- utter_tillage_definition
+- utter_first_step_crop_cultivation
+- utter_mitigate_leaf_shedding_cassava_during_dry_season
+- utter_grasshoppers_active_conditions
+- utter_leaf_smut_management
+- utter_potassium_fertilizers_definition
+- utter_poor_soil_health_signs
+- utter_fertilizer_nutrients
+- utter_maize_streak_family_genus
+- utter_explain_crop_rotation
+- utter_reasons_for_using_ipm
+- utter_verticillium_wilt_affected_plants
+- utter_hispa_beetle_natural_predators
+- utter_irrigation_methods
+- utter_spider_mites_type
+- utter_tool_for_threshing_wheat
+- utter_soil_organic_matter_importance
+- utter_cbb_spread_method
+- utter_brown_spot_symptoms_soybean
+- utter_definition_harvesting
+- utter_uses_of_windmills
+- utter_cbb_effects_on_cassava
+- utter_septoria_leaf_spot_management_cultural_practices
+- utter_organic_fertilizers_definition
+- utter_cultural_techniques_crop_nutrients
+- utter_control_cassava_mosaic
+- utter_bacterial_blight_spread_farming_tools
+- utter_ipm_definition
+- utter_control_of_cassava_mosaic_disease
+- utter_impact_nutrient_leaching_cassava_yield
+- utter_soil_science_management_definition
+- utter_nutrient_uptake
+- utter_causes_of_cassava_mosaic_disease
+- utter_ylcv_preventive_measures
+- utter_grasshoppers_damage
+- utter_importance_soil_science_agriculture
+- utter_grasshoppers_type
+- utter_process_biological_pest_control
+- utter_cassava_anthracnose_disease_control_measures
+- utter_cassava_harvest_supervision
+- utter_transmission_process
+- utter_single_nutrient_fertilizers_definition
+- utter_soil_management_activities
+- utter_seed_dormancy_factors
+- utter_fertilizers_purpose
+- utter_cassava_bacterial_blight_effects
+- utter_hispa_beetle_plants_attacked
+- utter_leaf_mold_management
+- utter_farming_practices_soil_erosion
+- utter_maize_spacing
+- utter_environment_friendly_technology_farmers_use
+- utter_brown_spot_identification
+- utter_vitamin_retention_boiling
+- utter_leaf_smut_chemical_control
+- utter_natural_predators_used_to_control_armyworms
+- utter_suitable_planting_method_large_scale_farmers
+- utter_major_source_food_africa
+- utter_transmission_method
+- utter_cmd_effect
+- utter_soil_definition
+- utter_soil_fertility_definition
+- utter_brown_spot_primary_pathogen
+- utter_cassava_green_mite_control_methods
+- utter_organic_farming_soil_health
+- utter_benefits_tillage_balanced
+- utter_leaf_miners_chemical_insecticides
+- utter_red_rust_management
+- utter_control_fungal_diseases_tomato_plants
+- utter_cultural_practices
+- utter_cassava_mosaic_symptoms
+- utter_cassava_stem_size
+- utter_cassava_anthracnose_disease_effects
+- utter_waiting_period_planting_cassava_field_affected_cbsd
+- utter_leaf_smut_symptoms
+- utter_pest_management_practices_for_armyworms
+- utter_bacterial_blight_cause
+- utter_moisture_content_storage
+- utter_pest_management_definition
+- utter_pest_control_steps
+- utter_leaf_beetles_damage
+- utter_leaf_beetles_signs_infestation
+- utter_tools_used_in_precision_agriculture
+- utter_ipm_benefits
+- utter_maize_streak_symptoms
+- utter_importance_seed_drying_farmers
+- utter_bacterial_blight_spread_planting_material
+- utter_bacterial_blight_spread_insects
+- utter_utilization_of_information_in_precision_agriculture
+- utter_test_soil_ph_with_kit
+- utter_microbial_fertilizers_microorganisms
+- utter_depth_soil_planting_maize
+- utter_gray_leaf_spot_preferred_conditions
+- utter_armyworm_crop_losses
+- utter_hispa_beetle_management
+- utter_maize_pests_diseases_management
+- utter_leafhoppers_species_spread_maize_streak_disease
+- utter_cassava_green_mite_botanical_name
+- utter_ylcv_treatment
+- utter_leaf_miners_signs_infestation
+- utter_factors_for_planting_timing
+- utter_grasshoppers_signs_infestation
+- utter_climate_change_effects_on_agriculture
+- utter_verticillium_wilt_symptoms_in_tomatoes
+- utter_red_rust_genetic_resistance
+- utter_cbb_resistant_crops
+- utter_liquid_fertilizers_usage
+- utter_red_rust_affected_crops
+- utter_rainfall_soil_health
+- utter_cbb_spread_factors
+- utter_cassava_mature_identification
+- utter_cbb_fungicides
+- utter_maize_importance
+- utter_complete_fertilizers_definition
+- utter_soil_compaction_definition
+- utter_fertilizer_micronutrients
+- utter_spider_mites_natural_predators
+- utter_leaf_mold_symptoms
+- utter_rainfall_effects
+- utter_physical_chemical_properties_soil
+- utter_spacing_long_2H
+- utter_gummosis_effect_on_fruit_production
+- utter_cassava_mosaic_preventive_measures
+- utter_leaf_smut_affected_crops
+- utter_potassium_fertilizers_examples
+- utter_sustainable_approaches_to_management
+- utter_information_collected_in_precision_agriculture
+- utter_cassava_tests_common
+- utter_erosion_impact_soil_health
+- utter_verticillium_wilt_management_chemical_control
+- utter_drip_irrigation_advantages
+- utter_maize_fertilizers
+- utter_red_rust_monitoring
+- utter_mealybug_control_biologically
+- utter_soil_structure_improvement
+- utter_leaf_mold_susceptible_plants
+- utter_types_fertilizers
+- utter_fertilizers_used_to_grow_cassava
+- utter_soil_degradation_causes
+- utter_leaf_beetles_natural_predators
+- utter_cbb_sanitation_control
+- utter_nutritional_loss_fresh_broccoli
+- utter_hispa_beetle_common_name
+- utter_grasshoppers_management
+- utter_harvesting_before_machinery
+- utter_leaf_miners_infested_plants
+- utter_maize_harvesting_time
+- utter_required_depth_planting_cassava
+- utter_leaf_beetles_management
+- utter_reason_cassava_poor_yield_wetlands
+- utter_phosphorus_fertilizers_definition
+- utter_leaf_smut_prevention
+- utter_cbb_economic_impacts
+- utter_nitrogen_fixing_bacteria_soil_fertility
+- utter_diseases_spread_by_whiteflies
+- utter_cassava_brown_streak_disease_symptoms
+- utter_cassava_mealybug_definition
+- utter_brown_spot_genetic_resistance
+- utter_cmd_effect_severe_condition
+- utter_factors_contribute_spread_CMD
+- utter_leaf_blight_affected_plants
+- action_default_fallback
 
 practice:
-  - mechanical planting
-  - pest control management
-  - Cultural Control
-  - pest control practices
-  - mark rows
-  - seed drying
-  - crop cultivation
-  - pest control
-  - fertilization
   - pest management
-  - mechanical pest control
-  - maize farming
-  - thresh
-  - precision agriculture
-  - drying seeds
-  - Integrated Pest Management
-  - threshing
-  - agricultural systems
-  - Physical Control
-  - harvesting
-  - Pest Management
-  - cultural practices
-  - biological control
-  - crop protection
+  - fertilization
   - cultural pest control
-  - biological pest control
-  - biological control measures
-  - soil science and management
-  - fumigation
-  - soil compaction
-  - Biological Control
-  - government interventions
-  - organic farming
-  - Chemical Control
+  - seed drying
   - soil management
-  - plant disease control
-  - deforestation
-  - crop rotation
+  - organic farming
+  - crop protection
+  - threshing
+  - biological control measures
   - crop maintenance
-  - control plant diseases
+  - biological control
+  - agricultural systems
+  - pest control practices
+  - government interventions
+  - harvesting
+  - soil science and management
+  - Integrated Pest Management
   - soil management activities
   - agriculture
+  - fumigation
+  - plant disease control
+  - drying seeds
+  - precision agriculture
+  - Physical Control
+  - soil compaction
+  - crop rotation
+  - Chemical Control
+  - mechanical planting
+  - maize farming
+  - cultural practices
+  - control plant diseases
+  - biological pest control
+  - pest control management
+  - Biological Control
+  - thresh
+  - crop cultivation
+  - deforestation
+  - mechanical pest control
+  - Pest Management
+  - Cultural Control
+  - pest control
+  - mark rows
 
 disease:
-  - brown spot
-  - Maize chlorotic mottle virus
-  - Maize streak virus
-  - Gray leaf spot
-  - CMD
-  - leaf blight
-  - Cassava Anthracnose Disease
-  - cassava mosaic disease
-  - bacterial blight
-  - leaf smut
-  - CBB
-  - root rot disease
-  - Common rust
-  - plant diseases
-  - leaf mold
-  - cassava mosaic
-  - Verticillium wilt
-  - Cassava Mosaic Disease
-  - gummosis
-  - Cassava Bacterial Blight
   - Septoria leaf spot
-  - Yellow Leaf Curl Virus
-  - Cassava Brown Streak Disease
-  - CBSD
-  - maize streak disease
+  - CMD
   - Northern corn leaf blight
+  - leaf blight
+  - bacterial blight
+  - Common rust
+  - Cassava Brown Streak Disease
+  - Maize chlorotic mottle virus
+  - plant diseases
+  - Maize streak virus
+  - Cassava Anthracnose Disease
+  - Verticillium wilt
+  - leaf mold
+  - maize streak disease
+  - root rot disease
   - red rust
+  - cassava mosaic disease
+  - brown spot
+  - leaf smut
+  - Cassava Mosaic Disease
+  - Yellow Leaf Curl Virus
+  - cassava mosaic
+  - Gray leaf spot
+  - CBB
+  - gummosis
+  - CBSD
+  - Cassava Bacterial Blight
 
 crops:
-  - cassava
   - crops
-  - tomato plants
+  - tomatoes
+  - cassava
+  - maize plants
+  - corn
+  - maize
+  - soybean
   - maize crops
   - plants
   - wheat
   - potato
-  - maize plants
-  - citrus
-  - soybean
-  - corn
-  - tomatoes
-  - maize
+  - tomato plants
 
 pests:
-  - cassava mealybug
-  - armyworm
+  - leaf miners
+  - pests
+  - leafhoppers
   - Cassava green mite
   - pest
-  - spider mite
-  - caterpillar pests
-  - leafhoppers
-  - fall armyworm
-  - armyworms
-  - mealybug
-  - leaf miners
-  - field pests
-  - Hispa
-  - leaf beetles
-  - spider mites
-  - pests
-  - cassava mealybugs
-  - whiteflies
-  - green mite
-  - leafhopper
-  - termites
   - grasshoppers
+  - Hispa
+  - armyworm
+  - leaf beetles
+  - field pests
+  - green mite
+  - fall armyworm
+  - whiteflies
+  - cassava mealybug
+  - termites
+  - armyworms
+  - spider mite
+  - mealybug
+  - cassava mealybugs
+  - spider mites
+  - caterpillar pests
+  - leafhopper
 
 health:
-  - nutrient depletion
-  - soil organisms
-  - monoculture
-  - pesticides
-  - environmental condition
-  - soil science
-  - soil microorganisms
   - soil health
+  - soil organism
+  - soil organisms
+  - nitrogen-fixing bacteria
+  - pesticides
+  - nutrition
   - soil acidity
   - soil living organisms
   - environment
-  - soil PH
-  - nitrogen-fixing bacteria
   - soil
-  - soil organism
-  - nutrition
+  - soil microorganisms
+  - environmental condition
+  - soil science
   - poor soil health
+  - nutrient depletion
+  - soil PH
+  - monoculture
 
 erosion:
   - erosion
@@ -1537,22 +1880,22 @@ CBB:
   - Cassava Bacterial Blight (CBB)
 
 fertilizers:
-  - slow-release fertilizers
-  - synthetic fertilizers
-  - Synthetic fertilizers
-  - fertilizers
-  - liquid fertilizers
+  - potassium fertilizers
   - chemical
   - phosphorus fertilizers
-  - microbial fertilizers
-  - potassium fertilizers
+  - slow-release fertilizers
   - organic fertilizers
+  - Synthetic fertilizers
   - nitrogen fertilizers
+  - liquid fertilizers
   - complete fertilizers
+  - fertilizers
+  - synthetic fertilizers
+  - microbial fertilizers
 
 climate:
-  - dry season
   - climate change
+  - dry season
 
 phenomenon:
   - temperature
@@ -1561,25 +1904,30 @@ CAN:
   - maize
 
 tools:
-  - windmills
-  - implements
-  - seed drill
-  - farm tool
   - combine harvesters
   - wind mill
-  - wind mills
-  - test kit
   - tools
+  - windmills
   - combine harvester
+  - seed drill
+  - test kit
+  - wind mills
   - tool
+  - farm tool
+  - implements
 
 foods:
+  - frozen vegetables
   - grain seeds
   - maize grains
-  - frozen vegetables
   - broccoli
   - vegetables
+  
+food:
+  - food
 
+stalks:
+  - stalks
 water:
   - water
 
@@ -1593,26 +1941,26 @@ technology:
   - technology
 
 soil:
-  - rocky soils
-  - tillage
   - soil
+  - rocky soils
   - irrigation
+  - tillage
 
 technique:
-  - spaced
   - overgrazing
-  - planting technique
   - planting method
+  - planting technique
+  - spaced
   - spacing pattern
 
 name:
-  - botanical name
-  - family
-  - taxonomy
   - virus family
-  - scientific name
-  - binomial nomenclature
   - family classification
+  - binomial nomenclature
+  - botanical name
+  - scientific name
+  - taxonomy
+  - family
 
 tillage:
   - intensive tillage
@@ -1625,3 +1973,7 @@ Cuttings:
 
 seeds:
   - seeds
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

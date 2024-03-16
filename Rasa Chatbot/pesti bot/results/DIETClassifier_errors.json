@@ -1,63 +1,67 @@
 [
   {
-    "text": "What is irrigation?",
-    "entities": [],
-    "predicted_entities": [
-      {
-        "entity": "soil",
-        "start": 8,
-        "end": 18,
-        "confidence_entity": 0.5348864793777466,
-        "value": "irrigation",
-        "extractor": "DIETClassifier",
-        "processors": [
-          "EntitySynonymMapper"
-        ]
-      }
-    ]
-  },
-  {
-    "text": "Is organic farming less polluting compared to conventional farming methods?",
+    "text": "What are some of biological properties of soil that soil scientists study?",
     "entities": [
       {
-        "start": 3,
-        "end": 18,
-        "value": "organic farming",
-        "entity": "practice"
+        "start": 42,
+        "end": 46,
+        "value": "soil",
+        "entity": "soil"
       }
     ],
     "predicted_entities": [
       {
-        "entity": "practice",
-        "start": 3,
-        "end": 18,
-        "confidence_entity": 0.9895002245903015,
-        "value": "organic farming",
+        "entity": "soil",
+        "start": 42,
+        "end": 46,
+        "confidence_entity": 0.980138897895813,
+        "value": "soil",
         "extractor": "DIETClassifier",
         "processors": [
           "EntitySynonymMapper"
         ]
       },
       {
-        "entity": "practice",
-        "start": 59,
-        "end": 66,
-        "confidence_entity": 0.8723056316375732,
-        "value": "farming",
-        "extractor": "DIETClassifier"
+        "entity": "soil",
+        "start": 52,
+        "end": 56,
+        "confidence_entity": 0.7507049441337585,
+        "value": "soil",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
       }
     ]
   },
   {
-    "text": "By what means is cassava mosaic transmitted?",
-    "entities": [],
+    "text": "Which fertilizers are considered potassium fertilizers?",
+    "entities": [
+      {
+        "start": 33,
+        "end": 54,
+        "value": "potassium fertilizers",
+        "entity": "fertilizers"
+      }
+    ],
     "predicted_entities": [
       {
-        "entity": "disease",
-        "start": 17,
-        "end": 31,
-        "confidence_entity": 0.6249229311943054,
-        "value": "cassava mosaic",
+        "entity": "fertilizers",
+        "start": 6,
+        "end": 17,
+        "confidence_entity": 0.846891462802887,
+        "value": "fertilizers",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "fertilizers",
+        "start": 33,
+        "end": 54,
+        "confidence_entity": 0.9996565580368042,
+        "value": "potassium fertilizers",
         "extractor": "DIETClassifier",
         "processors": [
           "EntitySynonymMapper"

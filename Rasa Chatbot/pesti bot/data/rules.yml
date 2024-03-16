@@ -1,46 +1,20 @@
-version: "3.1"
+version: '3.1'
 
 rules:
   - rule: Respond to greet
     steps:
-    - intent: greet
-    - action: utter_greet
+      - intent: greet
+      - action: utter_greet
 
   - rule: Respond to thank you
     steps:
-    - intent: thank_you
-    - action: utter_thank_you
+      - intent: thank_you
+      - action: utter_thank_you
 
   - rule: Respond to goodbye
     steps:
-    - intent: goodbye
-    - action: utter_goodbye
-
-  - rule: Respond to mood_great
-    steps:
-    - intent: mood_great
-    - action: utter_happy
-
-  - rule: Respond to mood_unhappy
-    steps:
-    - intent: mood_unhappy
-    - action: utter_cheer_up
-    - action: utter_did_that_help
-
-  - rule: Handle affirm
-    steps:
-    - intent: affirm
-    - action: utter_happy
-
-  - rule: Handle deny
-    steps:
-    - intent: deny
-    - action: utter_goodbye
-
-  - rule: Handle bot challenge
-    steps:
-    - intent: bot_challenge
-    - action: utter_iamabot
+      - intent: goodbye
+      - action: utter_goodbye
 
   - rule: Respond to explain_crop_rotation intent
     steps:
@@ -66,11 +40,6 @@ rules:
     steps:
       - intent: ylcv_symptoms
       - action: utter_ylcv_symptoms
-
-  - rule: Respond to ylcv_impact intent
-    steps:
-      - intent: ylcv_impact
-      - action: utter_ylcv_impact
 
   - rule: Respond to ylcv_preventive_measures intent
     steps:
@@ -252,11 +221,6 @@ rules:
       - intent: gummosis_management_prevention
       - action: utter_gummosis_management_prevention
 
-  - rule: Respond to gummosis_symptoms_in_citrus_trees intent
-    steps:
-      - intent: gummosis_symptoms_in_citrus_trees
-      - action: utter_gummosis_symptoms_in_citrus_trees
-
   - rule: Respond to gummosis_effect_on_fruit_production intent
     steps:
       - intent: gummosis_effect_on_fruit_production
@@ -366,11 +330,6 @@ rules:
     steps:
       - intent: brown_spot_genetic_resistance
       - action: utter_brown_spot_genetic_resistance
-
-  - rule: Respond to maize_streak_primary_vector intent
-    steps:
-      - intent: maize_streak_primary_vector
-      - action: utter_maize_streak_primary_vector
 
   - rule: Respond to maize_streak_affected_crop intent
     steps:
@@ -531,11 +490,6 @@ rules:
     steps:
       - intent: grasshoppers_type
       - action: utter_grasshoppers_type
-
-  - rule: Respond to grasshoppers_feeding intent
-    steps:
-      - intent: grasshoppers_feeding
-      - action: utter_grasshoppers_feeding
 
   - rule: Respond to grasshoppers_damage intent
     steps:
@@ -817,11 +771,6 @@ rules:
       - intent: cbb_economic_impacts
       - action: utter_cbb_economic_impacts
 
-  - rule: Respond to cbb_importance_of_control intent
-    steps:
-      - intent: cbb_importance_of_control
-      - action: utter_cbb_importance_of_control
-
   - rule: Respond to sustainable_approaches_to_management intent
     steps:
       - intent: sustainable_approaches_to_management
@@ -836,11 +785,6 @@ rules:
     steps:
       - intent: organic_fertilizers_definition
       - action: utter_organic_fertilizers_definition
-
-  - rule: Respond to fertilizers_definition intent
-    steps:
-      - intent: fertilizers_definition
-      - action: utter_fertilizers_definition
 
   - rule: Respond to fertilizers_purpose intent
     steps:
@@ -997,11 +941,6 @@ rules:
       - intent: control_fungal_diseases_tomato_plants
       - action: utter_control_fungal_diseases_tomato_plants
 
-  - rule: Respond to prevent_soil_erosion_farm intent
-    steps:
-      - intent: prevent_soil_erosion_farm
-      - action: utter_prevent_soil_erosion_farm
-
   - rule: Respond to corn_harvest_ready intent
     steps:
       - intent: corn_harvest_ready
@@ -1026,11 +965,6 @@ rules:
     steps:
       - intent: maize_importance
       - action: utter_maize_importance
-
-  - rule: Respond to ideal_conditions_maize intent
-    steps:
-      - intent: ideal_conditions_maize
-      - action: utter_ideal_conditions_maize
 
   - rule: Respond to maize_planting intent
     steps:
@@ -1081,11 +1015,6 @@ rules:
     steps:
       - intent: fall_armyworm_concern
       - action: utter_fall_armyworm_concern
-
-  - rule: Respond to fall_armyworm_detection intent
-    steps:
-      - intent: fall_armyworm_detection
-      - action: utter_fall_armyworm_detection
 
   - rule: Respond to armyworm_susceptible_crops intent
     steps:
@@ -1141,11 +1070,6 @@ rules:
     steps:
       - intent: cassava_tests_common
       - action: utter_cassava_tests_common
-
-  - rule: Respond to cassava_virus_testing_importance intent
-    steps:
-      - intent: cassava_virus_testing_importance
-      - action: utter_cassava_virus_testing_importance
 
   - rule: Respond to cassava_virus_testing_methods intent
     steps:
@@ -1242,11 +1166,6 @@ rules:
       - intent: control_of_cassava_mosaic_disease
       - action: utter_control_of_cassava_mosaic_disease
 
-  - rule: Respond to spread_of_cassava_mosaic_disease intent
-    steps:
-      - intent: spread_of_cassava_mosaic_disease
-      - action: utter_spread_of_cassava_mosaic_disease
-
   - rule: Respond to benefits_of_combine_harvester intent
     steps:
       - intent: benefits_of_combine_harvester
@@ -1326,11 +1245,6 @@ rules:
     steps:
       - intent: farmers_conserve_water
       - action: utter_farmers_conserve_water
-
-  - rule: Respond to role_of_agriculture intent
-    steps:
-      - intent: role_of_agriculture
-      - action: utter_role_of_agriculture
 
   - rule: Respond to importance_of_agriculture intent
     steps:
@@ -1417,11 +1331,6 @@ rules:
       - intent: irrigation_areas
       - action: utter_irrigation_areas
 
-  - rule: Respond to reasons_practice_irrigation intent
-    steps:
-      - intent: reasons_practice_irrigation
-      - action: utter_reasons_practice_irrigation
-
   - rule: Respond to tillage_definition intent
     steps:
       - intent: tillage_definition
@@ -1441,11 +1350,6 @@ rules:
     steps:
       - intent: crop_rotation_definition
       - action: utter_crop_rotation_definition
-
-  - rule: Respond to importance_crop_rotation intent
-    steps:
-      - intent: importance_crop_rotation
-      - action: utter_importance_crop_rotation
 
   - rule: Respond to final_stage_crop_cultivation intent
     steps:
@@ -1617,11 +1521,6 @@ rules:
       - intent: first_stage_of_managing_armyworms
       - action: utter_first_stage_of_managing_armyworms
 
-  - rule: Respond to ways_of_managing_armyworms intent
-    steps:
-      - intent: ways_of_managing_armyworms
-      - action: utter_ways_of_managing_armyworms
-
   - rule: Respond to natural_predators_used_to_control_armyworms intent
     steps:
       - intent: natural_predators_used_to_control_armyworms
@@ -1637,16 +1536,6 @@ rules:
       - intent: cmd_effect_severe_condition
       - action: utter_cmd_effect_severe_condition
 
-  - rule: Respond to cmd_spread_method intent
-    steps:
-      - intent: cmd_spread_method
-      - action: utter_cmd_spread_method
-
-  - rule: Respond to cmd_definition intent
-    steps:
-      - intent: cmd_definition
-      - action: utter_cmd_definition
-
   - rule: Respond to cmd_effect intent
     steps:
       - intent: cmd_effect
@@ -1656,16 +1545,6 @@ rules:
     steps:
       - intent: cmd_control_crop_rotation
       - action: utter_cmd_control_crop_rotation
-
-  - rule: Respond to cmd_control_resistant_varieties intent
-    steps:
-      - intent: cmd_control_resistant_varieties
-      - action: utter_cmd_control_resistant_varieties
-
-  - rule: Respond to cbb_cause intent
-    steps:
-      - intent: cbb_cause
-      - action: utter_cbb_cause
 
   - rule: Respond to cbb_spread_method intent
     steps:
@@ -1831,11 +1710,6 @@ rules:
     steps:
       - intent: maize_chlorotic_mottle_virus_effect
       - action: utter_maize_chlorotic_mottle_virus_effect
-
-  - rule: Respond to maize_streak_virus_transmission intent
-    steps:
-      - intent: maize_streak_virus_transmission
-      - action: utter_maize_streak_virus_transmission
 
   - rule: Respond to northern_corn_leaf_blight_characteristics intent
     steps:
@@ -2032,11 +1906,6 @@ rules:
       - intent: rainfall_requirement_maturation_stage
       - action: utter_rainfall_requirement_maturation_stage
 
-  - rule: Respond to rainfall_requirement_late_vegetative_stage intent
-    steps:
-      - intent: rainfall_requirement_late_vegetative_stage
-      - action: utter_rainfall_requirement_late_vegetative_stage
-
   - rule: Respond to test_soil_ph_with_kit intent
     steps:
       - intent: test_soil_ph_with_kit
@@ -2226,11 +2095,6 @@ rules:
     steps:
       - intent: maize_growing_in_rocky_soils
       - action: utter_maize_growing_in_rocky_soils
-
-  - rule: Respond to cassava_mosaic_transmission intent
-    steps:
-      - intent: cassava_mosaic_transmission
-      - action: utter_cassava_mosaic_transmission
 
   - rule: Respond to cassava_mosaic_virus_family intent
     steps:

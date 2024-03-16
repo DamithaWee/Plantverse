@@ -1,4 +1,5 @@
-version: "3.1"
+version: '3.1'
+
 nlu:
 - intent: greet
   examples: |
@@ -9,6 +10,7 @@ nlu:
     - hi, how are you?
     - hey, what's up?
     - hey
+
 - intent: thank_you
   examples: |
     - thanks
@@ -16,6 +18,7 @@ nlu:
     - thanks a lot
     - thank you so much
     - appreciate it
+
 - intent: goodbye
   examples: |
     - goodbye
@@ -23,35 +26,6 @@ nlu:
     - see you later
     - take care
     - farewell
-- intent: mood_great
-  examples: |
-    - amazing
-    - great
-    - fantastic
-    - wonderful
-- intent: mood_unhappy
-  examples: |
-    - not good
-    - terrible
-    - very terrible
-    - sad
-- intent: affirm
-  examples: |
-    - yes
-    - yeah
-    - yep
-    - absolutely
-- intent: deny
-  examples: |
-    - no
-    - nah
-    - nope
-    - not really
-- intent: bot_challenge
-  examples: |
-    - are you a bot?
-    - am I talking to a bot?
-    - is this a bot?
 
 - intent: explain_crop_rotation
   examples: |
@@ -83,12 +57,6 @@ nlu:
     - What are the typical symptoms of a tomato plant infected with [Yellow Leaf Curl Virus][{"entity": "disease", "value": "Yellow Leaf Curl Virus"}]?
     - How can you identify a tomato plant infected with [Yellow Leaf Curl Virus][{"entity": "disease", "value": "Yellow Leaf Curl Virus"}]?
     - What signs indicate a tomato plant has been infected with [Yellow Leaf Curl Virus][{"entity": "disease", "value": "Yellow Leaf Curl Virus"}]?
-
-- intent: ylcv_impact
-  examples: |
-    - How does [Yellow Leaf Curl Virus][{"entity": "disease", "value": "Yellow Leaf Curl Virus"}] affect tomato crops?
-    - What is the impact of [Yellow Leaf Curl Virus][{"entity": "disease", "value": "Yellow Leaf Curl Virus"}] on tomato cultivation?
-    - What damage does [Yellow Leaf Curl Virus][{"entity": "disease", "value": "Yellow Leaf Curl Virus"}] cause to tomato crops?
 
 - intent: ylcv_preventive_measures
   examples: |
@@ -306,12 +274,6 @@ nlu:
     - What strategies can be employed to control [gummosis][{"entity": "disease", "value": "gummosis"}]?
     - What measures can be taken to prevent [gummosis][{"entity": "disease", "value": "gummosis"}] outbreaks?
 
-- intent: gummosis_symptoms_in_citrus_trees
-  examples: |
-    - What are some symptoms of [gummosis][{"entity": "disease", "value": "gummosis"}] in [citrus][{"entity": "crops", "value": "citrus"}] trees?
-    - How can you identify [gummosis][{"entity": "disease", "value": "gummosis"}] in [citrus][{"entity": "crops", "value": "citrus"}] trees?
-    - What signs indicate [citrus][{"entity": "crops", "value": "citrus"}] trees have been infected with [gummosis][{"entity": "disease", "value": "gummosis"}]?
-
 - intent: gummosis_effect_on_fruit_production
   examples: |
     - Can [gummosis][{"entity": "disease", "value": "gummosis"}] affect fruit production in affected trees?
@@ -444,12 +406,6 @@ nlu:
     - What are some resistant soybean varieties for [brown spot][{"entity": "disease", "value": "brown spot"}]?
     - Are there soybean varieties resistant to [brown spot][{"entity": "disease", "value": "brown spot"}]?
 
-- intent: maize_streak_primary_vector
-  examples: |
-    - What is the primary vector responsible for transmitting [Maize streak virus][{"entity": "disease", "value": "Maize streak virus"}]?
-    - Which insect is the main carrier of [Maize streak virus][{"entity": "disease", "value": "Maize streak virus"}]?
-    - What insect transmits [Maize streak virus][{"entity": "disease", "value": "Maize streak virus"}]?
-
 - intent: maize_streak_affected_crop
   examples: |
     - Which crop is primarily affected by [Maize streak virus][{"entity": "disease", "value": "Maize streak virus"}]?
@@ -470,7 +426,6 @@ nlu:
 
 - intent: maize_streak_transmission
   examples: |
-    - How is [Maize streak virus][{"entity": "disease", "value": "Maize streak virus"}] transmitted?
     - What is the mode of transmission of [Maize streak virus][{"entity": "disease", "value": "Maize streak virus"}]?
     - By what means does [Maize streak virus][{"entity": "disease", "value": "Maize streak virus"}] spread?
 
@@ -513,7 +468,7 @@ nlu:
 - intent: leaf_smut_symptoms
   examples: |
     - What are some symptoms of [leaf smut][{"entity": "disease", "value": "leaf smut"}] in affected [crops][{"entity": "crops", "value": "crops"}]?
-    - How does [leaf smut][{"entity": "disease", "value": "leaf smut"}] affect [crops][{"entity": "crops", "value": "crops"}]?
+    - How does the [leaf smut][{"entity": "disease", "value": "leaf smut"}] affect [crops][{"entity": "crops", "value": "crops"}]?
     - What signs indicate [crops][{"entity": "crops", "value": "crops"}] have been infected with [leaf smut][{"entity": "disease", "value": "leaf smut"}]?
 
 - intent: leaf_smut_spread
@@ -641,12 +596,6 @@ nlu:
     - What type of insects are [grasshoppers][{"entity": "pests", "value": "grasshoppers"}]?
     - What category do [grasshoppers][{"entity": "pests", "value": "grasshoppers"}] belong to?
     - To which suborder do [grasshoppers][{"entity": "pests", "value": "grasshoppers"}] belong?
-
-- intent: grasshoppers_feeding
-  examples: |
-    - Which types of plants do [grasshoppers][{"entity": "pests", "value": "grasshoppers"}] typically feed on?
-    - What are the preferred food sources of [grasshoppers][{"entity": "pests", "value": "grasshoppers"}]?
-    - On which plants do [grasshoppers][{"entity": "pests", "value": "grasshoppers"}] usually feed?
 
 - intent: grasshoppers_damage
   examples: |
@@ -974,12 +923,6 @@ nlu:
     - How does [CBB][{"entity": "disease", "value": "CBB"}] disease affect cassava farmers economically?
     - What economic losses are associated with [CBB][{"entity": "disease", "value": "CBB"}] in cassava crops?
 
-- intent: cbb_importance_of_control
-  examples: |
-    - What is the importance of controlling [CBB][{"entity": "disease", "value": "CBB"}]?
-    - Why is it important to control [CBB][{"entity": "disease", "value": "CBB"}] in cassava crops?
-    - What are the reasons for controlling [CBB][{"entity": "disease", "value": "CBB"}] in cassava production?
-
 - intent: sustainable_approaches_to_management
   examples: |
     - What are the sustainable approaches to cassava disease management?
@@ -994,11 +937,6 @@ nlu:
   examples: |
     - What are [organic fertilizers][{"entity": "fertilizers", "value": "organic fertilizers"}]?
     - How would you define [organic fertilizers][{"entity": "fertilizers", "value": "organic fertilizers"}]?
-
-- intent: fertilizers_definition
-  examples: |
-    - What are [fertilizers][{"entity": "fertilizers", "value": "fertilizers"}]?
-    - How would you define [fertilizers][{"entity": "fertilizers", "value": "fertilizers"}]?
 
 - intent: fertilizers_purpose
   examples: |
@@ -1022,7 +960,6 @@ nlu:
     - What are the different methods of [Pest Management][{"entity": "practice", "value": "Pest Management"}]?
     - How can [Pest Management][{"entity": "practice", "value": "Pest Management"}] be accomplished?
     - What techniques are used in [Pest Management][{"entity": "practice", "value": "Pest Management"}]?
-    - Can you list some strategies for [Pest Management][{"entity": "practice", "value": "Pest Management"}]?
 
 - intent: biological_control_definition
   examples: |
@@ -1213,13 +1150,6 @@ nlu:
     - What strategies are effective for controlling fungal diseases in [tomato plants][{"entity": "crops", "value": "tomato plants"}]?
     - What steps should be followed to manage fungal diseases in [tomato plants][{"entity": "crops", "value": "tomato plants"}]?
 
-- intent: prevent_soil_erosion_farm
-  examples: |
-    - What measures can be taken to prevent soil erosion on farms?
-    - How can soil erosion be prevented on farms?
-    - What strategies are effective for preventing soil erosion on farms?
-    - What steps should be followed to mitigate soil erosion on farms?
-
 - intent: corn_harvest_ready
   examples: |
     - When is [corn][{"entity": "crops", "value": "corn"}] ready to harvest?
@@ -1254,13 +1184,6 @@ nlu:
     - Why is [maize][{"entity": "crops", "value": "maize"}] important as a crop?
     - What role does [maize][{"entity": "crops", "value": "maize"}] play in agriculture and food production?
     - How significant is [maize][{"entity": "crops", "value": "maize"}] as a staple food?
-
-- intent: ideal_conditions_maize
-  examples: |
-    - What are the ideal conditions for planting [maize][{"entity": "crops", "value": "maize"}]?
-    - How can I ensure optimal growth conditions for [maize][{"entity": "crops", "value": "maize"}]?
-    - What factors contribute to successful [maize][{"entity": "crops", "value": "maize"}] cultivation?
-    - What soil and sunlight conditions are best for [maize][{"entity": "crops", "value": "maize"}]?
 
 - intent: maize_planting
   examples: |
@@ -1331,13 +1254,6 @@ nlu:
     - What makes the [fall armyworm][{"entity": "pests", "value": "fall armyworm"}] a significant threat to farmers in [Uganda][{"entity": "location", "value": "Uganda"}]?
     - How does the [fall armyworm][{"entity": "pests", "value": "fall armyworm"}] pose a threat to farmers in [Uganda][{"entity": "location", "value": "Uganda"}]?
 
-- intent: fall_armyworm_detection
-  examples: |
-    - When was the [fall armyworm][{"entity": "pests", "value": "fall armyworm"}] first detected in [Uganda][{"entity": "location", "value": "Uganda"}]?
-    - In what year was the presence of the [fall armyworm][{"entity": "pests", "value": "fall armyworm"}] confirmed in [Uganda][{"entity": "location", "value": "Uganda"}]?
-    - When did [Uganda][{"entity": "location", "value": "Uganda"}] first experience the appearance of the [fall armyworm][{"entity": "pests", "value": "fall armyworm"}]?
-    - What is the timeline of the [fall armyworm][{"entity": "pests", "value": "fall armyworm"}] detection in [Uganda][{"entity": "location", "value": "Uganda"}]?
-
 - intent: armyworm_susceptible_crops
   examples: |
     - Which crops are most susceptible to [armyworm][{"entity": "pests", "value": "armyworm"}] infestation in [Uganda][{"entity": "location", "value": "Uganda"}]?
@@ -1350,7 +1266,6 @@ nlu:
     - What are the potential crop losses due to [armyworm][{"entity": "pests", "value": "armyworm"}] infestation?
     - How much crop yield can be lost due to [armyworm][{"entity": "pests", "value": "armyworm"}] infestation?
     - What percentage of crop yield can be affected by [armyworm][{"entity": "pests", "value": "armyworm"}] infestation?
-    - What is the extent of crop damage caused by [armyworm][{"entity": "pests", "value": "armyworm"}] infestation?
 
 - intent: armyworm_spread_challenge
   examples: |
@@ -1414,13 +1329,6 @@ nlu:
     - Which tests are typically conducted on [cassava][{"entity": "crops", "value": "cassava"}]?
     - What testing methods are commonly used for [cassava][{"entity": "crops", "value": "cassava"}]?
     - How can [cassava][{"entity": "crops", "value": "cassava"}] be tested for various factors?
-
-- intent: cassava_virus_testing_importance
-  examples: |
-    - Why is testing for viruses important in [cassava][{"entity": "crops", "value": "cassava"}]?
-    - What is the significance of testing [cassava][{"entity": "crops", "value": "cassava"}] for viruses?
-    - How does testing for viruses benefit [cassava][{"entity": "crops", "value": "cassava"}] cultivation?
-    - What are the reasons for conducting virus tests on [cassava][{"entity": "crops", "value": "cassava"}]?
 
 - intent: cassava_virus_testing_methods
   examples: |
@@ -1555,13 +1463,6 @@ nlu:
     - Can you suggest ways to prevent [cassava mosaic disease][{"entity": "disease", "value": "cassava mosaic disease"}]?
     - What are the strategies for managing [cassava mosaic disease][{"entity": "disease", "value": "cassava mosaic disease"}]?
 
-- intent: spread_of_cassava_mosaic_disease
-  examples: |
-    - How can [cassava mosaic disease][{"entity": "disease", "value": "cassava mosaic disease"}] spread?
-    - What are the methods of transmission for [cassava mosaic disease][{"entity": "disease", "value": "cassava mosaic disease"}]?
-    - What causes the spread of [cassava mosaic disease][{"entity": "disease", "value": "cassava mosaic disease"}]?
-    - How does [cassava mosaic disease][{"entity": "disease", "value": "cassava mosaic disease"}] transmit?
-
 - intent: benefits_of_combine_harvester
   examples: |
     - How does the [combine harvester][{"entity": "tools", "value": "combine harvester"}] help farmers?
@@ -1671,11 +1572,6 @@ nlu:
     - What motivates farmers to conserve [water][{"entity": "water", "value": "water"}] ?
     - How do farmers conserve water in agriculture?
     - What are the reasons for farmers to conserve [water][{"entity": "water", "value": "water"}] ?
-
-- intent: role_of_agriculture
-  examples: |
-    - What important role does [agriculture][{"entity": "agriculture", "value": "agriculture"}] play?
-    - What is the significance of [agriculture][{"entity": "agriculture", "value": "agriculture"}] in modern society?
 
 - intent: importance_of_agriculture
   examples: |
@@ -1788,13 +1684,6 @@ nlu:
     - Which regions or places use [irrigation][{"entity": "soil", "value": "irrigation"}]?
     - What are the typical locations for [irrigation][{"entity": "soil", "value": "irrigation"}]?
 
-- intent: reasons_practice_irrigation
-  examples: |
-    - Why do farmers practice [irrigation][{"entity": "soil", "value": "irrigation"}]?
-    - What are the reasons for practicing [irrigation][{"entity": "soil", "value": "irrigation"}]?
-    - What motivates farmers to use [irrigation][{"entity": "soil", "value": "irrigation"}]?
-    - What are the purposes of [irrigation][{"entity": "soil", "value": "irrigation"}] practices?
-
 - intent: tillage_definition
   examples: |
     - What is [tillage][{"entity": "soil", "value": "tillage"}]?
@@ -1822,13 +1711,6 @@ nlu:
     - Can you define [crop rotation][{"entity": "practice", "value": "crop rotation"}] in the context of soil management?
     - How do you define crop rotation in soil management?
     - Could you explain what crop rotation is in soil management?
-
-- intent: importance_crop_rotation
-  examples: |
-    - Why is [crop rotation][{"entity": "practice", "value": "crop rotation"}] important?
-    - What is the significance of [crop rotation][{"entity": "practice", "value": "crop rotation"}] in agriculture?
-    - How does [crop rotation][{"entity": "practice", "value": "crop rotation"}] contribute to soil health?
-    - What are the benefits of practicing [crop rotation][{"entity": "practice", "value": "crop rotation"}]?
 
 - intent: final_stage_crop_cultivation
   examples: |
@@ -2068,13 +1950,6 @@ nlu:
     - What is the initial step in [armyworm][{"entity": "pests", "value": "armyworm"}] management?
     - How do you start controlling [armyworms][{"entity": "pests", "value": "armyworms"}]?
 
-- intent: ways_of_managing_armyworms
-  examples: |
-    - What are some of the ways of managing [armyworms][{"entity": "pests", "value": "armyworms"}]?
-    - How can you manage [armyworms][{"entity": "pests", "value": "armyworms"}] effectively?
-    - What methods are used for [armyworm][{"entity": "pests", "value": "armyworm"}] control?
-    - What are the management strategies for armyworms?
-
 - intent: natural_predators_used_to_control_armyworms
   examples: |
     - Which natural predators are used to control armyworms?
@@ -2096,20 +1971,6 @@ nlu:
     - What are the consequences of severe [Cassava Mosaic Disease][{"entity": "disease", "value": "Cassava Mosaic Disease"}]?
     - In severe cases, what is the outcome of [Cassava Mosaic Disease][{"entity": "disease", "value": "Cassava Mosaic Disease"}]?
 
-- intent: cmd_spread_method
-  examples: |
-    - What spreads [Cassava Mosaic Disease][{"entity": "disease", "value": "Cassava Mosaic Disease"}]? 
-    - How does [Cassava Mosaic Disease][{"entity": "disease", "value": "Cassava Mosaic Disease"}] spread?
-    - By what means is [Cassava Mosaic Disease][{"entity": "disease", "value": "Cassava Mosaic Disease"}] transmitted?
-    - What is the transmission method of [Cassava Mosaic Disease][{"entity": "disease", "value": "Cassava Mosaic Disease"}]? 
-
-- intent: cmd_definition
-  examples: |
-    - What is [Cassava Mosaic Disease][{"entity": "disease", "value": "Cassava Mosaic Disease"}]? 
-    - Can you explain [Cassava Mosaic Disease][{"entity": "disease", "value": "Cassava Mosaic Disease"}]? 
-    - What does [Cassava Mosaic Disease][{"entity": "disease", "value": "Cassava Mosaic Disease"}] refer to?
-    - Could you define [Cassava Mosaic Disease][{"entity": "disease", "value": "Cassava Mosaic Disease"}]? 
-
 - intent: cmd_effect
   examples: |
     - What is the effect of [CMD][{"entity": "disease", "value": "CMD"}]? 
@@ -2123,20 +1984,6 @@ nlu:
     - What role does [crop rotation][{"entity": "practice", "value": "crop rotation"}] play in controlling [Cassava Mosaic Disease][{"entity": "disease", "value": "Cassava Mosaic Disease"}]? 
     - In what way does [crop rotation][{"entity": "practice", "value": "crop rotation"}] help manage [Cassava Mosaic Disease][{"entity": "disease", "value": "Cassava Mosaic Disease"}]? 
     - What is the significance of [crop rotation][{"entity": "practice", "value": "crop rotation"}] in preventing [Cassava Mosaic Disease][{"entity": "disease", "value": "Cassava Mosaic Disease"}]? 
-
-- intent: cmd_control_resistant_varieties
-  examples: |
-    - What other way can a farmer control [Cassava Mosaic Disease][{"entity": "disease", "value": "Cassava Mosaic Disease"}]? 
-    - Aside from [crop rotation][{"entity": "practice", "value": "crop rotation"}], what other method can be used to control [Cassava Mosaic Disease][{"entity": "disease", "value": "Cassava Mosaic Disease"}]? 
-    - How can farmers combat [Cassava Mosaic Disease][{"entity": "disease", "value": "Cassava Mosaic Disease"}] besides using [crop rotation][{"entity": "practice", "value": "crop rotation"}]? 
-    - What alternative methods are available for controlling [Cassava Mosaic Disease][{"entity": "disease", "value": "Cassava Mosaic Disease"}]? 
-
-- intent: cbb_cause
-  examples: |
-    - What causes [Cassava Bacterial Blight][{"entity": "disease", "value": "Cassava Bacterial Blight"}]?
-    - What is the causative agent of [Cassava Bacterial Blight][{"entity": "disease", "value": "Cassava Bacterial Blight"}]? 
-    - By what pathogen is [Cassava Bacterial Blight][{"entity": "disease", "value": "Cassava Bacterial Blight"}] caused?
-    - Which bacterium leads to [Cassava Bacterial Blight][{"entity": "disease", "value": "Cassava Bacterial Blight"}]?
 
 - intent: cbb_spread_method
   examples: |
@@ -2231,6 +2078,7 @@ nlu:
 
 - intent: fertilizer_definition
   examples: |
+    - What are [fertilizers][{"entity": "fertilizers", "value": "fertilizers"}]?
     - Can you explain [fertilizers][{"entity": "fertilizers", "value": "fertilizers"}]?
     - What do you mean by [fertilizers][{"entity": "fertilizers", "value": "fertilizers"}]?
     - Could you define [fertilizers][{"entity": "fertilizers", "value": "fertilizers"}]?
@@ -2317,7 +2165,7 @@ nlu:
     - Name examples of [phosphorus fertilizers][{"entity": "fertilizers", "value": "phosphorus fertilizers"}].
     - What are some examples of [phosphorus fertilizers][{"entity": "fertilizers", "value": "phosphorus fertilizers"}]?
     - Which fertilizers fall under the category of [phosphorus fertilizers][{"entity": "fertilizers", "value": "phosphorus fertilizers"}]?
-    - Can you give examples of [phosphorus fertilizers][{"entity": "fertilizers", "value": "phosphorus fertilizers"}]?
+    - Give some examples of [phosphorus fertilizers][{"entity": "fertilizers", "value": "phosphorus fertilizers"}]?
 
 - intent: potassium_fertilizers_definition
   examples: |
@@ -2367,12 +2215,6 @@ nlu:
     - How does [Maize chlorotic mottle virus][{"entity": "disease", "value": "Maize chlorotic mottle virus"}] affect maize leaves?
     - What are the symptoms of maize leaves affected by [Maize chlorotic mottle virus][{"entity": "disease", "value": "Maize chlorotic mottle virus"}]?
     - Can you describe the impact of [Maize chlorotic mottle virus][{"entity": "disease", "value": "Maize chlorotic mottle virus"}] on maize leaves?
-
-- intent: maize_streak_virus_transmission
-  examples: |
-    - What is the mode of transmission for [Maize streak virus][{"entity": "disease", "value": "Maize streak virus"}]?
-    - Which insects transmit [Maize streak virus][{"entity": "disease", "value": "Maize streak virus"}]?
-    - Can you explain how [Maize streak virus][{"entity": "disease", "value": "Maize streak virus"}] is transmitted?
 
 - intent: northern_corn_leaf_blight_characteristics
   examples: |
@@ -2583,13 +2425,11 @@ nlu:
   examples: |
     - How is [maize streak disease][{"entity": "disease", "value": "maize streak disease"}] transmitted?
     - By what means does [maize streak disease][{"entity": "disease", "value": "maize streak disease"}] spread?
-    - What is the method of transmission for [maize streak disease][{"entity": "disease", "value": "maize streak disease"}]?
     - How does [maize streak disease][{"entity": "disease", "value": "maize streak disease"}] transfer from one plant to another?
 
 - intent: transmission_process
   examples: |
     - List the ways in which [maize streak disease][{"entity": "disease", "value": "maize streak disease"}] transmission occurs.
-    - How does [maize streak disease][{"entity": "disease", "value": "maize streak disease"}] spread from one plant to another?
     - What are the steps involved in the transmission of [maize streak disease][{"entity": "disease", "value": "maize streak disease"}]?
     - What are the methods by which [maize streak disease][{"entity": "disease", "value": "maize streak disease"}] is transmitted?
 
@@ -2634,13 +2474,6 @@ nlu:
     - During which phase of growth does [cassava][{"entity": "crops", "value": "cassava"}] need approximately 500 to 750 mm of rainfall?
     - When does [cassava][{"entity": "crops", "value": "cassava"}] need around 500 to 750 mm of rainfall?
     - Which stage of its growth cycle requires [cassava][{"entity": "crops", "value": "cassava"}] to have 500 to 750 mm of rainfall?
-
-- intent: rainfall_requirement_late_vegetative_stage
-  examples: |
-    - During the mid to late vegetative stage, [cassava][{"entity": "crops", "value": "cassava"}] requires less rainfall as it begins to store food in its roots. What is it?
-    - At which point in its growth cycle does [cassava][{"entity": "crops", "value": "cassava"}] need about 750 to 1000 mm of rainfall?
-    - When does [cassava][{"entity": "crops", "value": "cassava"}] need approximately 750 to 1000 mm of rainfall?
-    - During which phase of growth does [cassava][{"entity": "crops", "value": "cassava"}] require roughly 750 to 1000 mm of rainfall?
 
 - intent: test_soil_ph_with_kit
   examples: |
@@ -2847,6 +2680,7 @@ nlu:
 
 - intent: transmit_cassava_mosaic
   examples: |
+    - What transmits [cassava mosaic][{"entity": "disease", "value": "cassava mosaic"}]?
     - How is [cassava mosaic][{"entity": "disease", "value": "cassava mosaic"}] transmitted?
     - Which organism spreads [cassava mosaic][{"entity": "disease", "value": "cassava mosaic"}]?
     - By what means is [cassava mosaic][{"entity": "disease", "value": "cassava mosaic"}] spread?
@@ -2907,13 +2741,6 @@ nlu:
     - How does maize tolerate [rocky soils][{"entity": "soil", "value": "rocky soils"}]?
     - What considerations should be taken into account when growing maize in [rocky soils][{"entity": "soil", "value": "rocky soils"}]?
 
-- intent: cassava_mosaic_transmission
-  examples: |
-    - What transmits [cassava mosaic][{"entity": "disease", "value": "cassava mosaic"}]?
-    - By what means is cassava mosaic transmitted?
-    - How does cassava mosaic spread?
-    - Which insect is responsible for transmitting cassava mosaic disease?
-
 - intent: cassava_mosaic_virus_family
   examples: |
     - To which [virus family][{"entity": "name", "value": "virus family"}] does the virus responsible for cassava mosaic disease belong?
@@ -2969,3 +2796,4 @@ nlu:
     - What pest management practices besides monitoring can help prevent and control [Cassava green mite][{"entity": "pests", "value": "Cassava green mite"}]?
     - Besides monitoring, what other methods are effective in controlling [Cassava green mite][{"entity": "pests", "value": "Cassava green mite"}]?
     - In addition to monitoring, what practices are recommended for managing [Cassava green mite][{"entity": "pests", "value": "Cassava green mite"}] populations?
+
