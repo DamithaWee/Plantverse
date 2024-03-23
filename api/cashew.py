@@ -8,7 +8,7 @@ import tensorflow as tf
 #create app which is an instance of fast api
 app = FastAPI()
 
-MODEL = tf.keras.models.load_model(r"C:\Users\USER\Downloads\diseasedetection\models\1\cashew.h5")
+MODEL = tf.keras.models.load_model(r"C:\Users\USER\Downloads\disease detection\new models\1\cashew.h5")
 
 CLASS_NAMES = ["cashew_anthracnose", "cashew_gumosis", "cashew_healthy","cashew_red rust"]
 
