@@ -8,8 +8,3 @@ Plantverse is a cutting-edge mobile application designed for the detection of di
 - **Rasa Chatbot**: Access instant support and information through an AI-driven conversational interface.
 - **Community Forum**: Connect with a network of users, including farmers and agronomists, to discuss and resolve crop-related issues.
 
-## Getting Started
-Follow these instructions to get Plantverse running on your device for development and testing purposes.
-
-### Prerequisites
-Ensure you have the following installed:
