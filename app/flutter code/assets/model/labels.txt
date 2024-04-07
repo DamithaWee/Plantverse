@@ -1,0 +1,7 @@
+0 cashew_leaf miner
+1 cashew_leafminer
+2 cassava_green mite
+3 maize_fall armyworm
+4 maize_grasshoper
+5 maize_leaf beetle
+6 rice_hispa
