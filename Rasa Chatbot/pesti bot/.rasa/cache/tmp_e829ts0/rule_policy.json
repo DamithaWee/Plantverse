@@ -1,0 +1,50 @@
+{
+  "lookup": {
+    "rules": {
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"Cassava Mosaic Disease (CMD)\"}}]": "utter_Cassava Mosaic Disease (CMD)",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"Cassava Mosaic Disease (CMD)\"}}, {\"prev_action\": {\"action_name\": \"utter_Cassava Mosaic Disease (CMD)\"}, \"user\": {\"intent\": \"Cassava Mosaic Disease (CMD)\"}}]": "action_listen",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"Cassava Whitefly\"}}]": "utter_Cassava Whitefly",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"Cassava Whitefly\"}}, {\"prev_action\": {\"action_name\": \"utter_Cassava Whitefly\"}, \"user\": {\"intent\": \"Cassava Whitefly\"}}]": "action_listen",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"Irrigation\"}}]": "utter_Irrigation",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"Irrigation\"}}, {\"prev_action\": {\"action_name\": \"utter_Irrigation\"}, \"user\": {\"intent\": \"Irrigation\"}}]": "action_listen",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"Soil Health\"}}]": "utter_Soil Health",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"Soil Health\"}}, {\"prev_action\": {\"action_name\": \"utter_Soil Health\"}, \"user\": {\"intent\": \"Soil Health\"}}]": "action_listen",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"Fertilizers\"}}]": "utter_Fertilizers",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"Fertilizers\"}}, {\"prev_action\": {\"action_name\": \"utter_Fertilizers\"}, \"user\": {\"intent\": \"Fertilizers\"}}]": "action_listen",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"Organic Farming\"}}]": "utter_Organic Farming",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"Organic Farming\"}}, {\"prev_action\": {\"action_name\": \"utter_Organic Farming\"}, \"user\": {\"intent\": \"Organic Farming\"}}]": "action_listen",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"Cassava Bacterial Blight (CBB)\"}}]": "utter_Cassava Bacterial Blight (CBB)",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"Cassava Bacterial Blight (CBB)\"}}, {\"prev_action\": {\"action_name\": \"utter_Cassava Bacterial Blight (CBB)\"}, \"user\": {\"intent\": \"Cassava Bacterial Blight (CBB)\"}}]": "action_listen",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"Pest Management\"}}]": "utter_Pest Management",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"Pest Management\"}}, {\"prev_action\": {\"action_name\": \"utter_Pest Management\"}, \"user\": {\"intent\": \"Pest Management\"}}]": "action_listen",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"Crop Rotation\"}}]": "utter_Crop Rotation",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"Crop Rotation\"}}, {\"prev_action\": {\"action_name\": \"utter_Crop Rotation\"}, \"user\": {\"intent\": \"Crop Rotation\"}}]": "action_listen"
+    },
+    "rule_only_slots": [],
+    "rule_only_loops": [],
+    "rules_for_loop_unhappy_path": {},
+    "rules_not_in_stories": [
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"Cassava Mosaic Disease (CMD)\"}}]",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"Pest Management\"}}, {\"prev_action\": {\"action_name\": \"utter_Pest Management\"}, \"user\": {\"intent\": \"Pest Management\"}}]",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"Cassava Bacterial Blight (CBB)\"}}, {\"prev_action\": {\"action_name\": \"utter_Cassava Bacterial Blight (CBB)\"}, \"user\": {\"intent\": \"Cassava Bacterial Blight (CBB)\"}}]",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"Pest Management\"}}]",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"Crop Rotation\"}}]",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"Soil Health\"}}, {\"prev_action\": {\"action_name\": \"utter_Soil Health\"}, \"user\": {\"intent\": \"Soil Health\"}}]",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"Soil Health\"}}]",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"Irrigation\"}}]",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"Organic Farming\"}}, {\"prev_action\": {\"action_name\": \"utter_Organic Farming\"}, \"user\": {\"intent\": \"Organic Farming\"}}]",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"Crop Rotation\"}}, {\"prev_action\": {\"action_name\": \"utter_Crop Rotation\"}, \"user\": {\"intent\": \"Crop Rotation\"}}]",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"Organic Farming\"}}]",
+      "predicting default action with intent restart",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"Cassava Mosaic Disease (CMD)\"}}, {\"prev_action\": {\"action_name\": \"utter_Cassava Mosaic Disease (CMD)\"}, \"user\": {\"intent\": \"Cassava Mosaic Disease (CMD)\"}}]",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"Cassava Whitefly\"}}, {\"prev_action\": {\"action_name\": \"utter_Cassava Whitefly\"}, \"user\": {\"intent\": \"Cassava Whitefly\"}}]",
+      "predicting default action with intent back",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"Cassava Bacterial Blight (CBB)\"}}]",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"Fertilizers\"}}]",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"Fertilizers\"}}, {\"prev_action\": {\"action_name\": \"utter_Fertilizers\"}, \"user\": {\"intent\": \"Fertilizers\"}}]",
+      "predicting default action with intent session_start",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"Cassava Whitefly\"}}]",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"Irrigation\"}}, {\"prev_action\": {\"action_name\": \"utter_Irrigation\"}, \"user\": {\"intent\": \"Irrigation\"}}]"
+    ]
+  }
+}

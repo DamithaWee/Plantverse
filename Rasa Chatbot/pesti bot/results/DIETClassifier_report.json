@@ -1,0 +1,196 @@
+{
+  "agriculture": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 13,
+    "confused_with": {}
+  },
+  "stalks": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 4,
+    "confused_with": {}
+  },
+  "tillage": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 8,
+    "confused_with": {}
+  },
+  "crops": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 243,
+    "confused_with": {}
+  },
+  "technique": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 15,
+    "confused_with": {}
+  },
+  "erosion": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 2,
+    "confused_with": {}
+  },
+  "water": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 5,
+    "confused_with": {}
+  },
+  "health": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 98,
+    "confused_with": {}
+  },
+  "tools": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 62,
+    "confused_with": {}
+  },
+  "location": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 15,
+    "confused_with": {}
+  },
+  "environment": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 2,
+    "confused_with": {}
+  },
+  "fertilizers": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 138,
+    "confused_with": {}
+  },
+  "phenomenon": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 4,
+    "confused_with": {}
+  },
+  "foods": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 50,
+    "confused_with": {}
+  },
+  "Water": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 12,
+    "confused_with": {}
+  },
+  "climate": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 56,
+    "confused_with": {}
+  },
+  "soil": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 33,
+    "confused_with": {}
+  },
+  "pests": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 318,
+    "confused_with": {}
+  },
+  "technology": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 4,
+    "confused_with": {}
+  },
+  "food": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 4,
+    "confused_with": {}
+  },
+  "Cuttings": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 4,
+    "confused_with": {}
+  },
+  "seeds": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 12,
+    "confused_with": {}
+  },
+  "name": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 14,
+    "confused_with": {}
+  },
+  "disease": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 977,
+    "confused_with": {}
+  },
+  "practice": {
+    "precision": 0.9977272727272727,
+    "recall": 1.0,
+    "f1-score": 0.9988623435722412,
+    "support": 439,
+    "confused_with": {}
+  },
+  "micro avg": {
+    "precision": 0.9996052112120016,
+    "recall": 1.0,
+    "f1-score": 0.9998025666337612,
+    "support": 2532
+  },
+  "macro avg": {
+    "precision": 0.9999090909090909,
+    "recall": 1.0,
+    "f1-score": 0.9999544937428897,
+    "support": 2532
+  },
+  "weighted avg": {
+    "precision": 0.9996059528938676,
+    "recall": 1.0,
+    "f1-score": 0.9998027523018223,
+    "support": 2532
+  },
+  "accuracy": 0.9999244827065398
+}

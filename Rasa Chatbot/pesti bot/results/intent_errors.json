@@ -1,0 +1,10 @@
+[
+  {
+    "text": "Can you explain the purpose of Integrated Pest Management?",
+    "intent": "reasons_for_using_ipm",
+    "intent_prediction": {
+      "name": "ipm_definition",
+      "confidence": 0.430620938539505
+    }
+  }
+]

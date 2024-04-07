@@ -1,0 +1,23 @@
+{
+  "lookup": {
+    "eJyLrq6NBQAEOAGx": "action_listen",
+    "eJyLrq7VUaguKEoti09MLsnMz7NSqIYw4vMSc1OtFKCcnMziktQ8oNrS4tQioJrMPCC3xErBObG4OLEsUSE8I7MkNS2nsrY2FgAr7R+c": "utter_Cassava Whitefly",
+    "eJyLrq7VUaguKEoti09MLsnMz7NSqIYw4vMSc1OtFKCcnMziktQ8oNrS4tQioJrMPCC3xErBObG4OLEsUSE8I7MkNS2nspaAcaUlJalF8Ri6iDA3FgDHm0Dc": "action_listen",
+    "eJyLrq7VUaguKEoti09MLsnMz7NSqIYw4vMSc1OtFKCcnMziktQ8oNrS4tQioJrMPCC3xErBObG4OLEsUcE3vzgxM1nBJbM4NbE4VUHD2ddFs7Y2FgC0+CLP": "utter_Cassava Mosaic Disease (CMD)",
+    "eJyLrq7VUaguKEoti09MLsnMz7NSqIYw4vMSc1OtFKCcnMziktQ8oNrS4tQioJrMPCC3xErBObG4OLEsUcE3vzgxM1nBJbM4NbE4VUHD2ddFs5aA0aUlJalF8XhNING+WADk/Ep1": "action_listen",
+    "eJyLrq7VUaguKEoti09MLsnMz7NSqIYw4vMSc1OtFKCcnMziktQ8oNrS4tQioJrMPCC3xErBs6goMz0RpKS2NhYAeBodhg==": "utter_Irrigation",
+    "eJyLrq7VUaguKEoti09MLsnMz7NSqIYw4vMSc1OtFKCcnMziktQ8oNrS4tQioJrMPCC3xErBs6goMz0RpKSWgEGlJSWpRfFI6vGaFQsAju06mg==": "action_listen",
+    "eJyLrq7VUaguKEoti09MLsnMz7NSqIYw4vMSc1OtFKCcnMziktQ8oNrS4tQioJrMPCC3xErBuSi/QCEovyQRpKq2NhYAzsMecg==": "utter_Crop Rotation",
+    "eJyLrq7VUaguKEoti09MLsnMz7NSqIYw4vMSc1OtFKCcnMziktQ8oNrS4tQioJrMPCC3xErBuSi/QCEovyQRpKqWgFmlJSWpRfGoWgiZGAsAioc9Xg==": "action_listen",
+    "eJyLrq7VUaguKEoti09MLsnMz7NSqIYw4vMSc1OtFKCcnMziktQ8oNrS4tQioJrMPCC3xErBLbWoJDMnsyq1qLi2NhYAlikeAQ==": "utter_Fertilizers",
+    "eJyLrq7VUaguKEoti09MLsnMz7NSqIYw4vMSc1OtFKCcnMziktQ8oNrS4tQioJrMPCC3xErBLbWoJDMnsyq1qLiWgEmlJSWpRfHIGvCbFgsATFk8Cw==": "action_listen",
+    "eJyLrq7VUaguKEoti09MLsnMz7NSqIYw4vMSc1OtFKCcnMziktQ8oNrS4tQioJrMPCC3xEohOD8zR8EjNTGnJKO2NhYAkbgdew==": "utter_Soil Health",
+    "eJyLrq7VUaguKEoti09MLsnMz7NSqIYw4vMSc1OtFKCcnMziktQ8oNrS4tQioJrMPCC3xEohOD8zR8EjNTGnJKOWgEmlJSWpRfHIGvCbFgsABwQ6eQ==": "action_listen",
+    "eJyLrq7VUaguKEoti09MLsnMz7NSqIYw4vMSc1OtFKCcnMziktQ8oNrS4tQioJrMPCC3xEohILW4RME3MS8xPTUXKFBbGwsAC4MfJw==": "utter_Pest Management",
+    "eJyLrq7VUaguKEoti09MLsnMz7NSqIYw4vMSc1OtFKCcnMziktQ8oNrS4tQioJrMPCC3xEohILW4RME3MS8xPTUXKFBLwLTSkpLUonh0TYRNjQUA+eI/fQ==": "action_listen",
+    "eJyLrq7VUaguKEoti09MLsnMz7NSqIYw4vMSc1OtFKCcnMziktQ8oNrS4tQioJrMPCC3xErBvyg9MS8zWcEtsSg3My+9tjYWAAvnHxU=": "utter_Organic Farming",
+    "eJyLrq7VUaguKEoti09MLsnMz7NSqIYw4vMSc1OtFKCcnMziktQ8oNrS4tQioJrMPCC3xErBvyg9MS8zWcEtsSg3My+9loBppSUlqUXx6JoImxoLAPKwP0c=": "action_listen",
+    "eJwtysEJgDAMQNFVclRwgh7jGCIlSNBAjdLEXkp3t6C3/+EttU1Q78wl0uZyaYD6RVQ6OcA/ScxZu32MczeifT3ATGZUCLA7zkIJMMl+OAwz4tja+gL9VCOJ": "utter_Cassava Bacterial Blight (CBB)",
+    "eJyLrq7VUaguKEoti09MLsnMz7NSqIYw4vMSc1OtFKCcnMziktQ8oNrS4tQioJrMPCC3xErBObG4OLEsUcEJqC61KDMxR8EpJzM9o0RBw9nJSbOWgOGlJUBN8QTMINnOWAC0mkyj": "action_listen"
+  }
+}

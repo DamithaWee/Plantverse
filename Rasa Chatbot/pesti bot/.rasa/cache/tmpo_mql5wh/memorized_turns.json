@@ -1,0 +1,14 @@
+{
+  "lookup": {
+    "eJyLrq6NBQAEOAGx": "action_listen",
+    "eJyLrq7VUaguKEoti09MLsnMz7NSqIYw4vMSc1OtFKCcnMziktQ8oNrS4tQioJrMPCC3xEqhJCMxLzu+Mr+0tjYWAFwgHUA=": "utter_thank_you",
+    "eJyLrq7VUaguKEoti09MLsnMz7NSqIYw4vMSc1OtFKCcnMziktQ8oNrS4tQioJrMPCC3xEqhJCMxLzu+Mr+0loA5pSUlqUXxCOX4TIoFAO+LOcg=": "action_listen",
+    "eJwtysEJgDAMQNFVMoATZJVSSqwRgjVKk3op3d2C3v6HF/pYoN+Vn0TZ5VKE/kVSOhnhnyLmrNM24zoNq4sLG0LYxJiM4wKi0ziClpZ2KmWlfIwRX3ovJe0=": "action_listen",
+    "eJy1zNEJhEAMRdFWUoAVTCsiIWp0w2aimCjIML3vgNuCf+/C4fWldlD2gy+kKWSzBOUZaJQ5wT9UPNiaPZ2PZthCQtgT9LM4k/PQgVgzkcD0xIVUR5q+9YV/ZVpwVFk/gX7nPbbstQ4/51BNpw==": "utter_leaf_blight_symptoms",
+    "eJy1jVEKwkAMRK+SA/QEe5VSQlpTDWbTsskKsvTuLtRPwQ/xbwbezBvbMUDbCz+QlpDNErQzoFHmBO+i4sHW2epcOsMWEsKeYLyIMzlPA4h1JhKYVlxJdablfvzhX5lWnFWut0B/5j227N88NYILflz+Ip1euGx65A==": "action_listen",
+    "eJyLrq7VUaguKEoti09MLsnMz7NSqIYw4vMSc1OtFKCcnMziktQ8oNrS4tQioJrMPCC3xEohPT8/JakytbY2FgAh+hxX": "utter_goodbye",
+    "eJyLrq7VUaguKEoti09MLsnMz7NSqIYw4vMSc1OtFKCcnMziktQ8oNrS4tQioJrMPCC3xEohPT8/JakytZaAKaUlJalF8TDFuE2JBQCMqTcN": "action_listen",
+    "eJyLrq7VUaguKEoti09MLsnMz7NSqIYw4vMSc1OtFKCcnMziktQ8oNrS4tQioJrMPCC3xEohvSg1taS2NhYA6dwbhQ==": "utter_greet",
+    "eJyLrq7VUaguKEoti09MLsnMz7NSqIYw4vMSc1OtFKCcnMziktQ8oNrS4tQioJrMPCC3xEohvSg1taSWgBmlJSWpRfEQpbhMiAUAQvc0lw==": "action_listen"
+  }
+}

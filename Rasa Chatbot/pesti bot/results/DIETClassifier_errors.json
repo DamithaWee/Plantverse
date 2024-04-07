@@ -1,0 +1,34 @@
+[
+  {
+    "text": "How is mechanical planting different from manual planting?",
+    "entities": [
+      {
+        "start": 7,
+        "end": 26,
+        "value": "mechanical planting",
+        "entity": "practice"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "practice",
+        "start": 7,
+        "end": 26,
+        "confidence_entity": 0.9986347556114197,
+        "value": "mechanical planting",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "practice",
+        "start": 49,
+        "end": 57,
+        "confidence_entity": 0.593453049659729,
+        "value": "planting",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  }
+]

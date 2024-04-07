@@ -1,0 +1,33 @@
+{
+  "lookup": {
+    "eJyLrq6NBQAEOAGx": "action_listen",
+    "eJyLrq7VUaguKEoti09MLsnMz7NSqIYw4vMSc1OtFKCcnMziktQ8oNrS4tQioJrMPCC3xEohvSg1taS2NhYA6dwbhQ==": "utter_greet",
+    "eJyLrq7VUaguKEoti09MLsnMz7NSqIYw4vMSc1OtFKCcnMziktQ8oNrS4tQioJrMPCC3xEohvSg1taSWgBmlJSWpRfEQpbhMiAUAQvc0lw==": "action_listen",
+    "eJydjssJgDAQBVtJAVaQo5YhsgR9SMB8zG4ECendoN4Fb29gGN5YaqdKTDjIzGKD16o8g7xx0OqFzbLANzczUnOsbyharQmQ+tHIIkj0qP8KHy/2DL6Foe9psQzDID5dlOC41ukCe5hYGg==": "utter_question_CBB_disease_symptoms",
+    "eJydjssJgDAQRFtJAVaQo5YhsgQdJGCiZjeCBHs3qGd/txl4vJk6bYVKU8BCphU7eq3SGcgbB62uMlgW+MxGRsiM9bmKVn0AZHtwRBEEOtF/hocXcwQfQFWW1FmGYRCvbpLR8bt394qvi80OkN6Eig==": "action_listen",
+    "eJydjlEKgCAQBa/iATqBV4lYFnuEUFbu6o949yT7F/p7A8Pw5lInU66ITOzUn8Ga0gcFPmDNB7sXRWhuEsTm+NBQrdkioHXQSKqI1NV/hcGLO0FewbEIZ6bVC1ggtS4PJelWvQ==": "utter_question_cassava_diseases",
+    "eJydjlsKgCAURLfiAlqBW4mQiw0hlJX36o+49yT7jR5/M3Dm0efSqbwFJENW3Oq1yk0YTwu0uszsWOArGxmhMs5XK1pNAZDy0BFFEExD/zU8vNgj+AQsMVMiMzoGMfjds/v4l6XhAKk/gHM=": "action_listen",
+    "eJydjkEKgCAURK/iATqBV4kQqcE+lNb320a8e6LthXZv4PGYOZdJ5YvxGLsKBa9V7mC8PaHVNw6KAl/dFMHVIV+naOUYkDJoJBGw6eq/wuDFnRCbQMzkbMMTsoctlrK81qdXtg==": "utter_question_irrigation_methods",
+    "eJydjlEKgCAQRK/iATqBV4kQqcEWSmtd+5HunlTfWf3NwOPNtHlvVF4Ym7G9UPBa5SsYb2dodZeJosAXNkVwYciXKlo5BmSvOJII2FzoP0PlxZoQT4CYydkzzpAxDPHdtyfBt7XuANfdg14=": "action_listen",
+    "eJyLrq7VUaguKEoti09MLsnMz7NSqIYw4vMSc1OtFKCcnMziktQ8oNrS4tQioJrMPCC3xEohLTEnJykxObu2NhYAPZocng==": "utter_default",
+    "eJyLrq7VUaguKEoti09MLsnMz7NSqIYw4vMSc1OtFKCcnMziktQ8oNrS4tQioJrMPCC3xEohLTEnJykxObuWgDGlJSWpRfEpqWmJpTkl+IyJBQDxgDeX": "action_listen",
+    "eJydjlEKgzAQRK+SA3iCXKWUJegYFpq1bjb+hNzd2Pgv9G8e8xjmVdvk6ldxUJiNN/GujkASEry74cPZIN0tGdodlo7mXVTA2sNGMYPSUP9beHixF+SfsGkMwjOtQRNLpAUrC19Va+8Tnqla2Q==": "utter_question_organic_farming_definition",
+    "eJydjkEKhTAMRK/SA3iCXkUkFB1LQOM3Td0U727Vv1fcZcjjzbRlb1z5KTYKvfEi3pX7IAkzvPuHiZNBKpsTtDIsNZp3UQHbHxzZDEo3+s3wsGLNSBewaAzCPY1BZ5ZIA0YWPl/vNr4RfWvvDo7AjMc=": "action_listen",
+    "eJydjkEKgDAMBL/SB/iCfkUkFFk0UFNNUy+lf7eod8HbDgzDjrUNru6Kk8JsnMS7+gySsMG7FyJng3S3ZGh3WDqad4sC1j4axQxKj/qv8PHiKMi3kBNHWhGircTbntSCzGhtugA4CVlI": "utter_question_soil_health_importance",
+    "eJydjlEKwyAQRK/iAXoCrxLKImFIFsxq1jU/4t0rTf9t+zcDjzeztP5wLSsuCqtxEu/aHUjCAe8+JXIxyGBrgQ6GZVTzblPA+sRRzaB0o/8ZJi/OivIGSuJIO0K0nfjISS3Iiu/+zSS/rz5fGOSIFA==": "action_listen",
+    "eJydjkEKgDAMBL/SB/iCfkUkhLpIRasmqZfSv1vUu+BtB4Zh+1I7V3bBSRwsbsm78gxKvMK7F5aohtTcrJDmxNTQvJsEsPrRyGYQetR/hY8XR4bewsrzJhRYlU+mMSpYUetwAd1MWMI=": "utter_question_major_cassava_disease",
+    "eJydjlEKgzAQRK+SA3iCXEXKssShRGpsdzf+hNzdoP2P+jcDjzczljq48hVsxMHimrwrZ6DEC7z7l09UQ2psVkhjYmrVvHsLYLXjyGYQOtFnhs6LX4YewMLzKhRYlTemKSpYce1ex3F787UDaImGgg==": "action_listen",
+    "eJydjlEKgCAQBa/iATqBV4mQiEcIprW79iPevTX7F/p7ww7DzqVOppyE262b+BStKX24uB6w5oPgWRDVzQxSx0dFsWYnQOqgkUVArqv/CoMvrgx+BU4+OFDiBq2nZ521Lg+UY1np": "utter_question_soil_erosion_prevention",
+    "eJydjlEKgCAQRK/iATqBV4mQiCGE0tpd+xHv3pr9G/3NsI+3M+YymHwQLjcv4mOwJrfgwrzDmrdsngVB2cQgZXzQKtasBEjpOJIIyDX0n6Gz4kzgB+DoNweKXEv16Vnjt4Fdy4+/0w3jRon3": "action_listen",
+    "eJydjssJgDAQBVtJAVaQVkRCiE9Z0I1uNl5Cejd+7oK3NzAMry+1M2UTHM4HpcjWlGc49iuseWGhpODm5gRpDnFDtWYWQOtHI6tC3KP+K3y82DPSLQSJm5Oo/qYREzFds9bhBO0pWjY=": "utter_question_crop_rotation_definition",
+    "eJydjssJgDAQRFtJAVaQVkRC0FEWdKObjZdg78bPPeJtBh5vps1HY/Iq2J3vlQJbk5/g2C+w5i0zRQUXNkVIYYhLVWsmAfSoOJIqxD3oP0PlxZYQb6CXsDoJ6u82YCSmK357WNf8We5Obf2K3g==": "action_listen",
+    "eJydjlEKgCAQBa/iATqBV4lYFtvCKLfWtR/x7kn2L/T3BobhjbkMJp9CN6BTz8Ga3AYEPMiaD3YflUJ1UySpjg8V1ZpViLR0GkmVBJr6r9B5cSWKr3DgxgIL8wxO+ARcxDssZXoANndZIw==": "utter_question_major_food_crop_africa",
+    "eJydjkEKgDAMBL/SB/iCfkUkhBqloo2mqZfi3y3qveptF4bZbfPRmLwK7YBOPQdr8h0g4ELWPGX2USkUNkWSwvhQqlozCpEeFUdSJYEb/WeovNgSxQtYcGKBgbkHJ7wCDuIdvvtXk3xf7U77/Iel": "action_listen",
+    "eJydjkEKgDAMBL+SB/iCfkUklBKkoGlNUy8lf7da74K3HRiGnZtN0LLQiT5oTOygjYHsd3LwwhaLEne3FpLuRO6oDlYhUvtoVFUSHOq/wseLo1J5hCApoyT1N5ktFyUWVa4=": "utter_question_crop_rotation",
+    "eJyLrq7VUaguKEoti09MLsnMz7NSqIYw4vMSc1OtFKCcnMziktQ8oNrS4tQioJrMPCC3xEohvSg1taSWgBmlJSWpRfEQpeSZQMAVhaWpxWAFyUX5BfFF+SWJIB5xzsKhl2g7YgFKVX1G": "action_listen",
+    "eJydzlEKgCAQBNCreIBO4FUiZNEhhNLaXfsR755Y/0F/O8Nj2Lm2ydSDcTnyGnOypj6HS7TDmjdsURSp2yLgbmLqUa1ZGdD2sVFUwe6h/xY+vjgLZADJcXMBK1OgUXjqVFpbbpB0WaY=": "utter_question_soil_degradation_causes",
+    "eJydjlEKgCAQRK/iATqBV4mQxYYQSmt37Ue8e1L9G/3tLI83M5Y6mLIzTkdeQ4rWlOdwkTZY84Y1iCI2Ngu4MSG2qNYsDGjtOLIq2D3oP0NnxZEhNyAprG7GwjTT/fDUUPk2sGv50TtdqvuJLg==": "action_listen",
+    "eJydjkEKwzAMBL/iB/QF/kopQpiNEdRyKsu5GP+9puk9kNsODMM+x3yEsRsO4uRSNYZxDlIuiOEPb2kOXW5vsOWILvQYsgE+LxrdHUaneq9w8eLT0X5CtcwqiTa2IppJyl7NWRPmfH0Bn6la4g==": "utter_question_organic_farming_importance",
+    "eJydjkEKwzAMBL/iB/QF/kopQpiNEdRyKsu5mPy9puk9IbddGGb3OfZHGKthI04uVWMYRyDlghj+5S3NoZPtDTYZ0Vk9hmyA7yeO7g6jA71nOHnx6Wg/oFpmlUQLWxHNJGWt5qwJ1z5eEd1bf30BmAuM4g==": "action_listen"
+  }
+}

@@ -1,0 +1,52 @@
+[
+  {
+    "tag_name": "entity",
+    "ids_to_tags": {
+      "1": "B-agricultural_technique",
+      "2": "I-agricultural_technique",
+      "3": "L-agricultural_technique",
+      "4": "U-agricultural_technique",
+      "5": "B-food_crop",
+      "6": "I-food_crop",
+      "7": "L-food_crop",
+      "8": "U-food_crop",
+      "9": "B-irrigation_method",
+      "10": "I-irrigation_method",
+      "11": "L-irrigation_method",
+      "12": "U-irrigation_method",
+      "13": "B-plant_disease",
+      "14": "I-plant_disease",
+      "15": "L-plant_disease",
+      "16": "U-plant_disease",
+      "17": "B-soil_degradation_factor",
+      "18": "I-soil_degradation_factor",
+      "19": "L-soil_degradation_factor",
+      "20": "U-soil_degradation_factor",
+      "0": "O"
+    },
+    "tags_to_ids": {
+      "B-agricultural_technique": 1,
+      "I-agricultural_technique": 2,
+      "L-agricultural_technique": 3,
+      "U-agricultural_technique": 4,
+      "B-food_crop": 5,
+      "I-food_crop": 6,
+      "L-food_crop": 7,
+      "U-food_crop": 8,
+      "B-irrigation_method": 9,
+      "I-irrigation_method": 10,
+      "L-irrigation_method": 11,
+      "U-irrigation_method": 12,
+      "B-plant_disease": 13,
+      "I-plant_disease": 14,
+      "L-plant_disease": 15,
+      "U-plant_disease": 16,
+      "B-soil_degradation_factor": 17,
+      "I-soil_degradation_factor": 18,
+      "L-soil_degradation_factor": 19,
+      "U-soil_degradation_factor": 20,
+      "O": 0
+    },
+    "num_tags": 21
+  }
+]
